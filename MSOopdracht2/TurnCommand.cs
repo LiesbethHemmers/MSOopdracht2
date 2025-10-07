@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSOopdracht2
 {
-    internal class TurnCommand : ICommand
+    public class TurnCommand : ICommand
     {
         TurnDirection turn;
 
@@ -29,7 +29,7 @@ namespace MSOopdracht2
         }
     }
 
-    enum TurnDirection
+    public enum TurnDirection
     {
         Left,
         Right

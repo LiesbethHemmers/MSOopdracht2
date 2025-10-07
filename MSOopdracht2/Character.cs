@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace MSOopdracht2
 {
-    internal class Character
+    public class Character
     {
         Vector2 position;
         Direction direction;
 
-        Vector2 Position { get; }
-        Direction Direction { get; }
+        public Vector2 Position { get { return position; } }
+        public Direction Direction { get { return direction; } }
 
         public Character()
         {
@@ -48,7 +48,7 @@ namespace MSOopdracht2
             }
         }
     }
-    enum Direction
+    public enum Direction
     {
         East,
         South,
