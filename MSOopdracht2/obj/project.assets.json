@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aftor\\source\\repos\\MSOopdracht2\\MSOopdracht2.csproj",
+      "projectUniqueName": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\MSOopdracht2.csproj",
       "projectName": "MSOopdracht2",
-      "projectPath": "C:\\Users\\aftor\\source\\repos\\MSOopdracht2\\MSOopdracht2.csproj",
+      "projectPath": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\MSOopdracht2.csproj",
       "packagesPath": "C:\\Users\\aftor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aftor\\source\\repos\\MSOopdracht2\\obj\\",
+      "outputPath": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
