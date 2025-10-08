@@ -15,7 +15,7 @@ namespace MSOopdracht2
 
         public void Run(CodeProgram program)
         {
-
+            throw new NotImplementedException();
         }
     }
 }

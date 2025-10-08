@@ -12,5 +12,10 @@ namespace MSOopdracht2
         {
 
         }
+
+        public void Execute(Character character, List<string> trace)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
