@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSOopdracht2
 {
-    internal class RepeatCommand : ICommand
+    public class RepeatCommand : ICommand
     {
         int times;
         List<ICommand> commands;
@@ -18,7 +18,14 @@ namespace MSOopdracht2
         }
         public void Execute(Character character, List<string> trace)
         {
-
+            for (int i = 0; i < times; i++)
+            {
+                foreach (ICommand command in commands)
+                {
+                    command.Execute(character, trace);
+                }
+            }
+            
         }
     }
 }

@@ -3,34 +3,37 @@
   "WorkspaceRootPath": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2test\\movecommandtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\movecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:movecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2test\\turncommandtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2test\\repeatcommandtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\repeatcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:repeatcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\icommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:icommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2test\\turncommandtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2test\\movecommandtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\movecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:movecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\turncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:turncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,12 +52,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RepeatCommandTests.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\RepeatCommandTests.cs",
+              "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\RepeatCommandTests.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\RepeatCommandTests.cs*",
+              "RelativeToolTip": "..\\MSOopdracht2Test\\RepeatCommandTests.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwCoAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T08:35:19.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MoveCommandTests.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\MoveCommandTests.cs",
               "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\MoveCommandTests.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\MoveCommandTests.cs*",
-              "RelativeToolTip": "..\\MSOopdracht2Test\\MoveCommandTests.cs*",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswBoAAAAOAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\MoveCommandTests.cs",
+              "RelativeToolTip": "..\\MSOopdracht2Test\\MoveCommandTests.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-07T18:06:38.149Z",
               "EditorCaption": ""
@@ -67,40 +83,39 @@
               "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\TurnCommandTests.cs",
               "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\TurnCommandTests.cs",
               "RelativeToolTip": "..\\MSOopdracht2Test\\TurnCommandTests.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAowBUAAABsAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowA4AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-07T17:01:18.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Character.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Character.cs",
               "RelativeDocumentMoniker": "Character.cs",
               "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Character.cs",
               "RelativeToolTip": "Character.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwA8AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwBgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T15:49:20.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T15:49:20.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "RepeatCommand.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\RepeatCommand.cs",
               "RelativeDocumentMoniker": "RepeatCommand.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\RepeatCommand.cs",
-              "RelativeToolTip": "RepeatCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\RepeatCommand.cs*",
+              "RelativeToolTip": "RepeatCommand.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-07T15:48:18.692Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "MoveCommand.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\MoveCommand.cs",
               "RelativeDocumentMoniker": "MoveCommand.cs",
@@ -113,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "TurnCommand.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\TurnCommand.cs",
               "RelativeDocumentMoniker": "TurnCommand.cs",
@@ -121,25 +136,24 @@
               "RelativeToolTip": "TurnCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T15:47:34.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T15:47:34.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "ICommand.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\ICommand.cs",
               "RelativeDocumentMoniker": "ICommand.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\ICommand.cs",
-              "RelativeToolTip": "ICommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\ICommand.cs*",
+              "RelativeToolTip": "ICommand.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-07T15:47:12.063Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -147,8 +161,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T13:13:48.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T13:13:48.921Z"
             }
           ]
         }

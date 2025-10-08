@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSOopdracht2
 {
-    internal interface ICommand
+    public interface ICommand
     {
         public void Execute(Character character, List<string> trace);
     }
