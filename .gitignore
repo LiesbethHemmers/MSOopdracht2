@@ -409,3 +409,5 @@ FodyWeavers.xsd
 
 # art program files
 *.psd
+
+!/INFOGR2025TemplateP2/assets/*.obj
