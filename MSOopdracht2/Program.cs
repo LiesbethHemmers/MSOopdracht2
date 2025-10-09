@@ -12,6 +12,7 @@
             if (choice == "1")
             {
                 codeProgram = ExamplePrograms.GetRandomExampleProgram();
+                Console.WriteLine("You have chosen:" + codeProgram.Name);
             }
             else if (choice == "2")
             {

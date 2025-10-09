@@ -16,6 +16,7 @@ namespace MSOopdracht2
             this.times = times;
             this.commands = commands;
         }
+
         public void Execute(Character character, List<string> trace)
         {
             for (int i = 0; i < times; i++)

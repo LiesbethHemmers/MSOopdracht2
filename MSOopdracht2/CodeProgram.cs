@@ -8,14 +8,23 @@ namespace MSOopdracht2
 {
     internal class CodeProgram
     {
-        public CodeProgram()
-        {
+        private List<ICommand> commands;
+        private string name;
 
+        public string Name { get { return name; } }
+
+        public CodeProgram(List<ICommand> commands, string name)
+        {
+            this.commands = commands;
+            this.name = name;
         }
 
         public void Execute(Character character, List<string> trace)
         {
-            throw new NotImplementedException();
+            foreach (ICommand command in commands)
+            {
+                command.Execute(character, trace);
+            }
         }
     }
 }
