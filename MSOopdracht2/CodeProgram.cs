@@ -12,6 +12,7 @@ namespace MSOopdracht2
         private string name;
 
         public string Name { get { return name; } }
+        public List<ICommand> Commands { get { return commands; } }
 
         public CodeProgram(List<ICommand> commands, string name)
         {

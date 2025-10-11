@@ -28,5 +28,10 @@ namespace MSOopdracht2
             }
             
         }
+
+        public List<ICommand> GetCommands()
+        {
+            return commands;
+        }
     }
 }

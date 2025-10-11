@@ -94,8 +94,8 @@ namespace MSOopdracht2
                     new MoveCommand(2),
                     new RepeatCommand(3, new List<ICommand>
                     {
-                        new MoveCommand(3), 
-                        new RepeatCommand(2, new List<ICommand>{ 
+                        new MoveCommand(3),
+                        new RepeatCommand(2, new List<ICommand>{
                             new TurnCommand(TurnDirection.Right)
                         })
                     })

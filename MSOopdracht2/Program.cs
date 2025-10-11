@@ -35,7 +35,7 @@
             }
             else if (secondChoice == "2")
             {
-                MetricCalculator calculator = new MetricCalculator();
+                MetricCalculator calculator = new MetricCalculator(codeProgram);
                 StoredMetrics metric = calculator.CalculateMetrics(codeProgram);
                 metric.Print();
             }
