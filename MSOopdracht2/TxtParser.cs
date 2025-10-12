@@ -16,7 +16,6 @@ namespace MSOopdracht2
 
         }
 
-        //Comments nog verbeteren!
         public CodeProgram Parse(string[] lines)
         {
             CodeProgram program = new CodeProgram("txtProgram");
@@ -53,13 +52,13 @@ namespace MSOopdracht2
                 int currentDepth = numOfLeadingSpaces / 4;
                 string[] parts = lines[linePointer].Trim().Split(' ');
 
-                if (currentDepth < depth) 
+                if (currentDepth < depth) //So if you're on a lower depth 
                 {
                     linePointer--; //So you go back one because otherwise you skip one line
                     break;
                 }
 
-                if (currentDepth == depth)
+                if (currentDepth == depth) //So if you're still on the same depth
                 {
                     if (parts[0] == "Move")
                     {

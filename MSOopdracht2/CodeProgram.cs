@@ -9,7 +9,7 @@ namespace MSOopdracht2
     internal class CodeProgram
     {
         private string name;
-        private List<ICommand> commands = new List<ICommand>();
+        private List<ICommand> commands;
 
         public string Name { get { return name; } }
         public List<ICommand> Commands { get { return commands; } }

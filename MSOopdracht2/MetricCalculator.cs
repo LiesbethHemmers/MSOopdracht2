@@ -8,7 +8,7 @@ namespace MSOopdracht2
 {
     internal class MetricCalculator
     {
-        public MetricCalculator(CodeProgram program)
+        public MetricCalculator()
         {
 
         }
@@ -35,7 +35,7 @@ namespace MSOopdracht2
 
         public void CalculateNesting(StoredMetrics storedMetrics, RepeatCommand repeatCommand, int depth)
         {
-            foreach (ICommand command in repeatCommand.GetCommands())
+            foreach (ICommand command in repeatCommand.Commands)
             {
                 storedMetrics.commandAmmount++;
                 if (command is RepeatCommand)
