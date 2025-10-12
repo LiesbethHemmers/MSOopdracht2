@@ -19,13 +19,13 @@ namespace MSOopdracht2
 
             foreach (ICommand command in program.Commands)
             {
-                storedMetrics.commandAmmount++;
+                storedMetrics.CommandAmmount++;
                 if (command is RepeatCommand)
                 {
-                    storedMetrics.repeatAmmount++;
-                    if (storedMetrics.nestingAmmount < 1)
+                    storedMetrics.RepeatAmmount++;
+                    if (storedMetrics.NestingAmmount < 1)
                     {
-                        storedMetrics.nestingAmmount++;
+                        storedMetrics.NestingAmmount++;
                     }
                     CalculateNesting(storedMetrics, (RepeatCommand)command, 1);
                 }
@@ -37,18 +37,18 @@ namespace MSOopdracht2
         {
             foreach (ICommand command in repeatCommand.Commands)
             {
-                storedMetrics.commandAmmount++;
+                storedMetrics.CommandAmmount++;
                 if (command is RepeatCommand)
                 {
                     int newDepth = depth + 1;
-                    if (newDepth > storedMetrics.nestingAmmount)
+                    if (newDepth > storedMetrics.NestingAmmount)
                     {
-                        while (storedMetrics.nestingAmmount < newDepth)
+                        while (storedMetrics.NestingAmmount < newDepth)
                         {
-                            storedMetrics.nestingAmmount++;
+                            storedMetrics.NestingAmmount++;
                         }
                     }
-                    storedMetrics.repeatAmmount++;
+                    storedMetrics.RepeatAmmount++;
                     CalculateNesting(storedMetrics, (RepeatCommand)command, newDepth);
                 }
             }

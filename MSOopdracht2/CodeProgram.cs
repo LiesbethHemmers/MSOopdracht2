@@ -14,11 +14,6 @@ namespace MSOopdracht2
         public string Name { get { return name; } }
         public List<ICommand> Commands { get { return commands; } }
 
-        public CodeProgram(string name)
-        {
-            this.name = name;
-        }
-
         public CodeProgram(List<ICommand> commands, string name)
         {
             this.commands = commands;
@@ -31,11 +26,6 @@ namespace MSOopdracht2
             {
                 command.Execute(character, trace);
             }
-        }
-
-        public void AddCommand(ICommand command)
-        {
-            commands.Add(command);
         }
     }
 }
