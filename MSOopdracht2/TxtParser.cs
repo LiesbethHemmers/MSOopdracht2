@@ -16,9 +16,10 @@ namespace MSOopdracht2
 
         }
 
-        public CodeProgram Parse(string[] lines, string filePath)
+        //Comments nog verbeteren!
+        public CodeProgram Parse(string[] lines)
         {
-            CodeProgram program = new CodeProgram(filePath);
+            CodeProgram program = new CodeProgram("txtProgram");
 
             for (int linePointer = 0; linePointer < lines.Length; linePointer++)
             {
@@ -35,21 +36,28 @@ namespace MSOopdracht2
                 }
                 else if (parts[0] == "Repeat")
                 {
-                    RepeatCommand repeatCommand = new RepeatCommand(int.Parse(parts[1]), CreateNestedCommands(lines, linePointer++, 1));
+                    RepeatCommand repeatCommand = new RepeatCommand(int.Parse(parts[1]), CreateNestedCommands(lines, ref linePointer, 1));
+                    program.AddCommand(repeatCommand);
                 }
             }
             return program;
         }
 
-        private List<ICommand> CreateNestedCommands(string[] lines, int linePointer, int depth)
+        private List<ICommand> CreateNestedCommands(string[] lines, ref int linePointer, int depth)
         {
             List<ICommand> commands = new List<ICommand>();
 
-            for (int j = linePointer; j < lines.Length; j++)
+            for (linePointer = linePointer + 1; linePointer < lines.Length; linePointer++)
             {
                 int numOfLeadingSpaces = lines[linePointer].TakeWhile(char.IsWhiteSpace).Count();
                 int currentDepth = numOfLeadingSpaces / 4;
-                string[] parts = lines[linePointer].Split(' ');
+                string[] parts = lines[linePointer].Trim().Split(' ');
+
+                if (currentDepth < depth) 
+                {
+                    linePointer--; //So you go back one because otherwise you skip one line
+                    break;
+                }
 
                 if (currentDepth == depth)
                 {
@@ -63,7 +71,7 @@ namespace MSOopdracht2
                     }
                     else if (parts[0] == "Repeat")
                     {
-                        List<ICommand> nestedCommands = CreateNestedCommands(lines, linePointer++, depth++);
+                        List<ICommand> nestedCommands = CreateNestedCommands(lines, ref linePointer, depth + 1); //So you're nesting deeper
                         if (nestedCommands.Count == 0)
                         {
                             break;
@@ -71,11 +79,6 @@ namespace MSOopdracht2
                         RepeatCommand repeatCommand = new RepeatCommand(int.Parse(parts[1]), nestedCommands);
                         commands.Add(repeatCommand);
                     }
-                }
-
-                else if (currentDepth < depth)
-                {
-                    return new List<ICommand>();
                 }
             }
 

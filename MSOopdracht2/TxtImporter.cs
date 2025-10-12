@@ -17,7 +17,7 @@ namespace MSOopdracht2
         public CodeProgram Import(string filePath)
         {
             string[] lines = File.ReadAllLines(filePath);//this is thus a string array containing all lines of the file
-            CodeProgram parsedProgram = parser.Parse(lines, filePath);
+            CodeProgram parsedProgram = parser.Parse(lines);
             return parsedProgram;
         }
     }
