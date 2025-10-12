@@ -71,10 +71,6 @@ namespace MSOopdracht2
                     else if (parts[0] == "Repeat")
                     {
                         List<ICommand> nestedCommands = CreateNestedCommands(lines, ref linePointer, depth + 1); //So you're nesting deeper
-                        if (nestedCommands.Count == 0)
-                        {
-                            break;
-                        }
                         RepeatCommand repeatCommand = new RepeatCommand(int.Parse(parts[1]), nestedCommands);
                         commands.Add(repeatCommand);
                     }
