@@ -8,9 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="TryOutfile.txt">
+    <None Remove="program1.txt" />
+    <None Remove="TryOutfile.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="program1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
+    <Content Include="TryOutfile.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

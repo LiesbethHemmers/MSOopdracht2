@@ -100,7 +100,7 @@ namespace MSOopdracht2
                         })
                     })
                 })
-                //The endpoint (3,0) facing west
+                //The endpoint (0,0) facing east
             }, "ExpertProgram2");
         }
 
