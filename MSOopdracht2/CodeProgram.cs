@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MSOopdracht2
+﻿namespace MSOopdracht2
 {
     internal class CodeProgram
     {
-        private string name;
-        private List<ICommand> commands = new List<ICommand>();
+        string name;
+        List<ICommand> commands = new List<ICommand>();
 
         public string Name { get { return name; } }
         public List<ICommand> Commands { get { return commands; } }

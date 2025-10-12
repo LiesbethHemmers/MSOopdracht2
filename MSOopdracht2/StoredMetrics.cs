@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MSOopdracht2
+﻿namespace MSOopdracht2
 {
     internal class StoredMetrics
     {
