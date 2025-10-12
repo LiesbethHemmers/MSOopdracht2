@@ -19,7 +19,8 @@ namespace MSOopdracht2
         //Comments nog verbeteren!
         public CodeProgram Parse(string[] lines)
         {
-            CodeProgram program = new CodeProgram("txtProgram");
+            List<ICommand> commands = new List<ICommand>();
+            CodeProgram program = new CodeProgram(commands, "txtProgram");
 
             for (int linePointer = 0; linePointer < lines.Length; linePointer++)
             {
@@ -27,17 +28,17 @@ namespace MSOopdracht2
 
                 if (parts[0] == "Move")
                 {
-                    program.AddCommand(ParseMoveCommand(parts));
+                    commands.Add(ParseMoveCommand(parts));
                 }
                 else if (parts[0] == "Turn")
                 {
-                    program.AddCommand(ParseTurnCommand(parts));
+                    commands.Add(ParseTurnCommand(parts));
 
                 }
                 else if (parts[0] == "Repeat")
                 {
                     RepeatCommand repeatCommand = new RepeatCommand(int.Parse(parts[1]), CreateNestedCommands(lines, ref linePointer, 1));
-                    program.AddCommand(repeatCommand);
+                    commands.Add(repeatCommand);
                 }
             }
             return program;

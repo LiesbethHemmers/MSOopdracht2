@@ -8,16 +8,11 @@ namespace MSOopdracht2
 {
     internal class CodeProgram
     {
-        private string name;
-        private List<ICommand> commands = new List<ICommand>();
+        string name;
+        List<ICommand> commands = new List<ICommand>();
 
         public string Name { get { return name; } }
         public List<ICommand> Commands { get { return commands; } }
-
-        public CodeProgram(string name)
-        {
-            this.name = name;
-        }
 
         public CodeProgram(List<ICommand> commands, string name)
         {
@@ -31,11 +26,6 @@ namespace MSOopdracht2
             {
                 command.Execute(character, trace);
             }
-        }
-
-        public void AddCommand(ICommand command)
-        {
-            commands.Add(command);
         }
     }
 }

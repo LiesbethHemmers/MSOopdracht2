@@ -10,6 +10,7 @@ namespace MSOopdracht2
     {
         int times;
         List<ICommand> commands;
+        public List<ICommand> Commands { get { return commands; } }
 
         public RepeatCommand(int times, List<ICommand> commands)
         {
@@ -27,11 +28,6 @@ namespace MSOopdracht2
                 }
             }
             
-        }
-
-        public List<ICommand> GetCommands()
-        {
-            return commands;
         }
     }
 }

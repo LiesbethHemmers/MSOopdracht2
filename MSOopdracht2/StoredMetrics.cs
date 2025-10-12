@@ -9,20 +9,20 @@ namespace MSOopdracht2
 {
     internal class StoredMetrics
     {
-        public int commandAmmount { get; set; }
-        public int repeatAmmount { get; set; }
-        public int nestingAmmount { get; set; }
+        public int CommandAmmount { get; set; }
+        public int RepeatAmmount { get; set; }
+        public int NestingAmmount { get; set; }
 
         public StoredMetrics(int commandAmmount, int repeatAmmount, int nestingAmmount)
         {
-            this.commandAmmount = commandAmmount;
-            this.repeatAmmount = repeatAmmount;
-            this.nestingAmmount = nestingAmmount;
+            this.CommandAmmount = commandAmmount;
+            this.RepeatAmmount = repeatAmmount;
+            this.NestingAmmount = nestingAmmount;
         }
 
         public void Print()
         {
-            Console.WriteLine($"commandammount = {commandAmmount} repeatAmmount = {repeatAmmount} nestingAmmount = {nestingAmmount}");
+            Console.WriteLine($"commandammount = {CommandAmmount} repeatAmmount = {RepeatAmmount} nestingAmmount = {NestingAmmount}");
         }
     }
 }
