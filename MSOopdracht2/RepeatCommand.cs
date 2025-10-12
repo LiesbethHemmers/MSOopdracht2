@@ -14,15 +14,15 @@ namespace MSOopdracht2
 
         public RepeatCommand(int times, List<ICommand> commands)
         {
-            this.Times = times;
-            this.Commands = commands;
+            this.times = times;
+            this.commands = commands;
         }
         
         public void Execute(Character character, List<string> trace)
         {
-            for (int i = 0; i < Times; i++)
+            for (int i = 0; i < times; i++)
             {
-                foreach (ICommand command in Commands)
+                foreach (ICommand command in commands)
                 {
                     command.Execute(character, trace);
                 }
