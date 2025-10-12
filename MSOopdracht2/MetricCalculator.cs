@@ -8,7 +8,7 @@ namespace MSOopdracht2
 {
     internal class MetricCalculator
     {
-        public MetricCalculator(CodeProgram program)
+        public MetricCalculator()
         {
 
         }
