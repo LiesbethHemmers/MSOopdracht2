@@ -16,11 +16,22 @@
             }
             else if (choice == "2")
             {
-                Console.WriteLine("Enter filepath");
-                string filePath = Console.ReadLine();
-                IParser parser = new TxtParser();
-                IImporter importer = new TxtImporter(parser);
-                codeProgram = importer.Import(filePath);
+                while (true)
+                {
+                    Console.WriteLine("Enter filepath");
+                    string filePath = Console.ReadLine();
+                    IParser parser = new TxtParser();
+                    IImporter importer = new TxtImporter(parser);
+                    try
+                    {
+                        codeProgram = importer.Import(filePath);
+                        break;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Filepath not valid, please try again");
+                    }
+                }
             }
 
             Console.WriteLine("1: Execute loaded program");
