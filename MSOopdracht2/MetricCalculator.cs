@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSOopdracht2
 {
-    internal class MetricCalculator
+    public class MetricCalculator
     {
         public MetricCalculator()
         {

@@ -1,6 +1,6 @@
 ﻿namespace MSOopdracht2
 {
-    internal class StoredMetrics
+    public class StoredMetrics
     {
         public int CommandAmmount { get; set; }
         public int RepeatAmmount { get; set; }

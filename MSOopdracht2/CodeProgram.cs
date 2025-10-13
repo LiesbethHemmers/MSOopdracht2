@@ -1,6 +1,6 @@
 ﻿namespace MSOopdracht2
 {
-    internal class CodeProgram
+    public class CodeProgram
     {
         string name;
         List<ICommand> commands = new List<ICommand>();
