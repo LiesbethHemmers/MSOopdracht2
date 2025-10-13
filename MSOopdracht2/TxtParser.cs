@@ -7,6 +7,7 @@
 
         }
 
+        //So this method bundles the other 3 methods:
         public CodeProgram Parse(string[] lines)
         {
             List<ICommand> commands = new List<ICommand>();
@@ -38,19 +39,22 @@
         {
             List<ICommand> commands = new List<ICommand>();
 
+            //Starts from the line after the repeat statement:
             for (linePointer = linePointer + 1; linePointer < lines.Length; linePointer++)
             {
                 int numOfLeadingSpaces = lines[linePointer].TakeWhile(char.IsWhiteSpace).Count();
-                int currentDepth = numOfLeadingSpaces / 4;
+                int currentDepth = numOfLeadingSpaces / 4; //So the currentDepth is 1 is the ammount of leading spaces are 4, 2 if there are 8, etc.
                 string[] parts = lines[linePointer].Trim().Split(' ');
 
-                if (currentDepth < depth) //So if you're on a lower depth 
+                if (currentDepth < depth) 
                 {
-                    linePointer--; //So you go back one because otherwise you skip one line
-                    break;
+                    //The for loop in parse automatically makes linePointer higher by 1 after each iteration, so we need to lower linePointer here,
+                    //because otherwise the first line with less indentation would be skipped:
+                    linePointer--; 
+                    break;  //After this break the commands will be returned
                 }
 
-                if (currentDepth == depth) //So if you're still on the same depth
+                if (currentDepth == depth) 
                 {
                     if (parts[0] == "Move")
                     {
@@ -60,9 +64,11 @@
                     {
                         commands.Add(ParseTurnCommand(parts));
                     }
+                    //So if there's another repeat I will just call the CreateNestedCommand functions again, but with 
+                    //1 higher depth  because obviously the identation would be higher:
                     else if (parts[0] == "Repeat")
                     {
-                        List<ICommand> nestedCommands = CreateNestedCommands(lines, ref linePointer, depth + 1); //So you're nesting deeper
+                        List<ICommand> nestedCommands = CreateNestedCommands(lines, ref linePointer, depth + 1);
                         RepeatCommand repeatCommand = new RepeatCommand(int.Parse(parts[1]), nestedCommands);
                         commands.Add(repeatCommand);
                     }
