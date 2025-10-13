@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MSOopdracht2
+﻿namespace MSOopdracht2
 {
     internal class MetricCalculator
     {
@@ -33,7 +27,7 @@ namespace MSOopdracht2
             return storedMetrics;
         }
 
-        public void CalculateNesting(StoredMetrics storedMetrics, RepeatCommand repeatCommand, int depth)
+        void CalculateNesting(StoredMetrics storedMetrics, RepeatCommand repeatCommand, int depth)
         {
             foreach (ICommand command in repeatCommand.Commands)
             {

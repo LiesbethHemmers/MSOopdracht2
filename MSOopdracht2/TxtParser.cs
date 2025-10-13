@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
-
-namespace MSOopdracht2
+﻿namespace MSOopdracht2
 {
     internal class TxtParser : IParser
     {
@@ -43,7 +34,7 @@ namespace MSOopdracht2
             return program;
         }
 
-        private List<ICommand> CreateNestedCommands(string[] lines, ref int linePointer, int depth)
+        List<ICommand> CreateNestedCommands(string[] lines, ref int linePointer, int depth)
         {
             List<ICommand> commands = new List<ICommand>();
 
@@ -77,11 +68,10 @@ namespace MSOopdracht2
                     }
                 }
             }
-
             return commands;
         }
 
-        private TurnCommand ParseTurnCommand(string[] parts)
+        TurnCommand ParseTurnCommand(string[] parts)
         {
             if (parts[1] == "left")
             {
@@ -95,11 +85,10 @@ namespace MSOopdracht2
             }
         }
 
-        private MoveCommand ParseMoveCommand(string[] parts)
+        MoveCommand ParseMoveCommand(string[] parts)
         {
             MoveCommand moveCommand = new MoveCommand(int.Parse(parts[1]));
             return moveCommand;
         }
-
     }
 }

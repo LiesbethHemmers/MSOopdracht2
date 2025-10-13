@@ -1,6 +1,4 @@
 ﻿using System.Numerics;
-using System.Reflection.PortableExecutable;
-using System.Windows.Input;
 using MSOopdracht2;
 
 namespace MSOopdracht2Test
@@ -39,7 +37,6 @@ namespace MSOopdracht2Test
             Assert.Equal(expected, trace);
             Assert.Equal(new Vector2(0, 1), character.Position); //the character should end on 0,1
             Assert.Equal(Direction.North, character.Direction);//should end looking north
-
         }
     }
 }

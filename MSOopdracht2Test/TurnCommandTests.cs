@@ -1,5 +1,3 @@
-using System.Reflection.PortableExecutable;
-using System.Windows.Input;
 using MSOopdracht2;
 
 namespace MSOopdracht2Test
@@ -20,7 +18,6 @@ namespace MSOopdracht2Test
             Assert.Equal(Direction.North, character.Direction);//checks equality
             Assert.Single(trace);//checks that trace only contains 1 element
             Assert.Contains("Turn left", trace[0]);//chechs if the one element trace contains, the string is
-
         }
 
         [Fact]

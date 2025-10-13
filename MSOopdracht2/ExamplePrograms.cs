@@ -9,7 +9,7 @@ namespace MSOopdracht2
     internal static class ExamplePrograms
     {
         //The basicprograms are only turn and move commands
-        public static CodeProgram BasicProgram1()
+        static CodeProgram BasicProgram1()
         {
             return new CodeProgram(new List<ICommand>
             {
@@ -22,7 +22,7 @@ namespace MSOopdracht2
             }, "BasicProgram1");
         }
 
-        public static CodeProgram BasicProgram2()
+        static CodeProgram BasicProgram2()
         {
             return new CodeProgram(new List<ICommand>
             {
@@ -38,7 +38,7 @@ namespace MSOopdracht2
             }, "BasicProgram2");
         }
 
-        public static CodeProgram AdvancedProgram1()
+        static CodeProgram AdvancedProgram1()
         {
             return new CodeProgram(new List<ICommand>
             {
@@ -47,7 +47,7 @@ namespace MSOopdracht2
             }, "AdvancedProgram1");
         }
 
-        public static CodeProgram AdvancedProgram2()
+        static CodeProgram AdvancedProgram2()
         {
             return new CodeProgram(new List<ICommand>
             {
@@ -63,7 +63,7 @@ namespace MSOopdracht2
             }, "AdvancedProgram2");
         }
 
-        public static CodeProgram ExpertProgram1()
+        static CodeProgram ExpertProgram1()
         {
             return new CodeProgram(new List<ICommand>
             {
@@ -85,7 +85,7 @@ namespace MSOopdracht2
             }, "ExpertProgram1");
         }
 
-        public static CodeProgram ExpertProgram2()
+        static CodeProgram ExpertProgram2()
         {
             return new CodeProgram(new List<ICommand>
             {

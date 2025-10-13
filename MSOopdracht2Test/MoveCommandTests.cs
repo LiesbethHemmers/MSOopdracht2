@@ -1,6 +1,4 @@
 ﻿using System.Numerics;
-using System.Reflection.PortableExecutable;
-using System.Windows.Input;
 using MSOopdracht2;
 
 namespace MSOopdracht2Test
@@ -21,7 +19,6 @@ namespace MSOopdracht2Test
             Assert.Equal(new Vector2(3, 0), character.Position);//checks equality
             Assert.Single(trace);//checks that trace only contains 1 element
             Assert.Contains("Move 3", trace[0]);//chechs if the one element trace contains, the string is
-
         }
 
         [Fact]
@@ -40,7 +37,6 @@ namespace MSOopdracht2Test
             Assert.Equal(new Vector2(0, -3), character.Position);//checks equality
             Assert.Single(trace);//checks that trace only contains 1 element
             Assert.Contains("Move 3", trace[0]);//chechs if the one element trace contains, the string is
-
         }
     }
 }
