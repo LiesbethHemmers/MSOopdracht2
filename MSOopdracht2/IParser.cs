@@ -1,6 +1,6 @@
 ﻿namespace MSOopdracht2
 {
-    internal interface IParser
+    public interface IParser
     {
         CodeProgram Parse(string[] lines);
     }

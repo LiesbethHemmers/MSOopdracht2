@@ -1,6 +1,6 @@
 ﻿namespace MSOopdracht2
 {
-    internal class TxtImporter : IImporter
+    public class TxtImporter : IImporter
     {
         IParser parser;
         public TxtImporter(IParser parser)

@@ -2,7 +2,7 @@
 {
     public class TurnCommand : ICommand
     {
-        TurnDirection turn;
+        public TurnDirection turn;
 
         public TurnCommand(TurnDirection turn)
         {

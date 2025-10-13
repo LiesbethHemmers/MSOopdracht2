@@ -2,7 +2,7 @@
 {
     public class MoveCommand : ICommand
     {
-        int steps;
+        public int steps;
 
         public MoveCommand(int steps)
         {

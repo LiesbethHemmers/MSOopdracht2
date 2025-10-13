@@ -1,6 +1,6 @@
 ﻿namespace MSOopdracht2
 {
-    internal class TxtParser : IParser
+    public class TxtParser : IParser
     {
         public TxtParser()
         {

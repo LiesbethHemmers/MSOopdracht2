@@ -2,7 +2,7 @@
 {
     public class RepeatCommand : ICommand
     {
-        int times;
+        public int times;
         List<ICommand> commands;
         public List<ICommand> Commands { get { return commands; } }
 
