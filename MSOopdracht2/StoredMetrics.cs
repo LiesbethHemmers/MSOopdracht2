@@ -2,20 +2,20 @@
 {
     public class StoredMetrics
     {
-        public int CommandAmmount { get; set; }
-        public int RepeatAmmount { get; set; }
-        public int NestingAmmount { get; set; }
+        public int CommandAmount { get; set; }
+        public int RepeatAmount { get; set; }
+        public int NestingAmount { get; set; }
 
-        public StoredMetrics(int commandAmmount, int repeatAmmount, int nestingAmmount)
+        public StoredMetrics(int commandAmount, int repeatAmount, int nestingAmount)
         {
-            this.CommandAmmount = commandAmmount;
-            this.RepeatAmmount = repeatAmmount;
-            this.NestingAmmount = nestingAmmount;
+            this.CommandAmount = commandAmount;
+            this.RepeatAmount = repeatAmount;
+            this.NestingAmount = nestingAmount;
         }
 
         public void Print()
         {
-            Console.WriteLine($"commandammount = {CommandAmmount} repeatAmmount = {RepeatAmmount} nestingAmmount = {NestingAmmount}");
+            Console.WriteLine($"commandAmount = {CommandAmount} repeatAmount = {RepeatAmount} nestingAmount = {NestingAmount}");
         }
     }
 }

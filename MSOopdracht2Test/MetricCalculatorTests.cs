@@ -10,7 +10,7 @@ namespace MSOopdracht2Test
     public class MetricCalculatorTests
     {
         [Fact]
-        public void CommandAmmountTest()
+        public void CommandAmountTest()
         {
             //Initialize the test objects:
             CodeProgram commandProgram = new CodeProgram(new List<ICommand>
@@ -22,11 +22,11 @@ namespace MSOopdracht2Test
             MetricCalculator calculator = new MetricCalculator();
 
             StoredMetrics result = calculator.CalculateMetrics(commandProgram);
-            Assert.Equal(3, result.CommandAmmount);
+            Assert.Equal(3, result.CommandAmount);
         }
 
         [Fact]
-        public void RepeatAmmountTest()
+        public void RepeatAmountTest()
         {
             //Initialize the test objects:
             CodeProgram repeatProgram = new CodeProgram(new List<ICommand>
@@ -38,12 +38,12 @@ namespace MSOopdracht2Test
             MetricCalculator calculator = new MetricCalculator();
 
             StoredMetrics result = calculator.CalculateMetrics(repeatProgram);
-            Assert.Equal(1, result.RepeatAmmount);
+            Assert.Equal(1, result.RepeatAmount);
         }
 
 
         [Fact]
-        public void NestingAmmountTest()
+        public void NestingAmountTest()
         {
             //Initialize the test objects:
             CodeProgram nestedProgram = new CodeProgram(new List<ICommand>
@@ -63,7 +63,7 @@ namespace MSOopdracht2Test
             MetricCalculator calculator = new MetricCalculator();
 
             StoredMetrics result = calculator.CalculateMetrics(nestedProgram);
-            Assert.Equal(3, result.NestingAmmount);
+            Assert.Equal(3, result.NestingAmount);
         }
     }
 }

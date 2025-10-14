@@ -43,7 +43,7 @@
             for (linePointer = linePointer + 1; linePointer < lines.Length; linePointer++)
             {
                 int numOfLeadingSpaces = lines[linePointer].TakeWhile(char.IsWhiteSpace).Count();
-                int currentDepth = numOfLeadingSpaces / 4; //So the currentDepth is 1 is the ammount of leading spaces are 4, 2 if there are 8, etc.
+                int currentDepth = numOfLeadingSpaces / 4; //So the currentDepth is 1 is the amount of leading spaces are 4, 2 if there are 8, etc.
                 string[] parts = lines[linePointer].Trim().Split(' ');
 
                 if (currentDepth < depth) 
