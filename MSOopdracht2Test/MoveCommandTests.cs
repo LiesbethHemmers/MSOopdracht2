@@ -16,9 +16,9 @@ namespace MSOopdracht2Test
             //execute the tested method
             moveCommand.Execute(character, trace);
 
-            Assert.Equal(new Vector2(3, 0), character.Position);//checks equality
-            Assert.Single(trace);//checks that trace only contains 1 element
-            Assert.Contains("Move 3", trace[0]);//chechs if the one element trace contains, the string is
+            Assert.Equal(new Vector2(3, 0), character.Position);
+            Assert.Single(trace);
+            Assert.Contains("Move 3", trace[0]);
         }
 
         [Fact]
@@ -34,9 +34,9 @@ namespace MSOopdracht2Test
             //execute the tested method
             moveCommand.Execute(character, trace);
 
-            Assert.Equal(new Vector2(0, -3), character.Position);//checks equality
-            Assert.Single(trace);//checks that trace only contains 1 element
-            Assert.Contains("Move 3", trace[0]);//chechs if the one element trace contains, the string is
+            Assert.Equal(new Vector2(0, -3), character.Position);
+            Assert.Single(trace);
+            Assert.Contains("Move 3", trace[0]);
         }
     }
 }

@@ -1,9 +1,10 @@
 ﻿namespace MSOopdracht2
 {
-    internal class Program
+    internal class MainApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to the app!");
             Console.WriteLine("1: Load a random example program");
             Console.WriteLine("2: Import a program from a text file");
             string choice = Console.ReadLine();//stash user choice
