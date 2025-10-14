@@ -15,9 +15,9 @@ namespace MSOopdracht2Test
             //execute the tested method
             turnCommand.Execute(character, trace);
 
-            Assert.Equal(Direction.North, character.Direction);//checks equality
-            Assert.Single(trace);//checks that trace only contains 1 element
-            Assert.Contains("Turn left", trace[0]);//chechs if the one element trace contains, the string is
+            Assert.Equal(Direction.North, character.Direction);
+            Assert.Single(trace);
+            Assert.Contains("Turn left", trace[0]);
         }
 
         [Fact]
@@ -31,9 +31,9 @@ namespace MSOopdracht2Test
             //execute the tested method
             turnCommand.Execute(character, trace);
 
-            Assert.Equal(Direction.South, character.Direction);//checks equality
-            Assert.Single(trace);//checks that trace only contains 1 element
-            Assert.Contains("Turn right", trace[0]);//chechs if the one element trace contains, the string is
+            Assert.Equal(Direction.South, character.Direction);
+            Assert.Single(trace);
+            Assert.Contains("Turn right", trace[0]);
         }
     }
 }

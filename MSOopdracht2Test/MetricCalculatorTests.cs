@@ -1,9 +1,4 @@
 ﻿using MSOopdracht2;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MSOopdracht2Test
 {
@@ -21,7 +16,9 @@ namespace MSOopdracht2Test
             }, "commandProgram");
             MetricCalculator calculator = new MetricCalculator();
 
+            //execute the tested method
             StoredMetrics result = calculator.CalculateMetrics(commandProgram);
+
             Assert.Equal(3, result.CommandAmmount);
         }
 
@@ -37,7 +34,9 @@ namespace MSOopdracht2Test
             }, "repeatProgram");
             MetricCalculator calculator = new MetricCalculator();
 
+            //execute the tested method
             StoredMetrics result = calculator.CalculateMetrics(repeatProgram);
+
             Assert.Equal(1, result.RepeatAmmount);
         }
 
@@ -62,7 +61,9 @@ namespace MSOopdracht2Test
             }, "nestingProgram");
             MetricCalculator calculator = new MetricCalculator();
 
+            //execute the tested method
             StoredMetrics result = calculator.CalculateMetrics(nestedProgram);
+
             Assert.Equal(3, result.NestingAmmount);
         }
     }
