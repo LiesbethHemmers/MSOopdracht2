@@ -3,6 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2\\metriccalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:metriccalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2\\codeprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:codeprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2test\\metriccalculatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2test\\turncommandtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2test\\parsertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,10 +33,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2test\\movecommandtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2\\codeprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:codeprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -44,26 +54,12 @@
       "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2test\\repeatcommandtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2test\\metriccalculatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2\\metriccalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:metriccalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2\\storedmetrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:storedmetrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2\\repeatcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:repeatcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2test\\turncommandtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\liesb\\source\\repos\\liesbethhemmers\\msoopdracht2\\msoopdracht2\\iimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -104,7 +100,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 9,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -112,72 +108,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ParserTests.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\ParserTests.cs",
               "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\ParserTests.cs",
               "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\ParserTests.cs",
               "RelativeToolTip": "..\\MSOopdracht2Test\\ParserTests.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAxwC4AAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-13T10:04:29.928Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ExamplePrograms.cs",
-              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\ExamplePrograms.cs",
-              "RelativeDocumentMoniker": "ExamplePrograms.cs",
-              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\ExamplePrograms.cs",
-              "RelativeToolTip": "ExamplePrograms.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAUwFQAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T09:19:21.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CodeProgram.cs",
-              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\CodeProgram.cs",
-              "RelativeDocumentMoniker": "CodeProgram.cs",
-              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\CodeProgram.cs",
-              "RelativeToolTip": "CodeProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T08:54:19.498Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MoveCommandTests.cs",
-              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MoveCommandTests.cs",
-              "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\MoveCommandTests.cs",
-              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MoveCommandTests.cs",
-              "RelativeToolTip": "..\\MSOopdracht2Test\\MoveCommandTests.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T08:01:03.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Character.cs",
-              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\Character.cs",
-              "RelativeDocumentMoniker": "Character.cs",
-              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\Character.cs",
-              "RelativeToolTip": "Character.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T15:49:20.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "CodeProgramExecutor.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\CodeProgramExecutor.cs",
               "RelativeDocumentMoniker": "CodeProgramExecutor.cs",
@@ -191,6 +135,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MetricCalculatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MetricCalculatorTests.cs",
+              "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\MetricCalculatorTests.cs",
+              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MetricCalculatorTests.cs",
+              "RelativeToolTip": "..\\MSOopdracht2Test\\MetricCalculatorTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T10:03:56.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TurnCommandTests.cs",
+              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\TurnCommandTests.cs",
+              "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\TurnCommandTests.cs",
+              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\TurnCommandTests.cs",
+              "RelativeToolTip": "..\\MSOopdracht2Test\\TurnCommandTests.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwBkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T08:01:05.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CodeProgram.cs",
+              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\CodeProgram.cs",
+              "RelativeDocumentMoniker": "CodeProgram.cs",
+              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\CodeProgram.cs",
+              "RelativeToolTip": "CodeProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T08:54:19.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MetricCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\MetricCalculator.cs",
+              "RelativeDocumentMoniker": "MetricCalculator.cs",
+              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\MetricCalculator.cs",
+              "RelativeToolTip": "MetricCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T09:11:38.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ICommand.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\ICommand.cs",
               "RelativeDocumentMoniker": "ICommand.cs",
@@ -204,6 +200,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ExamplePrograms.cs",
+              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\ExamplePrograms.cs",
+              "RelativeDocumentMoniker": "ExamplePrograms.cs",
+              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\ExamplePrograms.cs",
+              "RelativeToolTip": "ExamplePrograms.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAUwE4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T09:19:21.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MoveCommandTests.cs",
+              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MoveCommandTests.cs",
+              "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\MoveCommandTests.cs",
+              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MoveCommandTests.cs",
+              "RelativeToolTip": "..\\MSOopdracht2Test\\MoveCommandTests.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T08:01:03.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\Character.cs",
+              "RelativeDocumentMoniker": "Character.cs",
+              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\Character.cs",
+              "RelativeToolTip": "Character.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T15:49:20.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "TxtImporter.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\TxtImporter.cs",
               "RelativeDocumentMoniker": "TxtImporter.cs",
@@ -216,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "TxtParser.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\TxtParser.cs",
               "RelativeDocumentMoniker": "TxtParser.cs",
@@ -229,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "program1.txt",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\program1.txt",
               "RelativeDocumentMoniker": "program1.txt",
@@ -242,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "RepeatCommandTests.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\RepeatCommandTests.cs",
               "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\RepeatCommandTests.cs",
@@ -251,45 +286,6 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T08:01:04.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MetricCalculatorTests.cs",
-              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MetricCalculatorTests.cs",
-              "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\MetricCalculatorTests.cs",
-              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MetricCalculatorTests.cs",
-              "RelativeToolTip": "..\\MSOopdracht2Test\\MetricCalculatorTests.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAACwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T10:03:56.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAzwCcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T17:37:27.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MetricCalculator.cs",
-              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\MetricCalculator.cs",
-              "RelativeDocumentMoniker": "MetricCalculator.cs",
-              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\MetricCalculator.cs",
-              "RelativeToolTip": "MetricCalculator.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwBoAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T09:11:38.022Z",
               "EditorCaption": ""
             },
             {
@@ -313,7 +309,7 @@
               "RelativeDocumentMoniker": "RepeatCommand.cs",
               "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\RepeatCommand.cs",
               "RelativeToolTip": "RepeatCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-07T15:48:18.692Z",
               "EditorCaption": ""
@@ -321,32 +317,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "TurnCommandTests.cs",
-              "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\TurnCommandTests.cs",
-              "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\TurnCommandTests.cs",
-              "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\TurnCommandTests.cs",
-              "RelativeToolTip": "..\\MSOopdracht2Test\\TurnCommandTests.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwBkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T08:01:05.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "IImporter.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\IImporter.cs",
               "RelativeDocumentMoniker": "IImporter.cs",
               "ToolTip": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\IImporter.cs",
               "RelativeToolTip": "IImporter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-08T08:58:06.193Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "TurnCommand.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\TurnCommand.cs",
               "RelativeDocumentMoniker": "TurnCommand.cs",
@@ -359,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "MoveCommand.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\MoveCommand.cs",
               "RelativeDocumentMoniker": "MoveCommand.cs",
@@ -371,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "IParser.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2\\IParser.cs",
               "RelativeDocumentMoniker": "IParser.cs",
@@ -383,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "Usings.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\Usings.cs",
               "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\Usings.cs",
@@ -395,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "MSOopdracht2Test.csproj",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MSOopdracht2Test.csproj",
               "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\MSOopdracht2Test.csproj",
@@ -408,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "RepeatCommandTests.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\RepeatCommandTests.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\RepeatCommandTests.cs",
@@ -419,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "MoveCommandTests.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\MoveCommandTests.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\MoveCommandTests.cs",
@@ -430,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "TurnCommandTests.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\TurnCommandTests.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\TurnCommandTests.cs",
