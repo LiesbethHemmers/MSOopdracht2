@@ -17,8 +17,8 @@
                 if (command is RepeatCommand)
                 {
                     storedMetrics.RepeatAmount++;
-                    //So this if statement is her, because if you're NestingAmount is already higher then one, you don't need to 
-                    //make it even higher, since it would get to high:
+                    
+                    //Update the nesting if this is the first repeat in the program
                     if (storedMetrics.NestingAmount < 1)
                     {
                         storedMetrics.NestingAmount++;
@@ -29,7 +29,7 @@
             return storedMetrics;
         }
 
-        //This method goes through all the commands in the repeat, so it can count them and to look for deeper nesting levels:
+        //This method recursively checks repeats and updates the different ammounts
         public void CalculateNesting(StoredMetrics storedMetrics, RepeatCommand repeatCommand, int depth)
         {
             foreach (ICommand command in repeatCommand.Commands)
@@ -38,14 +38,11 @@
                 if (command is RepeatCommand) //So this is true if the list of the repeatcommand has another repeatcommand
                 {
                     int newDepth = depth + 1;
-                    //So this if statement is her so if the NestingAmount is lower than the depth
-                    //we're in now, we make it higher until the depth we're in now is equal to the NestingAmount:
+                    
+                    //To keep the NestingAmmount the same as the deepest nesting level
                     if (newDepth > storedMetrics.NestingAmount)
                     {
-                        while (storedMetrics.NestingAmount < newDepth)
-                        {
-                            storedMetrics.NestingAmount++;
-                        }
+                        storedMetrics.NestingAmount = newDepth;
                     }
                     storedMetrics.RepeatAmount++;
                     //So if the list had another repeatcommand, i need to call this method again:

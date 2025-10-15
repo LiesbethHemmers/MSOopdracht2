@@ -17,7 +17,9 @@ namespace MSOopdracht2Test
             }, "commandProgram");
             MetricCalculator calculator = new MetricCalculator();
 
+            //Execute the method that's being tested:
             StoredMetrics result = calculator.CalculateMetrics(commandProgram);
+
             Assert.Equal(3, result.CommandAmount);
         }
 
@@ -33,7 +35,9 @@ namespace MSOopdracht2Test
             }, "repeatProgram");
             MetricCalculator calculator = new MetricCalculator();
 
+            //Execute the method that's being tested:
             StoredMetrics result = calculator.CalculateMetrics(repeatProgram);
+
             Assert.Equal(1, result.RepeatAmount);
         }
 
@@ -58,7 +62,9 @@ namespace MSOopdracht2Test
             }, "nestingProgram");
             MetricCalculator calculator = new MetricCalculator();
 
+            //Execute the method that's being tested:
             StoredMetrics result = calculator.CalculateMetrics(nestedProgram);
+
             Assert.Equal(3, result.NestingAmount);
         }
     }

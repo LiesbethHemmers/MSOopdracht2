@@ -111,7 +111,7 @@
                 4 => AdvancedProgram2(),
                 5 => ExpertProgram1(),
                 6 => ExpertProgram2(),
-                _ => BasicProgram2()
+                _ => throw new NotImplementedException() //Otherwise you will have a warning
             };
         }
     }
