@@ -8,6 +8,4 @@ Repeat 3 times
     Turn right
     Repeat 5 times
         Move 2
-Repeat 2 times
-    Move 3
  

@@ -18,7 +18,7 @@
                 {
                     storedMetrics.RepeatAmount++;
                     
-                    //Update the nesting if this is the first repeat in the program
+                    //Update the NestingAmount if this is the first repeat in the program
                     if (storedMetrics.NestingAmount < 1)
                     {
                         storedMetrics.NestingAmount++;
@@ -29,7 +29,7 @@
             return storedMetrics;
         }
 
-        //This method recursively checks repeats and updates the different ammounts
+        //This method recursively checks repeats and updates the different amounts
         public void CalculateNesting(StoredMetrics storedMetrics, RepeatCommand repeatCommand, int depth)
         {
             foreach (ICommand command in repeatCommand.Commands)
@@ -39,13 +39,14 @@
                 {
                     int newDepth = depth + 1;
                     
-                    //To keep the NestingAmmount the same as the deepest nesting level
+                    //To keep the NestingAmmount the same as the current deepest nesting level
                     if (newDepth > storedMetrics.NestingAmount)
                     {
                         storedMetrics.NestingAmount = newDepth;
                     }
+
                     storedMetrics.RepeatAmount++;
-                    //So if the list had another repeatcommand, i need to call this method again:
+
                     CalculateNesting(storedMetrics, (RepeatCommand)command, newDepth);
                 }
             }

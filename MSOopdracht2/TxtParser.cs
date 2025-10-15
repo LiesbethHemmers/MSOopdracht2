@@ -43,10 +43,10 @@ namespace MSOopdracht2
             List<ICommand> commands = new List<ICommand>();
 
             //Starts from the line after the repeat statement:
-            for (linePointer = linePointer + 1; linePointer < lines.Length; linePointer++)
+            for (linePointer++; linePointer < lines.Length; linePointer++)
             {
                 int numOfLeadingSpaces = lines[linePointer].TakeWhile(char.IsWhiteSpace).Count();
-                int currentDepth = numOfLeadingSpaces / 4; //So the currentDepth is 1 is the amount of leading spaces are 4, 2 if there are 8, etc.
+                int currentDepth = numOfLeadingSpaces / 4; //So if the currentDepth is 1, amount of leading spaces are 4, if 2, there are 8, etc.
                 string[] parts = lines[linePointer].Trim().Split(' ');
 
                 if (currentDepth < depth)

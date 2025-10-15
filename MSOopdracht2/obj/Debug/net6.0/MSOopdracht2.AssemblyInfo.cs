@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MSOopdracht2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cf89b8e4c71682930d037457044e4f7cb8aa04e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e8572bc8119d5812924fa440109310fe6b2c010")]
 [assembly: System.Reflection.AssemblyProductAttribute("MSOopdracht2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MSOopdracht2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,7 +2,6 @@
 {
     internal static class ExamplePrograms
     {
-        //The basicprograms are only turn and move commands
         static CodeProgram BasicProgram1()
         {
             return new CodeProgram(new List<ICommand>
