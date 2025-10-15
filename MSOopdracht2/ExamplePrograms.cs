@@ -1,4 +1,6 @@
-﻿namespace MSOopdracht2
+﻿using System.Xml.Serialization;
+
+namespace MSOopdracht2
 {
     internal static class ExamplePrograms
     {
@@ -97,19 +99,18 @@
             }, "ExpertProgram2");
         }
 
-        public static CodeProgram GetRandomExampleProgram()
+        public static CodeProgram GetExampleProgram()
         {
-            Random random = new Random();
-            int choice = random.Next(1, 7);
-
+            Console.WriteLine("Choose you exampleProgram: BasicProgram1, BasicProgram2, AdvancedProgram1, AdvancedProgram2, ExpertProgram1 or ExpertProgram2.");
+            string choice = Console.ReadLine();
             return choice switch
             {
-                1 => BasicProgram1(),
-                2 => BasicProgram2(),
-                3 => AdvancedProgram1(),
-                4 => AdvancedProgram2(),
-                5 => ExpertProgram1(),
-                6 => ExpertProgram2(),
+                "BasicProgram1" => BasicProgram1(),
+                "BasicProgram2" => BasicProgram2(),
+                "AdvancedProgram1" => AdvancedProgram1(),
+                "AdvancedProgram2" => AdvancedProgram2(),
+                "ExpertProgram1" => ExpertProgram1(),
+                "ExpertProgram2" => ExpertProgram2(),
                 _ => throw new NotImplementedException() //Otherwise you will have a warning
             };
         }
