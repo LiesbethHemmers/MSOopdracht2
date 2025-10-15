@@ -18,7 +18,7 @@
             Console.WriteLine(string.Join(",", trace) + ".");
 
             //Lastly we need to print it's finally coordinates and directions it faces:
-            Console.WriteLine($"End state:{character.Position.X}, {character.Position.Y} facing:{character.Direction}");
+            Console.WriteLine($"End state ({character.Position.X},{character.Position.Y}) facing {character.Direction}.");
         }
     }
 }
