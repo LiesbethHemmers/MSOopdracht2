@@ -6,14 +6,16 @@ namespace MSOopdracht2
     {
         Vector2 position;
         Direction direction;
+        Grid grid;
 
         public Vector2 Position { get { return position; } }
         public Direction Direction { get { return direction; } }
 
-        public Character()
+        public Character(Grid grid = null)//default is null because only the pathfinding exercises need a grid
         {
             position = Vector2.Zero;
             direction = Direction.East;
+            this.grid = grid;
         }
 
         public void TurnLeft()

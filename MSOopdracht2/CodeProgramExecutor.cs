@@ -7,9 +7,9 @@
 
         }
 
-        public void Run(CodeProgram program)
+        public void Run(CodeProgram program, Grid grid = null)
         {
-            Character character = new Character(); //Character starts at (0,0) facing east 
+            Character character = new Character(grid); //Character starts at (0,0) facing east 
             List<string> trace = new List<string>();
 
             program.Execute(character, trace);

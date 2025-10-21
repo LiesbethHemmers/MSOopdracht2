@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MSOopdracht2Test\MSOopdracht2Test.csproj" />
     <ProjectReference Include="..\MSOopdracht2\MSOopdracht2.csproj" />
   </ItemGroup>
 
