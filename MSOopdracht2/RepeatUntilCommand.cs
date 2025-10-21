@@ -9,11 +9,11 @@ namespace MSOopdracht2
 {
     internal class RepeatUntilCommand : ICommand
     {
-        string condition;
+        ICondition condition;
         List<ICommand> commands;
         public List<ICommand> Commands { get { return commands; } }
 
-        public RepeatUntilCommand(string condition, List<ICommand> commands)
+        public RepeatUntilCommand(ICondition condition, List<ICommand> commands)
         {
             this.condition = condition;
             this.commands = commands;

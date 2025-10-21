@@ -15,5 +15,7 @@ namespace MSOopdracht2
         {
             grid = new char[width, height];
         }
+
+
     }
 }
