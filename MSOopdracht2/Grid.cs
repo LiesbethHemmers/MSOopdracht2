@@ -9,6 +9,10 @@ namespace MSOopdracht2
 {
     public class Grid
     {
+        //the left array (the 0 dimension) indicates the column index (x) and the right array (the 1 dimension) the row index (y). 
+        //example: oo++
+        //         +oo+
+        //         ++ox has 4 columns and 3 rows, so that is new char[4,3]
         char[,] grid;
 
         public char[,] LoadedGrid { get { return grid; } }

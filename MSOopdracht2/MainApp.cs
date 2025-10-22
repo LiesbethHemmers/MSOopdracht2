@@ -8,6 +8,7 @@
             Console.WriteLine("1: Load a random example program");
             Console.WriteLine("2: Import a program from a text file");
             Console.WriteLine("3: Do a pathfinding exercise");
+            Console.WriteLine("4: Load a random pathfinding example program");
             string choice = Console.ReadLine();//stash user choice
             CodeProgram codeProgram = null;//fill in later, based on user choice
             Grid grid = null; //if the user chooses the pathfinding option then it will be filled in
@@ -82,8 +83,18 @@
                 CodeProgramExecutor executor = new CodeProgramExecutor();
                 executor.Run(codeProgram, grid);
             }
+            else if (choice == "4")
+            {
+                codeProgram = ExamplePrograms.GetRandomGridExampleProgram();//new method only for use with grids, so there can be repeatuntil commands
+                string gridName = codeProgram.Name;
+                IGridParser gridParser = new GridParser();
+                IGridImporter gridImporter = new GridImporter(gridParser);
+                grid = gridImporter.Import(gridName);
+                CodeProgramExecutor executor = new CodeProgramExecutor();
+                executor.Run(codeProgram, grid);
+            }
 
-            if(choice != "3")
+            if (choice != "3" && choice != "4")
             {
                 Console.WriteLine("1: Execute loaded program");
                 Console.WriteLine("2: Calculate metrics");

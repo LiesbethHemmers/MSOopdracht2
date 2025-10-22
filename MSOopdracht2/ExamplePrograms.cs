@@ -115,5 +115,10 @@ namespace MSOopdracht2
                 _ => throw new NotImplementedException() //Otherwise you will have a warning
             };
         }
+
+        public static CodeProgram GetRandomGridExampleProgram()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
