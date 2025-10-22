@@ -45,5 +45,39 @@ namespace MSOopdracht2Test
 
 
         }
+
+        [Fact]
+        public void RepeatUntilWithGridEdge()
+        {
+            //initialize all testobjects
+            //5x1 grid: 0  1  2  3  4
+            //         ' '' '' '' '' '
+            char[,] testGrid = new char[5, 1]
+            {
+                {' ' },
+                {' ' },
+                {' ' },
+                {' ' },
+                {' ' }
+            };
+            Grid grid = new Grid(testGrid);
+            Character character = new Character(grid);
+            List<string> trace = new List<string>();
+            ICondition condition = new GridEdgeCondition();
+            List<ICommand> commands = new List<ICommand>()
+            {
+                new MoveCommand(1)
+            };
+
+            RepeatUntilCommand repeatUntilCommand = new RepeatUntilCommand(condition, commands);
+
+            //execute the tested method
+            repeatUntilCommand.Execute(character, trace);
+
+            //(5,0) is outside of the grid, so the last position should be (4, 0) 
+            Assert.Equal(new Vector2(4, 0), character.Position);
+
+            Assert.Equal(new List<string> { "Move 1", "Move 1", "Move 1", "Move 1" }, trace);
+        }
     }
 }
