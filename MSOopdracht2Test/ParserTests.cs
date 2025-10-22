@@ -24,7 +24,7 @@ namespace MSOopdracht2Test
                               };
 
 
-            IParser parser = new TxtParser();
+            IProgramParser parser = new TxtProgramParser();
             CodeProgram parsedProgram = parser.Parse(lines);
 
             CodeProgram compareProgram = new CodeProgram(new List<ICommand>
