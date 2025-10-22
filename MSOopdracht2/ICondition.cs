@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSOopdracht2
 {
-    internal interface ICondition
+    public interface ICondition
     {
         public bool Evaluate(Character character);
     }

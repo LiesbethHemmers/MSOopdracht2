@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MSOopdracht2
 {
-    internal class RepeatUntilCommand : ICommand
+    public class RepeatUntilCommand : ICommand
     {
         ICondition condition;
         List<ICommand> commands;
@@ -21,19 +21,13 @@ namespace MSOopdracht2
 
         public void Execute(Character character, List<string> trace)
         {
-            
+            while (!condition.Evaluate(character))
+            {
+                foreach (ICommand command in commands)
+                {
+                    command.Execute(character, trace);
+                }
+            }
         }
-
-        //bool GridEdge(Character character)
-        //{
-        //   Direction dir = character.Direction;
-        //   Vector2 pos = character.Position;
-        //   char[,] gr = grid.LoadedGrid;
-        //    if (pos.X + 1 == gr.GetLength(0) && dir == Direction.East)//+1 because gridedge is true if the next step is outside of the grid
-        //    {
-        //        return false;
-        //    }
-        //    return true;
-        //}
     }
 }

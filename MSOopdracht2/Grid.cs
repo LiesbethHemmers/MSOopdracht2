@@ -11,9 +11,15 @@ namespace MSOopdracht2
         char[,] grid;
 
         public char[,] LoadedGrid { get { return grid; } }
-        public Grid(int width, int height)
+        public Grid(char[,] grid)
         {
-            grid = new char[width, height];
+            this.grid = grid;
+        }
+
+        public char GetSymbol(int x, int y)
+        {
+            char symbol = grid[x, y];
+            return symbol;
         }
 
 
