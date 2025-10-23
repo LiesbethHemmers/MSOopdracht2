@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.SymbolStore;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -34,6 +35,12 @@ namespace MSOopdracht2
                 return true;
             }
             return false;
+        }
+
+        public Vector2 GetXPosition()
+        {
+            //throw new NotImplementedException();
+            return new Vector2(0, 4);
         }
     }
 }
