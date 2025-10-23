@@ -10,7 +10,22 @@ namespace MSOopdracht2
     {
         public Grid Parse(string[] lines)
         {
-            throw new NotImplementedException();
+            char[,] grid = null;
+            for (int i = 0; i < lines.Length; i++)
+            {
+                //individual characters per line
+                char[] parts = lines[i].ToCharArray();
+                grid = new char[parts.Length, lines.Length];
+                for (int y = 0; y < lines.Length; y++)
+                {
+                    for (int x = 0; x < parts.Length; x++)
+                    {
+                        grid[x, y] = parts[x];
+                    }
+                }
+            }
+
+            return new Grid(grid);
         }
     }
 }
