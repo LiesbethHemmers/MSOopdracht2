@@ -24,8 +24,8 @@
                 {
                     Console.WriteLine("Enter filepath");
                     string filePath = Console.ReadLine();
-                    IParser parser = new TxtParser();
-                    IImporter importer = new TxtImporter(parser);
+                    IProgramParser parser = new TxtProgramParser();
+                    IProgramImporter importer = new TxtProgramImporter(parser);
                     try
                     {
                         codeProgram = importer.Import(filePath);
@@ -43,7 +43,7 @@
                 {
                     Console.WriteLine("Enter filepath to grid");
                     string filePathGrid = Console.ReadLine();
-                    IGridParser gridParser = new GridParser();
+                    IGridParser gridParser = new TxtGridParser();
                     IGridImporter gridImporter = new GridImporter(gridParser);
                     try
                     {
@@ -69,9 +69,9 @@
                             if (line == "FINISH") break;
                             lines.Add(line); 
                         }
-                        File.WriteAllLines(filePath, lines);
-                        IParser parser = new TxtParser();
-                        IImporter importer = new TxtImporter(parser);
+                        File.WriteAllLines(filePath, lines);//this will not create a valid format for parsing, because there is no indentation, unless the user explicitly did so
+                        IProgramParser parser = new TxtProgramParser();
+                        IProgramImporter importer = new TxtProgramImporter(parser);
                         codeProgram = importer.Import(filePath);
                         break;
                     }
@@ -87,7 +87,7 @@
             {
                 codeProgram = ExamplePrograms.GetRandomGridExampleProgram();//new method only for use with grids, so there can be repeatuntil commands
                 string gridName = codeProgram.Name;
-                IGridParser gridParser = new GridParser();
+                IGridParser gridParser = new TxtGridParser();
                 IGridImporter gridImporter = new GridImporter(gridParser);
                 grid = gridImporter.Import(gridName);
                 CodeProgramExecutor executor = new CodeProgramExecutor();

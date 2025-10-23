@@ -2,9 +2,9 @@
 
 namespace MSOopdracht2
 {
-    public class TxtParser : IParser
+    public class TxtProgramParser : IProgramParser
     {
-        public TxtParser()
+        public TxtProgramParser()
         {
 
         }

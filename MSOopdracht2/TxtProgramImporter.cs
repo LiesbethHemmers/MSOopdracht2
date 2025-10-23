@@ -1,9 +1,9 @@
 ﻿namespace MSOopdracht2
 {
-    public class TxtImporter : IImporter
+    public class TxtProgramImporter : IProgramImporter
     {
-        IParser parser;
-        public TxtImporter(IParser parser)
+        IProgramParser parser;
+        public TxtProgramImporter(IProgramParser parser)
         {
             this.parser = parser;
         }

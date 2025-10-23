@@ -1,6 +1,6 @@
 ﻿namespace MSOopdracht2
 {
-    internal interface IImporter
+    internal interface IProgramImporter
     {
         public CodeProgram Import(string filePath);
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSOopdracht2
 {
-    public class GridParser : IGridParser
+    public class TxtGridParser : IGridParser
     {
         public Grid Parse(string[] lines)
         {
