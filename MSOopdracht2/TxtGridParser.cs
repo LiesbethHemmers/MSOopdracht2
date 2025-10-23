@@ -10,24 +10,19 @@ namespace MSOopdracht2
     {
         public Grid Parse(string[] lines)
         {
-            char[,] grid = null;
-            for (int i = 0; i < lines.Length; i++)
+            int width = lines[0].Length;
+            int height = lines.Length;
+            char[,] grid = new char[width, height];
+            for (int y = 0; y < height; y++)
             {
                 //individual characters per line
-                char[] parts = lines[i].ToCharArray();
-                grid = new char[parts.Length, lines.Length];
-                for (int y = 0; y < lines.Length; y++)
+                char[] parts = lines[y].ToCharArray();
+                for (int x = 0; x < width; x++)
                 {
-                    for (int x = 0; x < parts.Length; x++)
-                    {
-                        grid[x, y] = parts[x];
-                        Console.WriteLine(grid[x, y]);
-                        Console.WriteLine(x);
-                        Console.WriteLine(y);
-                    }
+                    grid[x, y] = parts[x];
                 }
             }
-            
+
             return new Grid(grid);
         }
     }

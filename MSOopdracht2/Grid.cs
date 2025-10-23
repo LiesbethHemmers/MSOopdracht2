@@ -39,8 +39,18 @@ namespace MSOopdracht2
 
         public Vector2 GetXPosition()
         {
-            //throw new NotImplementedException();
-            return new Vector2(0, 4);
+            for (int y = 0; y < grid.GetLength(1); y++)
+            {
+                for (int x = 0; x < grid.GetLength(0); x++)
+                {
+                    if (grid[x, y] == 'x')
+                    {
+                        return new Vector2(x, y);
+                    }
+                }
+            }
+
+            return Vector2.Zero;
         }
     }
 }
