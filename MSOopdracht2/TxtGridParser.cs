@@ -21,10 +21,13 @@ namespace MSOopdracht2
                     for (int x = 0; x < parts.Length; x++)
                     {
                         grid[x, y] = parts[x];
+                        Console.WriteLine(grid[x, y]);
+                        Console.WriteLine(x);
+                        Console.WriteLine(y);
                     }
                 }
             }
-
+            
             return new Grid(grid);
         }
     }

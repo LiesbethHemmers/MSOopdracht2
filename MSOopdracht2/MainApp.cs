@@ -89,7 +89,7 @@
                 string gridName = codeProgram.Name;
                 IGridParser gridParser = new TxtGridParser();
                 IGridImporter gridImporter = new GridImporter(gridParser);
-                grid = gridImporter.Import(gridName);
+                grid = gridImporter.Import(gridName + ".txt");
                 CodeProgramExecutor executor = new CodeProgramExecutor();
                 executor.Run(codeProgram, grid);
             }

@@ -1,4 +1,6 @@
-﻿namespace MSOopdracht2
+﻿using System.Numerics;
+
+namespace MSOopdracht2
 {
     internal class CodeProgramExecutor
     {
@@ -13,7 +15,19 @@
             List<string> trace = new List<string>();
 
             program.Execute(character, trace);
+            if (grid != null)
+            {
+                Vector2 endPos = grid.GetXPosition();
+                if (endPos == character.Position)
+                {
+                    Console.WriteLine("Succesfuly reached endposition");
+                }
+                else
+                {
+                    Console.WriteLine("Character did not end at the right position");
+                }
 
+            }
             //Firstly we need to print out the path the character had:
             Console.WriteLine(string.Join(",", trace) + ".");
 

@@ -8,12 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Grid1.txt" />
+    <None Remove="AdvancedGrid1.txt" />
     <None Remove="program1.txt" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Grid1.txt">
+    <Content Include="AdvancedGrid1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="program1.txt">
