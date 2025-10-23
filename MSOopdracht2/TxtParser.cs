@@ -32,11 +32,15 @@ namespace MSOopdracht2
                     RepeatCommand repeatCommand = new RepeatCommand(int.Parse(parts[1]), CreateNestedCommands(lines, ref linePointer, 1));
                     commands.Add(repeatCommand);
                 }
+                else if (parts[0] == "RepeatUntil")
+                {
+                    RepeatUntilCommand repeatUntilCommand = new RepeatUntilCommand(ParseStringToCondition(parts[1]), CreateNestedCommands(lines, ref linePointer, 1));
+                    commands.Add(repeatUntilCommand); 
+                }
             }
 
             return program;
         }
-
 
         List<ICommand> CreateNestedCommands(string[] lines, ref int linePointer, int depth)
         {
@@ -71,9 +75,29 @@ namespace MSOopdracht2
                         RepeatCommand repeatCommand = new RepeatCommand(int.Parse(parts[1]), nestedCommands);
                         commands.Add(repeatCommand);
                     }
+                    else if (parts[0] == "RepeatUntil")
+                    {
+                        ICondition condition = ParseStringToCondition(parts[1]);
+                        List<ICommand> nestedCommands = CreateNestedCommands(lines, ref linePointer, depth + 1); //depth is one higher: you have a repeat in a repeat
+                        RepeatUntilCommand repeatUntilCommand = new RepeatUntilCommand(condition, nestedCommands);
+                        commands.Add(repeatUntilCommand);
+                    }
                 }
             }
             return commands; //So this are the commands that belong to a repeat command
+        }
+
+        ICondition ParseStringToCondition(string condition)
+        {
+            if (condition == "WallAhead")
+            {
+                return new WallAheadCondition();
+            }
+
+            else
+            {
+                return new GridEdgeCondition();
+            }
         }
 
         TurnCommand ParseTurnCommand(string[] parts)

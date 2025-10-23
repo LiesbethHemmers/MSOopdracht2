@@ -14,7 +14,7 @@
             foreach (ICommand command in program.Commands)
             {
                 storedMetrics.CommandAmount++;
-                if (command is RepeatCommand)
+                if (command is RepeatCommand or RepeatUntilCommand)
                 {
                     storedMetrics.RepeatAmount++;
                     
@@ -23,31 +23,58 @@
                     {
                         storedMetrics.NestingAmount++;
                     }
-                    CalculateNesting(storedMetrics, (RepeatCommand)command, 1);
+                    CalculateNesting(storedMetrics, command, 1);
                 }
             }
             return storedMetrics;
         }
 
         //This method recursively checks repeats and updates the different amounts
-        public void CalculateNesting(StoredMetrics storedMetrics, RepeatCommand repeatCommand, int depth)
+        public void CalculateNesting(StoredMetrics storedMetrics, ICommand command, int depth)
         {
-            foreach (ICommand command in repeatCommand.Commands)
+            if (command is RepeatCommand repeatCommand)
             {
-                storedMetrics.CommandAmount++;
-                if (command is RepeatCommand) //So this is true if the list of the repeatcommand has another repeatcommand
+                RepeatCommand repeat = (RepeatCommand)command;
+                foreach (ICommand innerCommand in repeat.Commands)
                 {
-                    int newDepth = depth + 1;
-                    
-                    //To keep the NestingAmmount the same as the current deepest nesting level
-                    if (newDepth > storedMetrics.NestingAmount)
+                    storedMetrics.CommandAmount++;
+                    if (innerCommand is RepeatCommand or RepeatUntilCommand) //So this is true if the list of the repeatcommand has another repeatcommand
                     {
-                        storedMetrics.NestingAmount = newDepth;
+                        int newDepth = depth + 1;
+
+                        //To keep the NestingAmmount the same as the current deepest nesting level
+                        if (newDepth > storedMetrics.NestingAmount)
+                        {
+                            storedMetrics.NestingAmount = newDepth;
+                        }
+
+                        storedMetrics.RepeatAmount++;
+
+                        CalculateNesting(storedMetrics, innerCommand, newDepth);
                     }
+                }
+            }
 
-                    storedMetrics.RepeatAmount++;
+            else if (command is RepeatUntilCommand repeatUntilCommand)
+            {
+                RepeatUntilCommand repeatUntil = (RepeatUntilCommand)command;
+                foreach (ICommand innerCommand in repeatUntil.Commands)
+                {
+                    storedMetrics.CommandAmount++;
+                    if (innerCommand is RepeatCommand or RepeatUntilCommand) //So this is true if the list of the repeatcommand has another repeatcommand
+                    {
+                        int newDepth = depth + 1;
 
-                    CalculateNesting(storedMetrics, (RepeatCommand)command, newDepth);
+                        //To keep the NestingAmmount the same as the current deepest nesting level
+                        if (newDepth > storedMetrics.NestingAmount)
+                        {
+                            storedMetrics.NestingAmount = newDepth;
+                        }
+
+                        storedMetrics.RepeatAmount++;
+
+                        CalculateNesting(storedMetrics, innerCommand, newDepth);
+                    }
                 }
             }
         }
