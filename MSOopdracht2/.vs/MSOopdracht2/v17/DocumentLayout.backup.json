@@ -3,48 +3,66 @@
   "WorkspaceRootPath": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\gridedgecondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:gridedgecondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2test\\parsertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\txtgridparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:txtgridparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\advancedgrid1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:advancedgrid1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\codeprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:codeprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\program1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:program1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\gridprogram1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:gridprogram1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\codeprogramexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:codeprogramexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\exampleprograms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:exampleprograms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\codeprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:codeprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\metriccalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:metriccalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9DBE0F-5824-4FB1-AEDE-50AD5368AB60}|..\\MSOopdracht2Test\\MSOopdracht2Test.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2test\\metriccalculatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\gridprograms\\gridprogram1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:gridprograms\\gridprogram1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\programs\\program1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:programs\\program1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\txtprogramparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:txtprogramparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\txtprogramimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:txtprogramimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:mainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\exampleprograms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:exampleprograms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\grids\\advancedgrid1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:grids\\advancedgrid1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\gridedgecondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:gridedgecondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\metriccalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:metriccalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\storedmetrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,18 +75,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\iprogramparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:iprogramparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\txtprogramparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:txtprogramparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\txtgridparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:txtgridparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\txtprogramimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|solutionrelative:txtprogramimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C38CB75C-474C-4032-933D-4872F7258202}|..\\MSOUserInterface2\\MSOUserInterface2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msouserinterface2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -135,127 +141,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 9,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ParserTests.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\ParserTests.cs",
+              "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\ParserTests.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\ParserTests.cs",
+              "RelativeToolTip": "..\\MSOopdracht2Test\\ParserTests.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAkwEoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:14:29.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MetricCalculatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\MetricCalculatorTests.cs",
+              "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\MetricCalculatorTests.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\MetricCalculatorTests.cs",
+              "RelativeToolTip": "..\\MSOopdracht2Test\\MetricCalculatorTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:05:30.555Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CodeProgramExecutor.cs",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\CodeProgramExecutor.cs",
-              "RelativeDocumentMoniker": "CodeProgramExecutor.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\CodeProgramExecutor.cs",
-              "RelativeToolTip": "CodeProgramExecutor.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwDAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T13:07:16.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "gridprogram1.txt",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\gridprogram1.txt",
-              "RelativeDocumentMoniker": "gridprogram1.txt",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\gridprogram1.txt",
-              "RelativeToolTip": "gridprogram1.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\GridPrograms\\gridprogram1.txt",
+              "RelativeDocumentMoniker": "GridPrograms\\gridprogram1.txt",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\GridPrograms\\gridprogram1.txt",
+              "RelativeToolTip": "GridPrograms\\gridprogram1.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-10-14T13:35:44.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "program1.txt",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\program1.txt",
-              "RelativeDocumentMoniker": "program1.txt",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\program1.txt",
-              "RelativeToolTip": "program1.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-10-25T14:23:29.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MetricCalculator.cs",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\MetricCalculator.cs",
-              "RelativeDocumentMoniker": "MetricCalculator.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\MetricCalculator.cs",
-              "RelativeToolTip": "MetricCalculator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T09:11:38.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CodeProgram.cs",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\CodeProgram.cs",
-              "RelativeDocumentMoniker": "CodeProgram.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\CodeProgram.cs",
-              "RelativeToolTip": "CodeProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T08:54:19.498Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdvancedGrid1.txt",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\AdvancedGrid1.txt",
-              "RelativeDocumentMoniker": "AdvancedGrid1.txt",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\AdvancedGrid1.txt",
-              "RelativeToolTip": "AdvancedGrid1.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-10-23T11:12:39.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GridEdgeCondition.cs",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\GridEdgeCondition.cs",
-              "RelativeDocumentMoniker": "GridEdgeCondition.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\GridEdgeCondition.cs",
-              "RelativeToolTip": "GridEdgeCondition.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAIwBMAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T10:30:40.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Grid.cs",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Grid.cs",
-              "RelativeDocumentMoniker": "Grid.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Grid.cs",
-              "RelativeToolTip": "Grid.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAYwCkAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T12:05:05.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Character.cs",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Character.cs",
-              "RelativeDocumentMoniker": "Character.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Character.cs",
-              "RelativeToolTip": "Character.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAUwDMAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T15:49:20.225Z",
               "EditorCaption": ""
             },
             {
@@ -264,98 +192,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ExamplePrograms.cs",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\ExamplePrograms.cs",
-              "RelativeDocumentMoniker": "ExamplePrograms.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\ExamplePrograms.cs",
-              "RelativeToolTip": "ExamplePrograms.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAIwJQAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Character.cs",
+              "RelativeDocumentMoniker": "Character.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Character.cs",
+              "RelativeToolTip": "Character.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T09:19:21.95Z",
+              "WhenOpened": "2025-10-07T15:49:20.225Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainApp.cs",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\MainApp.cs",
-              "RelativeDocumentMoniker": "MainApp.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\MainApp.cs",
-              "RelativeToolTip": "MainApp.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwIAAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Grid.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Grid.cs",
+              "RelativeDocumentMoniker": "Grid.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Grid.cs",
+              "RelativeToolTip": "Grid.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T18:20:21.558Z",
+              "WhenOpened": "2025-10-22T12:05:05.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "StoredMetrics.cs",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\StoredMetrics.cs",
-              "RelativeDocumentMoniker": "StoredMetrics.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\StoredMetrics.cs",
-              "RelativeToolTip": "StoredMetrics.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA+wA8AAAAmAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CodeProgram.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\CodeProgram.cs",
+              "RelativeDocumentMoniker": "CodeProgram.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\CodeProgram.cs",
+              "RelativeToolTip": "CodeProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T09:10:59.648Z",
+              "WhenOpened": "2025-10-08T08:54:19.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 1,
               "Title": "TxtGridParser.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\TxtGridParser.cs",
               "RelativeDocumentMoniker": "TxtGridParser.cs",
               "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\TxtGridParser.cs",
               "RelativeToolTip": "TxtGridParser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T09:19:29.528Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IProgramParser.cs",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\IProgramParser.cs",
-              "RelativeDocumentMoniker": "IProgramParser.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\IProgramParser.cs",
-              "RelativeToolTip": "IProgramParser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "CodeProgramExecutor.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\CodeProgramExecutor.cs",
+              "RelativeDocumentMoniker": "CodeProgramExecutor.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\CodeProgramExecutor.cs",
+              "RelativeToolTip": "CodeProgramExecutor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T08:59:31.647Z",
+              "WhenOpened": "2025-10-10T13:07:16.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "WallAheadCondition.cs",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\WallAheadCondition.cs",
-              "RelativeDocumentMoniker": "WallAheadCondition.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\WallAheadCondition.cs",
-              "RelativeToolTip": "WallAheadCondition.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAowA0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T10:30:16.024Z",
+              "DocumentIndex": 8,
+              "Title": "program1.txt",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Programs\\program1.txt",
+              "RelativeDocumentMoniker": "Programs\\program1.txt",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Programs\\program1.txt",
+              "RelativeToolTip": "Programs\\program1.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-25T14:23:29.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 9,
               "Title": "TxtProgramParser.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\TxtProgramParser.cs",
               "RelativeDocumentMoniker": "TxtProgramParser.cs",
               "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\TxtProgramParser.cs",
               "RelativeToolTip": "TxtProgramParser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-08T08:59:44.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 10,
               "Title": "TxtProgramImporter.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\TxtProgramImporter.cs",
               "RelativeDocumentMoniker": "TxtProgramImporter.cs",
@@ -368,7 +296,111 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainApp.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\MainApp.cs",
+              "RelativeDocumentMoniker": "MainApp.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\MainApp.cs",
+              "RelativeToolTip": "MainApp.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwB4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T18:20:21.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ExamplePrograms.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\ExamplePrograms.cs",
+              "RelativeDocumentMoniker": "ExamplePrograms.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\ExamplePrograms.cs",
+              "RelativeToolTip": "ExamplePrograms.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAIwJQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T09:19:21.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdvancedGrid1.txt",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Grids\\AdvancedGrid1.txt",
+              "RelativeDocumentMoniker": "Grids\\AdvancedGrid1.txt",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\Grids\\AdvancedGrid1.txt",
+              "RelativeToolTip": "Grids\\AdvancedGrid1.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-23T11:12:39.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GridEdgeCondition.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\GridEdgeCondition.cs",
+              "RelativeDocumentMoniker": "GridEdgeCondition.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\GridEdgeCondition.cs",
+              "RelativeToolTip": "GridEdgeCondition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:30:40.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MetricCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\MetricCalculator.cs",
+              "RelativeDocumentMoniker": "MetricCalculator.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\MetricCalculator.cs",
+              "RelativeToolTip": "MetricCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T09:11:38.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StoredMetrics.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\StoredMetrics.cs",
+              "RelativeDocumentMoniker": "StoredMetrics.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\StoredMetrics.cs",
+              "RelativeToolTip": "StoredMetrics.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA+wA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T09:10:59.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IProgramParser.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\IProgramParser.cs",
+              "RelativeDocumentMoniker": "IProgramParser.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\IProgramParser.cs",
+              "RelativeToolTip": "IProgramParser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T08:59:31.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 17,
+              "Title": "WallAheadCondition.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\WallAheadCondition.cs",
+              "RelativeDocumentMoniker": "WallAheadCondition.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\WallAheadCondition.cs",
+              "RelativeToolTip": "WallAheadCondition.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:30:16.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOUserInterface2\\Form1.cs",
               "RelativeDocumentMoniker": "..\\MSOUserInterface2\\Form1.cs",
@@ -381,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOUserInterface2\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "..\\MSOUserInterface2\\Form1.Designer.cs",
@@ -394,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Form1.resx",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOUserInterface2\\Form1.resx",
               "RelativeDocumentMoniker": "..\\MSOUserInterface2\\Form1.resx",
@@ -406,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOUserInterface2\\Form1.cs",
               "RelativeDocumentMoniker": "..\\MSOUserInterface2\\Form1.cs",
@@ -418,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "ICommand.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\ICommand.cs",
               "RelativeDocumentMoniker": "ICommand.cs",
@@ -430,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "IProgramImporter.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\IProgramImporter.cs",
               "RelativeDocumentMoniker": "IProgramImporter.cs",
@@ -442,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "TurnCommand.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\TurnCommand.cs",
               "RelativeDocumentMoniker": "TurnCommand.cs",
@@ -454,7 +486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "MetricCalculatorTests.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MetricCalculatorTests.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MetricCalculatorTests.cs",
@@ -466,7 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ParserTests.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\ParserTests.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\ParserTests.cs",
@@ -478,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "MoveCommandTests.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MoveCommandTests.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MoveCommandTests.cs",
@@ -490,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "RepeatCommandTests.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\RepeatCommandTests.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\RepeatCommandTests.cs",
@@ -502,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Usings.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\Usings.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\Usings.cs",
@@ -514,7 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "MSOopdracht2Test.csproj",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MSOopdracht2Test.csproj",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\MSOopdracht2Test.csproj",
@@ -526,7 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Microsoft.NET.EolTargetFrameworks.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.305\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
@@ -538,7 +570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "TurnCommandTests.cs",
               "DocumentMoniker": "C:\\Users\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\TurnCommandTests.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\liesb\\source\\repos\\LiesbethHemmers\\MSOopdracht2\\MSOopdracht2Test\\TurnCommandTests.cs",
@@ -550,7 +582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "RepeatCommandTests.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\RepeatCommandTests.cs",
               "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\RepeatCommandTests.cs",
@@ -561,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "MoveCommandTests.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\MoveCommandTests.cs",
               "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\MoveCommandTests.cs",
@@ -572,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "TurnCommandTests.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2Test\\TurnCommandTests.cs",
               "RelativeDocumentMoniker": "..\\MSOopdracht2Test\\TurnCommandTests.cs",

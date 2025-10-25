@@ -3,8 +3,10 @@ using MSOopdracht2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 using System.Xml.Serialization;
 
 namespace MSOopdracht2Test
@@ -12,7 +14,7 @@ namespace MSOopdracht2Test
     public class ParserTests
     {
         [Fact]
-        public void TxtParserTest()
+        public void TxtProgramParserTest()
         {
             //Initialize the test objects:
             string[] lines = {"Repeat 3 times",
@@ -51,6 +53,27 @@ namespace MSOopdracht2Test
             //Check if the end states are equal:
             Assert.Equal(character2.Position, character.Position);
             Assert.Equal(character2.Direction, character.Direction);
+        }
+
+        [Fact]
+
+        public void TxtGridParserTest()
+        {
+            string[] lines =
+            {
+                "oo+",
+                "+o+",
+                "+o+",
+                "+ox"
+            };
+            IGridParser parser = new TxtGridParser();
+            Grid parsedGrid = parser.Parse(lines);
+            Vector2 expectedXPos = new Vector2(2, 3);
+
+            Assert.Equal(3, parsedGrid.LoadedGrid.GetLength(0));
+            Assert.Equal(4, parsedGrid.LoadedGrid.GetLength(1));
+            Assert.Equal(expectedXPos, parsedGrid.GetXPosition());
+            Assert.Equal('o', parsedGrid.GetSymbol(1,0));
         }
     }
 }
