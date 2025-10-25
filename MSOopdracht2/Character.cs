@@ -37,12 +37,23 @@ namespace MSOopdracht2
 
         public void MoveForward(int steps)
         {
-            switch (direction)
+            for (int i = 0; i < steps; i++)
             {
-                case Direction.East: position.X += steps; break;
-                case Direction.South: position.Y += steps; break;
-                case Direction.West: position.X -= steps; break;
-                case Direction.North: position.Y -= steps; break; //because the upperleft corner is 0,0
+                Vector2 nextPos = NextPos();
+                if (grid != null)
+                {
+                    if (!grid.InBounds((int)nextPos.X, (int)nextPos.Y))
+                    {
+                        throw new OutOfBoundsException($"({nextPos.X}, {nextPos.Y}) is outside of the grid");
+                    }
+                    char symbol = grid.GetSymbol((int)nextPos.X, (int)nextPos.Y);
+                    if (symbol == '+')
+                    {
+                        throw new BlockedMoveException($"({nextPos.X}, {nextPos.Y}) is blocked");
+                    }
+
+                }
+                position = nextPos;
             }
         }
 
@@ -65,5 +76,15 @@ namespace MSOopdracht2
         South,
         West,
         North
+    }
+
+    public class BlockedMoveException : Exception
+    {
+        public BlockedMoveException(string message) : base(message) { }
+    }
+
+    public class OutOfBoundsException : Exception
+    {
+        public OutOfBoundsException(string message) : base (message){ }
     }
 }
