@@ -118,35 +118,23 @@ namespace MSOopdracht2
 
         public static CodeProgram AdvancedGridProgram1()
         {
-            //return new CodeProgram(new List<ICommand>
-            //{
-            //    new RepeatCommand(2, new List<ICommand>
-            //    {
-            //        new RepeatUntilCommand(new WallAheadCondition(), new List<ICommand>
-            //        {
-            //            new MoveCommand(1)
-            //        }),
-            //        new TurnCommand(TurnDirection.Right)
-            //    }), 
-            //    new RepeatUntilCommand(new GridEdgeCondition(), new List<ICommand>
-            //    {
-            //        new MoveCommand(1)
-            //    }), 
-            //    new TurnCommand(TurnDirection.Left),
-            //    new MoveCommand(1)
-            //}, "AdvancedGrid1");
             return new CodeProgram(new List<ICommand>
             {
-                new RepeatUntilCommand(new WallAheadCondition(), new List<ICommand>
+                new RepeatCommand(2, new List<ICommand>
+                {
+                    new RepeatUntilCommand(new WallAheadCondition(), new List<ICommand>
+                    {
+                        new MoveCommand(1)
+                    }),
+                    new TurnCommand(TurnDirection.Right)
+                }),
+                new RepeatUntilCommand(new GridEdgeCondition(), new List<ICommand>
                 {
                     new MoveCommand(1)
-                })
+                }),
+                new TurnCommand(TurnDirection.Left),
+                new MoveCommand(1)
             }, "AdvancedGrid1");
-            //return new CodeProgram(new List<ICommand>
-            //{
-            //    new MoveCommand(1)
-            //}, "AdvancedGrid1");
-
         }
         public static CodeProgram GetRandomGridExampleProgram()
         {
