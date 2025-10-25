@@ -13,9 +13,10 @@
             this.NestingAmount = nestingAmount;
         }
 
-        public void Print()
+        public List<string> GetMetrics()
         {
-            Console.WriteLine($"commandAmount = {CommandAmount} repeatAmount = {RepeatAmount} nestingAmount = {NestingAmount}");
+            return new List<string>
+                { $"commandAmount = {CommandAmount} repeatAmount = {RepeatAmount} nestingAmount = {NestingAmount}" };
         }
     }
 }

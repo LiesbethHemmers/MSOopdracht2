@@ -123,7 +123,11 @@
                 {
                     MetricCalculator calculator = new MetricCalculator();
                     StoredMetrics metric = calculator.CalculateMetrics(codeProgram);
-                    metric.Print();
+                    List<string> metrics = metric.GetMetrics();
+                    foreach (string line in metrics)
+                    {
+                        Console.WriteLine(line);
+                    }
                 }
             }
             
