@@ -10,6 +10,11 @@
   <ItemGroup>
     <None Remove="AdvancedGrid1.txt" />
     <None Remove="program1.txt" />
+    <None Remove="Programs\advancedProgram1.txt" />
+    <None Remove="Programs\advancedProgram2.txt" />
+    <None Remove="Programs\basicProgram2.txt" />
+    <None Remove="Programs\expertProgram1.txt" />
+    <None Remove="Programs\expertProgram2.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,9 +24,33 @@
     <Content Include="GridPrograms\gridprogram1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Programs\program1.txt">
+    <Content Include="Programs\advancedProgram1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Programs\advancedProgram2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Programs\basicProgram2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Programs\expertProgram1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <AdditionalFiles Include="Programs\program1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Programs\expertProgram2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Programs\basicProgram1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
