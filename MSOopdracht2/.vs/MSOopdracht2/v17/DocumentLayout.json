@@ -6,10 +6,10 @@
       "AbsoluteMoniker": "D:0:0:{C38CB75C-474C-4032-933D-4872F7258202}|..\\MSOUserInterface2\\MSOUserInterface2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msouserinterface2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C38CB75C-474C-4032-933D-4872F7258202}|..\\MSOUserInterface2\\MSOUserInterface2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msouserinterface2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C38CB75C-474C-4032-933D-4872F7258202}|..\\MSOUserInterface2\\MSOUserInterface2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msouserinterface2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C38CB75C-474C-4032-933D-4872F7258202}|..\\MSOUserInterface2\\MSOUserInterface2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msouserinterface2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C38CB75C-474C-4032-933D-4872F7258202}|..\\MSOUserInterface2\\MSOUserInterface2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msouserinterface2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F5722A4-AC0E-42EC-8C63-58BA1527497D}|MSOopdracht2.csproj|c:\\users\\aftor\\onedrive\\documenten\\github\\msoopdracht2\\msoopdracht2\\exampleprograms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -138,17 +138,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 9,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOUserInterface2\\Form1.cs",
               "RelativeDocumentMoniker": "..\\MSOUserInterface2\\Form1.cs",
               "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOUserInterface2\\Form1.cs",
               "RelativeToolTip": "..\\MSOUserInterface2\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-25T12:49:44.679Z",
               "IsPinned": true,
@@ -160,28 +160,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOUserInterface2\\Form1.cs",
               "RelativeDocumentMoniker": "..\\MSOUserInterface2\\Form1.cs",
               "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOUserInterface2\\Form1.cs [Design]",
               "RelativeToolTip": "..\\MSOUserInterface2\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T14:25:21.127Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ExamplePrograms.cs",
-              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\ExamplePrograms.cs",
-              "RelativeDocumentMoniker": "ExamplePrograms.cs",
-              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\ExamplePrograms.cs",
-              "RelativeToolTip": "ExamplePrograms.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAADwvxkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T09:19:21.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T14:25:21.127Z"
             },
             {
               "$type": "Document",
@@ -193,8 +179,7 @@
               "RelativeToolTip": "CodeProgram.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T08:54:19.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T08:54:19.498Z"
             },
             {
               "$type": "Document",
@@ -218,8 +203,7 @@
               "RelativeToolTip": "..\\MSOopdracht2Test\\ParserTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T16:14:29.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-25T16:14:29.018Z"
             },
             {
               "$type": "Document",
@@ -229,10 +213,22 @@
               "RelativeDocumentMoniker": "..\\MSOUserInterface2\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOUserInterface2\\Form1.Designer.cs",
               "RelativeToolTip": "..\\MSOUserInterface2\\Form1.Designer.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAYwF8AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T11:22:08.21Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExamplePrograms.cs",
+              "DocumentMoniker": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\ExamplePrograms.cs",
+              "RelativeDocumentMoniker": "ExamplePrograms.cs",
+              "ToolTip": "C:\\Users\\aftor\\OneDrive\\Documenten\\GitHub\\MSOopdracht2\\MSOopdracht2\\ExamplePrograms.cs",
+              "RelativeToolTip": "ExamplePrograms.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAADwvxkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T09:19:21.95Z"
             },
             {
               "$type": "Document",
@@ -244,8 +240,7 @@
               "RelativeToolTip": "CodeProgramExecutor.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwDAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T13:07:16.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-10T13:07:16.853Z"
             },
             {
               "$type": "Document",
@@ -257,8 +252,7 @@
               "RelativeToolTip": "Programs\\program1.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-10-26T13:37:04.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T13:37:04.108Z"
             },
             {
               "$type": "Document",
@@ -270,8 +264,7 @@
               "RelativeToolTip": "Character.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAgwDMAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T15:49:20.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T15:49:20.225Z"
             },
             {
               "$type": "Document",
@@ -283,8 +276,7 @@
               "RelativeToolTip": "TxtProgramImporter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T08:58:45.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T08:58:45.545Z"
             },
             {
               "$type": "Document",
