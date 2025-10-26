@@ -9,12 +9,21 @@ namespace MSOUserInterface2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            programPanel.BringToFront();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ToProgramButtonClick(object sender, EventArgs e)
+        {
+            programPanel.BringToFront();
+        }
+        private void ToPathfindingButtonClick(object sender, EventArgs e)
+        {
+            pathfindingPanel.BringToFront();
         }
     }
 }
