@@ -6,15 +6,15 @@ namespace MSOopdracht2
     {
         static CodeProgram BasicProgram1()
         {
-            return new CodeProgram(new List<ICommand>
-            {
-                new MoveCommand(2),
-                new TurnCommand(TurnDirection.Right),
-                new MoveCommand(3),
-                new TurnCommand(TurnDirection.Left),
-                new MoveCommand(4)
-                //The endpoint is (6,3) facing east
-            }, "BasicProgram1");
+            TxtProgramParser parser = new TxtProgramParser();
+            TxtProgramImporter import = new TxtProgramImporter(parser);
+            FileInfo fi = new FileInfo(@"Programs\basicProgram1.txt");
+            string fullFileName = fi.FullName;
+
+            CodeProgram basicProgram1 = import.Import(fullFileName);
+            basicProgram1.Name = "BasicProgram1";
+
+            return basicProgram1;
         }
 
         static CodeProgram BasicProgram2()
@@ -102,16 +102,11 @@ namespace MSOopdracht2
         public static CodeProgram GetRandomExampleProgram()
         {
             Random random = new Random();
-            int choice = random.Next(1, 7);
+            int choice = random.Next(1, 2);
 
             return choice switch
             {
                 1 => BasicProgram1(),
-                2 => BasicProgram2(),
-                3 => AdvancedProgram1(),
-                4 => AdvancedProgram2(),
-                5 => ExpertProgram1(),
-                6 => ExpertProgram2(),
                 _ => throw new NotImplementedException() //Otherwise you will have a warning
             };
         }
