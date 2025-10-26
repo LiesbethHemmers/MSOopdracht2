@@ -13,10 +13,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="AdvancedGrid1.txt">
+    <Content Include="Grids\AdvancedGrid1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="program1.txt">
+    <Content Include="GridPrograms\gridprogram1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Programs\program1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

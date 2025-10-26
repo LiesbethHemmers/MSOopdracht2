@@ -81,7 +81,12 @@
                     }
                 }
                 CodeProgramExecutor executor = new CodeProgramExecutor();
-                executor.Run(codeProgram, grid);
+                List<string> output = executor.Run(codeProgram, grid);
+                foreach (string line in output)
+                {
+                    Console.WriteLine(line);
+                }
+
             }
             else if (choice == "4")
             {
@@ -91,7 +96,11 @@
                 IGridImporter gridImporter = new GridImporter(gridParser);
                 grid = gridImporter.Import(gridName + ".txt");
                 CodeProgramExecutor executor = new CodeProgramExecutor();
-                executor.Run(codeProgram, grid);
+                List<string> output = executor.Run(codeProgram, grid);
+                foreach (string line in output)
+                {
+                    Console.WriteLine(line);
+                }
             }
 
             if (choice != "3" && choice != "4")
@@ -104,13 +113,21 @@
                 if (secondChoice == "1")
                 {
                     CodeProgramExecutor executor = new CodeProgramExecutor();
-                    executor.Run(codeProgram);
+                    List<string> output = executor.Run(codeProgram);
+                    foreach (string line in output)
+                    {
+                        Console.WriteLine(line);
+                    }
                 }
                 else if (secondChoice == "2")
                 {
                     MetricCalculator calculator = new MetricCalculator();
                     StoredMetrics metric = calculator.CalculateMetrics(codeProgram);
-                    metric.Print();
+                    List<string> metrics = metric.GetMetrics();
+                    foreach (string line in metrics)
+                    {
+                        Console.WriteLine(line);
+                    }
                 }
             }
             
