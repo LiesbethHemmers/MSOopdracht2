@@ -1,0 +1,8 @@
+﻿Repeat 2
+    Move 1
+Turn right
+Repeat 2
+    Move 1
+Turn left
+RepeatUntil WallAhead
+    Move 1

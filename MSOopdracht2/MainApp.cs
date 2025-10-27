@@ -94,7 +94,7 @@
                 string gridName = codeProgram.Name;
                 IGridParser gridParser = new TxtGridParser();
                 IGridImporter gridImporter = new GridImporter(gridParser);
-                grid = gridImporter.Import(gridName + ".txt");
+                grid = gridImporter.Import(Path.Combine("Grids", gridName + ".txt"));
                 CodeProgramExecutor executor = new CodeProgramExecutor();
                 List<string> output = executor.Run(codeProgram, grid);
                 foreach (string line in output)

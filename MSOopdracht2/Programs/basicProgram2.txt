@@ -1,8 +1,8 @@
 Move 10
-Turn Right
+Turn right
 Move 10
-Turn Right
+Turn right
 Move 10
-Turn Right
+Turn right
 Move 10 
-Turn Right 
+Turn right 
