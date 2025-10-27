@@ -40,17 +40,7 @@
                     storedMetrics.CommandAmount++;
                     if (innerCommand is RepeatCommand or RepeatUntilCommand) //So this is true if the list of the repeatcommand has another repeatcommand
                     {
-                        int newDepth = depth + 1;
-
-                        //To keep the NestingAmmount the same as the current deepest nesting level
-                        if (newDepth > storedMetrics.NestingAmount)
-                        {
-                            storedMetrics.NestingAmount = newDepth;
-                        }
-
-                        storedMetrics.RepeatAmount++;
-
-                        CalculateNesting(storedMetrics, innerCommand, newDepth);
+                        CalculateDeeperNesting(depth, storedMetrics, innerCommand);
                     }
                 }
             }
@@ -63,20 +53,25 @@
                     storedMetrics.CommandAmount++;
                     if (innerCommand is RepeatCommand or RepeatUntilCommand) //So this is true if the list of the repeatcommand has another repeatcommand
                     {
-                        int newDepth = depth + 1;
-
-                        //To keep the NestingAmmount the same as the current deepest nesting level
-                        if (newDepth > storedMetrics.NestingAmount)
-                        {
-                            storedMetrics.NestingAmount = newDepth;
-                        }
-
-                        storedMetrics.RepeatAmount++;
-
-                        CalculateNesting(storedMetrics, innerCommand, newDepth);
+                        CalculateDeeperNesting(depth, storedMetrics, innerCommand);
                     }
                 }
             }
+        }
+
+        public void CalculateDeeperNesting(int depth, StoredMetrics storedMetrics, ICommand innerCommand )
+        {
+            int newDepth = depth + 1;
+
+            //To keep the NestingAmmount the same as the current deepest nesting level
+            if (newDepth > storedMetrics.NestingAmount)
+            {
+                storedMetrics.NestingAmount = newDepth;
+            }
+
+            storedMetrics.RepeatAmount++;
+
+            CalculateNesting(storedMetrics, innerCommand, newDepth);
         }
     }
 }

@@ -1,5 +1,5 @@
 Move 2
-Turn Right
+Turn right
 Move 3
-Turn Left
+Turn left
 Move 4

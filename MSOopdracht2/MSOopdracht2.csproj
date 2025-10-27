@@ -9,10 +9,17 @@
 
   <ItemGroup>
     <None Remove="AdvancedGrid1.txt" />
+    <None Remove="Grids\AdvancedGrid2.txt" />
+    <None Remove="Grids\ExpertGrid1.txt" />
+    <None Remove="Grids\ExpertGrid2.txt" />
     <None Remove="program1.txt" />
+    <None Remove="Programs\advancedGridProgram1.txt" />
+    <None Remove="Programs\advancedGridProgram2.txt" />
     <None Remove="Programs\advancedProgram1.txt" />
     <None Remove="Programs\advancedProgram2.txt" />
     <None Remove="Programs\basicProgram2.txt" />
+    <None Remove="Programs\expertGridProgram1.txt" />
+    <None Remove="Programs\expertGridProgram2.txt" />
     <None Remove="Programs\expertProgram1.txt" />
     <None Remove="Programs\expertProgram2.txt" />
   </ItemGroup>
@@ -24,6 +31,21 @@
     <Content Include="GridPrograms\gridprogram1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Grids\AdvancedGrid2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Grids\ExpertGrid1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Grids\ExpertGrid2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Programs\advancedGridProgram1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Programs\advancedGridProgram2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Programs\advancedProgram1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -31,6 +53,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Programs\basicProgram2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Programs\expertGridProgram1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Programs\expertGridProgram2.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Programs\expertProgram1.txt">
