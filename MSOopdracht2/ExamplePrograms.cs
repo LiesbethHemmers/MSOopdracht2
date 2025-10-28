@@ -11,7 +11,7 @@ namespace MSOopdracht2
         {
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\basicProgram1.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\basicProgram1.txt");
             string fullFileName = file.FullName;
             return fullFileName;
             //CodeProgram basicProgram1 = import.Import(fullFileName);
@@ -25,7 +25,7 @@ namespace MSOopdracht2
         {
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\basicProgram2.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\basicProgram2.txt");
             string fullFileName = file.FullName;
             return fullFileName;
             //CodeProgram basicProgram2 = import.Import(fullFileName);
@@ -39,7 +39,7 @@ namespace MSOopdracht2
         {
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\advancedProgram1.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\advancedProgram1.txt");
             string fullFileName = file.FullName;
             return fullFileName; ;
             //CodeProgram advancedProgram1 = import.Import(fullFileName);
@@ -53,7 +53,7 @@ namespace MSOopdracht2
         {
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\advancedProgram2.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\advancedProgram2.txt");
             string fullFileName = file.FullName;
             return fullFileName;
             //CodeProgram advancedProgram2 = import.Import(fullFileName);
@@ -67,7 +67,7 @@ namespace MSOopdracht2
         {
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\expertProgram1.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\expertProgram1.txt");
             string fullFileName = file.FullName;
             return fullFileName;
             //CodeProgram expertProgram1 = import.Import(fullFileName);
@@ -81,7 +81,7 @@ namespace MSOopdracht2
         {
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\expertProgram2.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\expertProgram2.txt");
             string fullFileName = file.FullName;
             return fullFileName;
             //CodeProgram expertProgram2 = import.Import(fullFileName);

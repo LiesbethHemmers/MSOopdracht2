@@ -1,5 +1,8 @@
 using Microsoft.VisualBasic.ApplicationServices;
 using MSOopdracht2;
+using MSOopdracht2.Metrics;
+using MSOopdracht2.Parsers;
+using MSOopdracht2.Importers;
 using System.Collections;
 using System.Collections.Generic;
 
