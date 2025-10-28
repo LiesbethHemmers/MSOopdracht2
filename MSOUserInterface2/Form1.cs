@@ -1,4 +1,7 @@
+using Microsoft.VisualBasic.ApplicationServices;
 using MSOopdracht2;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace MSOUserInterface2
 {
@@ -16,7 +19,19 @@ namespace MSOUserInterface2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            CodeProgram codeProgram = TextToCodeProgram();
+            MetricCalculator calculator = new MetricCalculator();
+            StoredMetrics metric = calculator.CalculateMetrics(codeProgram);
+            List<string> output = metric.GetMetrics();
+            textBox1.Text = string.Join(" ", output);
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CodeProgram codeProgram = TextToCodeProgram();
+            CodeProgramExecutor executor = new CodeProgramExecutor();
+            List<string> output = executor.Run(codeProgram);
+            textBox1.Text = string.Join(" ", output);
         }
 
         private void ToProgramButtonClick(object sender, EventArgs e)
@@ -50,23 +65,35 @@ namespace MSOUserInterface2
         {
             string exampleProgram = ExamplePrograms.GetTextBasicExampleProgram();
             richTextBox1.Text = File.ReadAllText(exampleProgram);
+            string fileAsText = richTextBox1.Text;
         }
 
         public void AdvancedClick()
         {
             string exampleProgram = ExamplePrograms.GetTextAdvancedExampleProgram();
             richTextBox1.Text = File.ReadAllText(exampleProgram);
+            string fileAsText = richTextBox1.Text;
         }
 
         public void ExpertClick()
         {
             string exampleProgram = ExamplePrograms.GetTextExpertExampleProgram();
             richTextBox1.Text = File.ReadAllText(exampleProgram);
+            string fileAsText = richTextBox1.Text;
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private CodeProgram TextToCodeProgram()
         {
+            FileInfo file = new FileInfo(@"ProcessingFile\ProcessingFile.txt");
+            string fullFileName = file.FullName;
 
+            richTextBox1.SaveFile(fullFileName, RichTextBoxStreamType.PlainText);
+
+            CodeProgram codeProgram = null;
+            IProgramParser parser = new TxtProgramParser();
+            IProgramImporter importer = new TxtProgramImporter(parser);
+            codeProgram = importer.Import(fullFileName);
+            return codeProgram;
         }
     }
 }

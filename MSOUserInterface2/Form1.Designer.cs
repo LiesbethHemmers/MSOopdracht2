@@ -32,17 +32,18 @@
             programButton = new Button();
             pathfindingButton = new Button();
             programPanel = new Panel();
+            textBox1 = new TextBox();
+            richTextBox1 = new RichTextBox();
             button2 = new Button();
             comboBox1 = new ComboBox();
             pathfindingPanel = new Panel();
-            richTextBox1 = new RichTextBox();
             programPanel.SuspendLayout();
             pathfindingPanel.SuspendLayout();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(12, 422);
+            button1.Location = new Point(312, 95);
             button1.Name = "button1";
             button1.Size = new Size(147, 60);
             button1.TabIndex = 0;
@@ -72,6 +73,8 @@
             // 
             // programPanel
             // 
+            programPanel.BackColor = Color.DarkRed;
+            programPanel.Controls.Add(textBox1);
             programPanel.Controls.Add(richTextBox1);
             programPanel.Controls.Add(button2);
             programPanel.Controls.Add(comboBox1);
@@ -82,14 +85,33 @@
             programPanel.Size = new Size(878, 494);
             programPanel.TabIndex = 3;
             // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.Tomato;
+            textBox1.Location = new Point(312, 161);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(266, 217);
+            textBox1.TabIndex = 6;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.BackColor = Color.Salmon;
+            richTextBox1.Location = new Point(12, 76);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(276, 404);
+            richTextBox1.TabIndex = 5;
+            richTextBox1.Text = "";
+            // 
             // button2
             // 
-            button2.Location = new Point(279, 422);
+            button2.Location = new Point(465, 95);
             button2.Name = "button2";
             button2.Size = new Size(147, 60);
             button2.TabIndex = 4;
             button2.Text = "Run";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // comboBox1
             // 
@@ -111,14 +133,6 @@
             pathfindingPanel.Size = new Size(878, 494);
             pathfindingPanel.TabIndex = 0;
             // 
-            // richTextBox1
-            // 
-            richTextBox1.Location = new Point(12, 76);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(454, 319);
-            richTextBox1.TabIndex = 5;
-            richTextBox1.Text = "";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
@@ -130,6 +144,7 @@
             Text = "Form1";
             Load += Form1_Load;
             programPanel.ResumeLayout(false);
+            programPanel.PerformLayout();
             pathfindingPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -144,5 +159,6 @@
         private ComboBox comboBox1;
         private Button button2;
         private RichTextBox richTextBox1;
+        private TextBox textBox1;
     }
 }

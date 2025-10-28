@@ -2,7 +2,7 @@
 
 namespace MSOopdracht2
 {
-    internal class CodeProgramExecutor
+    public class CodeProgramExecutor
     {
         public CodeProgramExecutor()
         {

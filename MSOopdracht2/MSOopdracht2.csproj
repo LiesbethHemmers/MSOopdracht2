@@ -12,6 +12,7 @@
     <None Remove="Grids\AdvancedGrid2.txt" />
     <None Remove="Grids\ExpertGrid1.txt" />
     <None Remove="Grids\ExpertGrid2.txt" />
+    <None Remove="ProcessingFile.txt" />
     <None Remove="program1.txt" />
     <None Remove="Programs\advancedGridProgram1.txt" />
     <None Remove="Programs\advancedGridProgram2.txt" />
@@ -38,6 +39,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Grids\ExpertGrid2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProcessingFile\ProcessingFile.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Programs\advancedGridProgram1.txt">
