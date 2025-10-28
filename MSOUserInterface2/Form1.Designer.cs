@@ -32,16 +32,17 @@
             programButton = new Button();
             pathfindingButton = new Button();
             programPanel = new Panel();
+            button2 = new Button();
             comboBox1 = new ComboBox();
             pathfindingPanel = new Panel();
-            button2 = new Button();
+            richTextBox1 = new RichTextBox();
             programPanel.SuspendLayout();
             pathfindingPanel.SuspendLayout();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(338, 388);
+            button1.Location = new Point(12, 422);
             button1.Name = "button1";
             button1.Size = new Size(147, 60);
             button1.TabIndex = 0;
@@ -71,6 +72,7 @@
             // 
             // programPanel
             // 
+            programPanel.Controls.Add(richTextBox1);
             programPanel.Controls.Add(button2);
             programPanel.Controls.Add(comboBox1);
             programPanel.Controls.Add(pathfindingButton);
@@ -79,6 +81,15 @@
             programPanel.Name = "programPanel";
             programPanel.Size = new Size(878, 494);
             programPanel.TabIndex = 3;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(279, 422);
+            button2.Name = "button2";
+            button2.Size = new Size(147, 60);
+            button2.TabIndex = 4;
+            button2.Text = "Run";
+            button2.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -90,6 +101,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(485, 31);
             comboBox1.TabIndex = 3;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // pathfindingPanel
             // 
@@ -99,14 +111,13 @@
             pathfindingPanel.Size = new Size(878, 494);
             pathfindingPanel.TabIndex = 0;
             // 
-            // button2
+            // richTextBox1
             // 
-            button2.Location = new Point(504, 388);
-            button2.Name = "button2";
-            button2.Size = new Size(147, 60);
-            button2.TabIndex = 4;
-            button2.Text = "Run";
-            button2.UseVisualStyleBackColor = true;
+            richTextBox1.Location = new Point(12, 76);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(454, 319);
+            richTextBox1.TabIndex = 5;
+            richTextBox1.Text = "";
             // 
             // Form1
             // 
@@ -132,5 +143,6 @@
         private Panel pathfindingPanel;
         private ComboBox comboBox1;
         private Button button2;
+        private RichTextBox richTextBox1;
     }
 }

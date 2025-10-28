@@ -13,12 +13,12 @@
             CodeProgram codeProgram = null;//fill in later, based on user choice
             Grid grid = null; //if the user chooses the pathfinding option then it will be filled in
 
-            if (choice == "1")
-            {
-                codeProgram = ExamplePrograms.GetRandomExampleProgram();
-                Console.WriteLine("You have chosen:" + codeProgram.Name);
-            }
-            else if (choice == "2")
+            //if (choice == "1")
+            //{
+            //    codeProgram = ExamplePrograms.GetRandomExampleProgram();
+            //    Console.WriteLine("You have chosen:" + codeProgram.Name);
+            //}
+            if (choice == "2")
             {
                 while (true)
                 {
@@ -88,20 +88,20 @@
                 }
 
             }
-            else if (choice == "4")
-            {
-                codeProgram = ExamplePrograms.GetRandomGridExampleProgram();//new method only for use with grids, so there can be repeatuntil commands
-                string gridName = codeProgram.Name;
-                IGridParser gridParser = new TxtGridParser();
-                IGridImporter gridImporter = new GridImporter(gridParser);
-                grid = gridImporter.Import(Path.Combine("Grids", gridName + ".txt"));
-                CodeProgramExecutor executor = new CodeProgramExecutor();
-                List<string> output = executor.Run(codeProgram, grid);
-                foreach (string line in output)
-                {
-                    Console.WriteLine(line);
-                }
-            }
+            //else if (choice == "4")
+            //{
+            //    codeProgram = ExamplePrograms.GetRandomGridExampleProgram();//new method only for use with grids, so there can be repeatuntil commands
+            //    string gridName = codeProgram.Name;
+            //    IGridParser gridParser = new TxtGridParser();
+            //    IGridImporter gridImporter = new GridImporter(gridParser);
+            //    grid = gridImporter.Import(Path.Combine("Grids", gridName + ".txt"));
+            //    CodeProgramExecutor executor = new CodeProgramExecutor();
+            //    List<string> output = executor.Run(codeProgram, grid);
+            //    foreach (string line in output)
+            //    {
+            //        Console.WriteLine(line);
+            //    }
+            //}
 
             if (choice != "3" && choice != "4")
             {

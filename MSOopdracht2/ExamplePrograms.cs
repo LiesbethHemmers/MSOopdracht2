@@ -3,107 +3,90 @@ using System.Xml.Serialization;
 
 namespace MSOopdracht2
 {
-    internal static class ExamplePrograms
+    public static class ExamplePrograms
     {
-        static CodeProgram BasicProgram1()
+        static string BasicProgram1Content()
         {
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
             FileInfo file = new FileInfo(@"Programs\basicProgram1.txt");
             string fullFileName = file.FullName;
+            return fullFileName;
+            //CodeProgram basicProgram1 = import.Import(fullFileName);
+            //basicProgram1.Name = "BasicProgram1";
 
-            CodeProgram basicProgram1 = import.Import(fullFileName);
-            basicProgram1.Name = "BasicProgram1";
-
-            return basicProgram1;
+            //return basicProgram1;
             //The endpoint is (6,3) facing east
         }
 
-        static CodeProgram BasicProgram2()
+        static string BasicProgram2Content()
         {
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
             FileInfo file = new FileInfo(@"Programs\basicProgram2.txt");
             string fullFileName = file.FullName;
+            return fullFileName;
+            //CodeProgram basicProgram2 = import.Import(fullFileName);
+            //basicProgram2.Name = "BasicProgram2";
 
-            CodeProgram basicProgram2 = import.Import(fullFileName);
-            basicProgram2.Name = "BasicProgram2";
-
-            return basicProgram2;
+            //return basicProgram2;
             //The endpoint is (0,0) facing east
         }
 
-        static CodeProgram AdvancedProgram1()
+        static string AdvancedProgram1Content()
         {
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
             FileInfo file = new FileInfo(@"Programs\advancedProgram1.txt");
             string fullFileName = file.FullName;
+            return fullFileName; ;
+            //CodeProgram advancedProgram1 = import.Import(fullFileName);
+            //advancedProgram1.Name = "AdvancedProgram1";
 
-            CodeProgram advancedProgram1 = import.Import(fullFileName);
-            advancedProgram1.Name = "AdvancedProgram1";
-
-            return advancedProgram1;
+            //return advancedProgram1;
             //The endpoint is (0,0) facing east
         }
 
-        static CodeProgram AdvancedProgram2()
+        static string AdvancedProgram2Content()
         {
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
             FileInfo file = new FileInfo(@"Programs\advancedProgram2.txt");
             string fullFileName = file.FullName;
+            return fullFileName;
+            //CodeProgram advancedProgram2 = import.Import(fullFileName);
+            //advancedProgram2.Name = "AdvancedProgram2";
 
-            CodeProgram advancedProgram2 = import.Import(fullFileName);
-            advancedProgram2.Name = "AdvancedProgram2";
-
-            return advancedProgram2;
+            //return advancedProgram2;
             //The endpoint is (9,0) facing east
         }
 
-        static CodeProgram ExpertProgram1()
+        static string ExpertProgram1Content()
         {
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
             FileInfo file = new FileInfo(@"Programs\expertProgram1.txt");
             string fullFileName = file.FullName;
+            return fullFileName;
+            //CodeProgram expertProgram1 = import.Import(fullFileName);
+            //expertProgram1.Name = "ExpertProgram1";
 
-            CodeProgram expertProgram1 = import.Import(fullFileName);
-            expertProgram1.Name = "ExpertProgram1";
-
-            return expertProgram1;
+            //return expertProgram1;
             //The endpoint (3,6) facing south
         }
 
-        static CodeProgram ExpertProgram2()
+        static string ExpertProgram2Content()
         {
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
             FileInfo file = new FileInfo(@"Programs\expertProgram2.txt");
             string fullFileName = file.FullName;
+            return fullFileName;
+            //CodeProgram expertProgram2 = import.Import(fullFileName);
+            //expertProgram2.Name = "ExpertProgram2";
 
-            CodeProgram expertProgram2 = import.Import(fullFileName);
-            expertProgram2.Name = "ExpertProgram2";
-
-            return expertProgram2;
+            //return expertProgram2;
             //The endpoint (0,0) facing east
-        }
-
-        public static CodeProgram GetRandomExampleProgram()
-        {
-            Random random = new Random();
-            int choice = random.Next(1, 7);
-
-            return choice switch
-            {
-                1 => BasicProgram1(),
-                2 => BasicProgram2(),
-                3 => AdvancedProgram1(),
-                4 => AdvancedProgram2(),
-                5 => ExpertProgram1(),
-                6 => ExpertProgram2(),
-                _ => throw new NotImplementedException() //Otherwise you will have a warning
-            };
         }
 
         public static CodeProgram AdvancedGridProgram1()
@@ -166,19 +149,44 @@ namespace MSOopdracht2
             return expertGridProgram2;
         }
 
-        public static CodeProgram GetRandomGridExampleProgram()
+        public static string GetTextBasicExampleProgram()
         {
             Random random = new Random();
-            int choice = random.Next(1, 5);
+            int choice = random.Next(1, 3);
 
             return choice switch
             {
-                1 => AdvancedGridProgram1(),
-                2 => AdvancedGridProgram2(),
-                3 => ExpertGridProgram1(),
-                4 => ExpertGridProgram2(),
+                1 => BasicProgram1Content(),
+                2 => BasicProgram2Content(),
                 _ => throw new NotImplementedException() //Otherwise you will have a warning
             };
         }
+
+        public static string GetTextAdvancedExampleProgram()
+        {
+            Random random = new Random();
+            int choice = random.Next(1, 3);
+
+            return choice switch
+            {
+                1 => AdvancedProgram1Content(),
+                2 => AdvancedProgram2Content(),
+                _ => throw new NotImplementedException() //Otherwise you will have a warning
+            };
+        }
+
+        public static string GetTextExpertExampleProgram()
+        {
+            Random random = new Random();
+            int choice = random.Next(1, 3);
+
+            return choice switch
+            {
+                1 => ExpertProgram1Content(),
+                2 => ExpertProgram2Content(),
+                _ => throw new NotImplementedException() //Otherwise you will have a warning
+            };
+        }
+
     }
 }
