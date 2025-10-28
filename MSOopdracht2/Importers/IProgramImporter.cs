@@ -1,4 +1,4 @@
-﻿namespace MSOopdracht2
+﻿namespace MSOopdracht2.Importers
 {
     internal interface IProgramImporter
     {

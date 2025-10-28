@@ -1,4 +1,7 @@
 ﻿using MSOopdracht2;
+using MSOopdracht2.Commands;
+using MSOopdracht2.Enums;
+using MSOopdracht2.Metrics;
 
 
 namespace MSOopdracht2Test

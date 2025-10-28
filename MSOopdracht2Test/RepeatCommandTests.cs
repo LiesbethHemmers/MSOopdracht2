@@ -1,5 +1,7 @@
 ﻿using System.Numerics;
 using MSOopdracht2;
+using MSOopdracht2.Commands;
+using MSOopdracht2.Enums;
 
 namespace MSOopdracht2Test
 {
@@ -11,7 +13,7 @@ namespace MSOopdracht2Test
             //initialize all testobjects
             Character character = new Character();
             List<string> trace = new List<string>();
-            List<MSOopdracht2.ICommand> commands = new List<MSOopdracht2.ICommand>()
+            List<ICommand> commands = new List<ICommand>()
             {
                 new MoveCommand(1),
                 new TurnCommand(TurnDirection.Right)

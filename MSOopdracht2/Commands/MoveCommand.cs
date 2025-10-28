@@ -1,4 +1,4 @@
-﻿namespace MSOopdracht2
+﻿namespace MSOopdracht2.Commands
 {
     public class MoveCommand : ICommand
     {

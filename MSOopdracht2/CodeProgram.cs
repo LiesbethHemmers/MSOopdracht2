@@ -1,4 +1,6 @@
-﻿namespace MSOopdracht2
+﻿using MSOopdracht2.Commands;
+
+namespace MSOopdracht2
 {
     public class CodeProgram
     {

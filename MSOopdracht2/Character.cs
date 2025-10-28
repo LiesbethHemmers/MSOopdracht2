@@ -1,4 +1,6 @@
 ﻿using System.Numerics;
+using MSOopdracht2.Enums;
+using MSOopdracht2.Exceptions;
 
 namespace MSOopdracht2
 {
@@ -69,22 +71,5 @@ namespace MSOopdracht2
             }
             return nextPos;
         }
-    }
-    public enum Direction
-    {
-        East,
-        South,
-        West,
-        North
-    }
-
-    public class BlockedMoveException : Exception
-    {
-        public BlockedMoveException(string message) : base(message) { }
-    }
-
-    public class OutOfBoundsException : Exception
-    {
-        public OutOfBoundsException(string message) : base (message){ }
     }
 }

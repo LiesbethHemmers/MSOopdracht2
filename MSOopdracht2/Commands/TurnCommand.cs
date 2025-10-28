@@ -1,4 +1,6 @@
-﻿namespace MSOopdracht2
+﻿using MSOopdracht2.Enums;
+
+namespace MSOopdracht2.Commands
 {
     public class TurnCommand : ICommand
     {
@@ -23,9 +25,5 @@
         }
     }
 
-    public enum TurnDirection
-    {
-        Left,
-        Right
-    }
+   
 }
