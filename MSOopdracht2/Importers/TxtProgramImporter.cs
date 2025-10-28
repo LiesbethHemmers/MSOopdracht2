@@ -1,4 +1,6 @@
-﻿namespace MSOopdracht2
+﻿using MSOopdracht2.Parsers;
+
+namespace MSOopdracht2.Importers
 {
     public class TxtProgramImporter : IProgramImporter
     {

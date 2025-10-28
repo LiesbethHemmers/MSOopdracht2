@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSOopdracht2
+namespace MSOopdracht2.Conditions
 {
     public interface ICondition
     {

@@ -1,5 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestPlatform.TestHost;
 using MSOopdracht2;
+using MSOopdracht2.Commands;
+using MSOopdracht2.Enums;
+using MSOopdracht2.Parsers;
 using System;
 using System.Collections.Generic;
 using System.Linq;

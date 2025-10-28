@@ -1,4 +1,8 @@
-﻿namespace MSOopdracht2
+﻿using MSOopdracht2.Importers;
+using MSOopdracht2.Metrics;
+using MSOopdracht2.Parsers;
+
+namespace MSOopdracht2
 {
     internal class MainApp
     {

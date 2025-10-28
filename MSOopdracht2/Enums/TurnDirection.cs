@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSOopdracht2
+namespace MSOopdracht2.Enums
 {
-    public interface IGridParser
+    public enum TurnDirection
     {
-        public Grid Parse(string[] lines);
+        Left,
+        Right
     }
 }

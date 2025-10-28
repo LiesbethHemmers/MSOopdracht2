@@ -1,4 +1,6 @@
 ﻿using MSOopdracht2;
+using MSOopdracht2.Commands;
+using MSOopdracht2.Conditions;
 using System;
 using System.Collections.Generic;
 using System.Linq;

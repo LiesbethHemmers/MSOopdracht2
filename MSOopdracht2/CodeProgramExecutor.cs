@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using MSOopdracht2.Exceptions;
+using System.Numerics;
 
 namespace MSOopdracht2
 {

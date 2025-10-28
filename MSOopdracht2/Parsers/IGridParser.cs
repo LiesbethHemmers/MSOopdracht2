@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSOopdracht2
+namespace MSOopdracht2.Parsers
 {
-    internal interface IGridImporter
+    public interface IGridParser
     {
-        public Grid Import(string filePath);
+        public Grid Parse(string[] lines);
     }
 }

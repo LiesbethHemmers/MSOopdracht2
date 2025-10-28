@@ -1,4 +1,4 @@
-﻿namespace MSOopdracht2
+﻿namespace MSOopdracht2.Metrics
 {
     public class StoredMetrics
     {
@@ -8,9 +8,9 @@
 
         public StoredMetrics(int commandAmount, int repeatAmount, int nestingAmount)
         {
-            this.CommandAmount = commandAmount;
-            this.RepeatAmount = repeatAmount;
-            this.NestingAmount = nestingAmount;
+            CommandAmount = commandAmount;
+            RepeatAmount = repeatAmount;
+            NestingAmount = nestingAmount;
         }
 
         public List<string> GetMetrics()

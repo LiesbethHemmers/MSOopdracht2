@@ -1,5 +1,6 @@
 ﻿using System.Numerics;
 using MSOopdracht2;
+using MSOopdracht2.Commands;
 
 namespace MSOopdracht2Test
 {
