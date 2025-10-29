@@ -37,6 +37,17 @@ namespace MSOUserInterface2
             textBox1.Text = string.Join(" ", output);
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            using OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = openFileDialog.FileName;
+                richTextBox1.Text = File.ReadAllText(filePath);
+                string fileAsText = richTextBox1.Text;
+            }
+        }
+
         private void ToProgramButtonClick(object sender, EventArgs e)
         {
             programPanel.BringToFront();
@@ -84,6 +95,7 @@ namespace MSOUserInterface2
             richTextBox1.Text = File.ReadAllText(exampleProgram);
             string fileAsText = richTextBox1.Text;
         }
+
 
         private CodeProgram TextToCodeProgram()
         {

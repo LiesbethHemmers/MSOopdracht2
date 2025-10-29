@@ -32,6 +32,7 @@
             programButton = new Button();
             pathfindingButton = new Button();
             programPanel = new Panel();
+            button3 = new Button();
             textBox1 = new TextBox();
             richTextBox1 = new RichTextBox();
             button2 = new Button();
@@ -43,7 +44,8 @@
             // 
             // button1
             // 
-            button1.Location = new Point(312, 95);
+            button1.ForeColor = Color.Red;
+            button1.Location = new Point(312, 76);
             button1.Name = "button1";
             button1.Size = new Size(147, 60);
             button1.TabIndex = 0;
@@ -63,17 +65,20 @@
             // 
             // pathfindingButton
             // 
+            pathfindingButton.BackColor = Color.Crimson;
+            pathfindingButton.ForeColor = SystemColors.ButtonFace;
             pathfindingButton.Location = new Point(684, 12);
             pathfindingButton.Name = "pathfindingButton";
             pathfindingButton.Size = new Size(169, 46);
             pathfindingButton.TabIndex = 2;
             pathfindingButton.Text = "To pathfinding";
-            pathfindingButton.UseVisualStyleBackColor = true;
+            pathfindingButton.UseVisualStyleBackColor = false;
             pathfindingButton.Click += ToPathfindingButtonClick;
             // 
             // programPanel
             // 
             programPanel.BackColor = Color.DarkRed;
+            programPanel.Controls.Add(button3);
             programPanel.Controls.Add(textBox1);
             programPanel.Controls.Add(richTextBox1);
             programPanel.Controls.Add(button2);
@@ -85,19 +90,31 @@
             programPanel.Size = new Size(878, 494);
             programPanel.TabIndex = 3;
             // 
+            // button3
+            // 
+            button3.BackColor = Color.Crimson;
+            button3.ForeColor = SystemColors.ButtonFace;
+            button3.Location = new Point(14, 41);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 29);
+            button3.TabIndex = 7;
+            button3.Text = "From file";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // textBox1
             // 
             textBox1.BackColor = Color.Tomato;
             textBox1.Location = new Point(312, 161);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(266, 217);
+            textBox1.Size = new Size(363, 319);
             textBox1.TabIndex = 6;
             // 
             // richTextBox1
             // 
             richTextBox1.BackColor = Color.Salmon;
-            richTextBox1.Location = new Point(12, 76);
+            richTextBox1.Location = new Point(14, 76);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(276, 404);
             richTextBox1.TabIndex = 5;
@@ -105,7 +122,8 @@
             // 
             // button2
             // 
-            button2.Location = new Point(465, 95);
+            button2.ForeColor = Color.Red;
+            button2.Location = new Point(528, 76);
             button2.Name = "button2";
             button2.Size = new Size(147, 60);
             button2.TabIndex = 4;
@@ -118,10 +136,10 @@
             comboBox1.BackColor = Color.RosyBrown;
             comboBox1.ForeColor = Color.Brown;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Basic", "Advanced", "Expert", "From file" });
-            comboBox1.Location = new Point(0, 0);
+            comboBox1.Items.AddRange(new object[] { "Basic", "Advanced", "Expert" });
+            comboBox1.Location = new Point(114, 41);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(485, 31);
+            comboBox1.Size = new Size(172, 31);
             comboBox1.TabIndex = 3;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
@@ -160,5 +178,6 @@
         private Button button2;
         private RichTextBox richTextBox1;
         private TextBox textBox1;
+        private Button button3;
     }
 }
