@@ -11,19 +11,9 @@ namespace MSOopdracht2.Conditions
     {
         public bool Evaluate(Character character)
         {
-            if (character.Grid.LoadedGrid == null)
-            {
-                return false;
-            }
-
             Vector2 nextPos = character.NextPos();
             char symbol = character.Grid.GetSymbol((int)nextPos.X, (int)nextPos.Y);
-
-            if (symbol == '+')
-            {
-                return true;
-            }
-            return false;
+            return symbol == '+';
         }
     }
 }

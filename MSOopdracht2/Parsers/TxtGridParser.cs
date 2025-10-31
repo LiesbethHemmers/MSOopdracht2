@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MSOopdracht2.Parsers
+﻿namespace MSOopdracht2.Parsers
 {
     public class TxtGridParser : IGridParser
     {
@@ -22,7 +16,6 @@ namespace MSOopdracht2.Parsers
                     grid[x, y] = parts[x];
                 }
             }
-
             return new Grid(grid);
         }
     }

@@ -11,15 +11,13 @@ namespace MSOopdracht2Test
         {
             //initialize all testobjects
             Character character = new Character();
-            List<string> trace = new List<string>();
             MoveCommand moveCommand = new MoveCommand(3);
 
             //execute the tested method
-            moveCommand.Execute(character, trace);
+            string trace = moveCommand.Execute(character);
 
             Assert.Equal(new Vector2(3, 0), character.Position);
-            Assert.Single(trace);
-            Assert.Contains("Move 3", trace[0]);
+            Assert.Contains("Move 3", trace);
         }
 
         [Fact]
@@ -27,17 +25,15 @@ namespace MSOopdracht2Test
         {
             //initialize all testobjects
             Character character = new Character();
-            List<string> trace = new List<string>();
             MoveCommand moveCommand = new MoveCommand(3);
 
             character.TurnLeft();//so that the character faces north
 
             //execute the tested method
-            moveCommand.Execute(character, trace);
+            string trace = moveCommand.Execute(character);
 
             Assert.Equal(new Vector2(0, -3), character.Position);
-            Assert.Single(trace);
-            Assert.Contains("Move 3", trace[0]);
+            Assert.Contains("Move 3", trace);
         }
     }
 }

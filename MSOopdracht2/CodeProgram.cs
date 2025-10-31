@@ -4,24 +4,25 @@ namespace MSOopdracht2
 {
     public class CodeProgram
     {
-        string name;
-        List<ICommand> commands = new List<ICommand>();
+        public string Name { get; set; }
 
-        public string Name { get { return name; } set { name = value; } }
-        public List<ICommand> Commands { get { return commands; } }
+        public List<ICommand> Commands { get; }
 
         public CodeProgram(List<ICommand> commands, string name)
         {
-            this.commands = commands;
-            this.name = name;
+            this.Commands = commands;
+            this.Name = name;
         }
         
-        public void Execute(Character character, List<string> trace)
+        public List<string> Execute(Character character)
         {
-            foreach (ICommand command in commands)
+            List<string> trace = new List<string>();
+            foreach (ICommand command in Commands)
             {
-                command.Execute(character, trace);
+                string part = command.Execute(character);
+                trace.Add(part);
             }
+            return trace;
         }
     }
 }

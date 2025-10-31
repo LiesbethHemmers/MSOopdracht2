@@ -9,16 +9,16 @@ namespace MSOopdracht2.Importers
 {
     internal class GridImporter : IGridImporter
     {
-        IGridParser parser;
+        private readonly IGridParser _parser;
         public GridImporter(IGridParser parser)
         {
-            this.parser = parser;
+            _parser = parser;
         }
 
         public Grid Import(string filePath)
         {
             string[] lines = File.ReadAllLines(filePath);//this is thus a string array containing all lines of the file
-            Grid parsedGrid = parser.Parse(lines);
+            Grid parsedGrid = _parser.Parse(lines);
             return parsedGrid;
         }
     }

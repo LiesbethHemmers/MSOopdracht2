@@ -7,87 +7,51 @@ namespace MSOopdracht2
 {
     public static class ExamplePrograms
     {
-        static string BasicProgram1Content()
+        private static string BasicProgram1Content()
         {
-            TxtProgramParser parser = new TxtProgramParser();
-            TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"FilePrograms\basicProgram1.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\BasicProgram1.txt");
             string fullFileName = file.FullName;
             return fullFileName;
-            //CodeProgram basicProgram1 = import.Import(fullFileName);
-            //basicProgram1.Name = "BasicProgram1";
-
-            //return basicProgram1;
             //The endpoint is (6,3) facing east
         }
 
-        static string BasicProgram2Content()
+        private static string BasicProgram2Content()
         {
-            TxtProgramParser parser = new TxtProgramParser();
-            TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"FilePrograms\basicProgram2.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\BasicProgram2.txt");
             string fullFileName = file.FullName;
             return fullFileName;
-            //CodeProgram basicProgram2 = import.Import(fullFileName);
-            //basicProgram2.Name = "BasicProgram2";
-
-            //return basicProgram2;
             //The endpoint is (0,0) facing east
         }
 
-        static string AdvancedProgram1Content()
+        private static string AdvancedProgram1Content()
         {
-            TxtProgramParser parser = new TxtProgramParser();
-            TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"FilePrograms\advancedProgram1.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\AdvancedProgram1.txt");
             string fullFileName = file.FullName;
-            return fullFileName; ;
-            //CodeProgram advancedProgram1 = import.Import(fullFileName);
-            //advancedProgram1.Name = "AdvancedProgram1";
-
-            //return advancedProgram1;
+            return fullFileName;
             //The endpoint is (0,0) facing east
         }
 
-        static string AdvancedProgram2Content()
+        private static string AdvancedProgram2Content()
         {
-            TxtProgramParser parser = new TxtProgramParser();
-            TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"FilePrograms\advancedProgram2.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\AdvancedProgram2.txt");
             string fullFileName = file.FullName;
             return fullFileName;
-            //CodeProgram advancedProgram2 = import.Import(fullFileName);
-            //advancedProgram2.Name = "AdvancedProgram2";
-
-            //return advancedProgram2;
             //The endpoint is (9,0) facing east
         }
 
-        static string ExpertProgram1Content()
+        private static string ExpertProgram1Content()
         {
-            TxtProgramParser parser = new TxtProgramParser();
-            TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"FilePrograms\expertProgram1.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\ExpertProgram1.txt");
             string fullFileName = file.FullName;
             return fullFileName;
-            //CodeProgram expertProgram1 = import.Import(fullFileName);
-            //expertProgram1.Name = "ExpertProgram1";
-
-            //return expertProgram1;
             //The endpoint (3,6) facing south
         }
 
-        static string ExpertProgram2Content()
+        private static string ExpertProgram2Content()
         {
-            TxtProgramParser parser = new TxtProgramParser();
-            TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"FilePrograms\expertProgram2.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\ExpertProgram2.txt");
             string fullFileName = file.FullName;
             return fullFileName;
-            //CodeProgram expertProgram2 = import.Import(fullFileName);
-            //expertProgram2.Name = "ExpertProgram2";
-
-            //return expertProgram2;
             //The endpoint (0,0) facing east
         }
 
@@ -97,7 +61,7 @@ namespace MSOopdracht2
 
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\advancedGridProgram1.txt");
+            FileInfo file = new FileInfo(@"Programs\AdvancedGridProgram1.txt");
             string fullFileName = file.FullName;
             CodeProgram advancedGridProgram1 = import.Import(fullFileName);
 
@@ -112,7 +76,7 @@ namespace MSOopdracht2
 
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\advancedGridProgram2.txt");
+            FileInfo file = new FileInfo(@"Programs\AdvancedGridProgram2.txt");
             string fullFileName = file.FullName;
             CodeProgram advancedGridProgram2 = import.Import(fullFileName);
 
@@ -127,7 +91,7 @@ namespace MSOopdracht2
 
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\expertGridProgram1.txt");
+            FileInfo file = new FileInfo(@"Programs\ExpertGridProgram1.txt");
             string fullFileName = file.FullName;
             CodeProgram expertGridProgram1 = import.Import(fullFileName);
 
@@ -142,7 +106,7 @@ namespace MSOopdracht2
 
             TxtProgramParser parser = new TxtProgramParser();
             TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\expertGridProgram2.txt");
+            FileInfo file = new FileInfo(@"Programs\ExpertGridProgram2.txt");
             string fullFileName = file.FullName;
             CodeProgram expertGridProgram2 = import.Import(fullFileName);
 

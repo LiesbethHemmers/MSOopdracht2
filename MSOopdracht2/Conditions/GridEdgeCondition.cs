@@ -11,19 +11,10 @@ namespace MSOopdracht2.Conditions
     {
         public bool Evaluate(Character character)
         {
-            if (character.Grid.LoadedGrid == null)
-            {
-                return false;
-            }
-
             Vector2 nextPos = character.NextPos();
             bool inBounds = character.Grid.InBounds((int)nextPos.X, (int)nextPos.Y);
 
-            if (inBounds)
-            {
-                return false;
-            }
-            return true;
+            return !inBounds;
         }
     }
 }

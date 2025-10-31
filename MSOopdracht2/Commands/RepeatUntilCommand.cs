@@ -10,25 +10,28 @@ namespace MSOopdracht2.Commands
 {
     public class RepeatUntilCommand : ICommand
     {
-        ICondition condition;
-        List<ICommand> commands;
-        public List<ICommand> Commands { get { return commands; } }
+        private readonly ICondition _condition;
+        public List<ICommand> Commands { get; }
 
         public RepeatUntilCommand(ICondition condition, List<ICommand> commands)
         {
-            this.condition = condition;
-            this.commands = commands;
+            _condition = condition;
+            Commands = commands;
         }
 
-        public void Execute(Character character, List<string> trace)
+        public string Execute(Character character)
         {
-            while (!condition.Evaluate(character))
+            List<string> traceParts = new List<string>();
+            while (!_condition.Evaluate(character))
             {
-                foreach (ICommand command in commands)
+                foreach (ICommand command in Commands)
                 {
-                    command.Execute(character, trace);
+                    string part = command.Execute(character);
+                    traceParts.Add(part);
                 }
             }
+
+            return string.Join(", ", traceParts);
         }
     }
 }

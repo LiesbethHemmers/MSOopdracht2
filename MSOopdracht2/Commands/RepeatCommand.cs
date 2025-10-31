@@ -2,26 +2,28 @@
 {
     public class RepeatCommand : ICommand
     {
-        int times;
-        List<ICommand> commands;
-        public List<ICommand> Commands { get { return commands; } }
+        private readonly int _times;
+        public List<ICommand> Commands { get; }
 
         public RepeatCommand(int times, List<ICommand> commands)
         {
-            this.times = times;
-            this.commands = commands;
+            _times = times;
+            Commands = commands;
         }
         
-        public void Execute(Character character, List<string> trace)
+        public string Execute(Character character)
         {
-            for (int i = 0; i < times; i++)
+            //this command should collect all strings from its subcommands
+            List<string> traceParts = new List<string>();
+            for (int i = 0; i < _times; i++)
             {
-                foreach (ICommand command in commands)
+                foreach (ICommand command in Commands)
                 {
-                    command.Execute(character, trace);
+                    string part = command.Execute(character);
+                    traceParts.Add(part);
                 }
             }
-            
+            return string.Join(", ", traceParts);
         }
     }
 }

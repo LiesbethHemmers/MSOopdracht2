@@ -13,18 +13,17 @@ namespace MSOopdracht2
         public List<string> Run(CodeProgram program, Grid grid = null)
         {
             Character character = new Character(grid); //Character starts at (0,0) facing east 
-            List<string> trace = new List<string>();
             List<string> output = new List<string>();
 
             try
             {
-                program.Execute(character, trace);
+                List<string> trace = program.Execute(character);
                 if (grid != null)
                 {
                     Vector2 endPos = grid.GetXPosition();
                     if (endPos == character.Position)
                     {
-                        output.Add("Succesfully reached end position");
+                        output.Add("Successfully reached end position");
                     }
                     else
                     {
@@ -34,7 +33,7 @@ namespace MSOopdracht2
                 }
 
                 //Firstly we need to print out the path the character had:
-                output.Add(string.Join(",", trace) + ".");
+                output.Add(string.Join(", ", trace) + ".");
 
                 //Lastly we need to print it's finally coordinates and directions it faces:
                 output.Add($"End state ({character.Position.X},{character.Position.Y}) facing {character.Direction}.");

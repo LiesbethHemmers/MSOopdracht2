@@ -2,6 +2,6 @@
 {
     public interface ICommand
     {
-        public void Execute(Character character, List<string> trace);
+        public string Execute(Character character);
     }
 }

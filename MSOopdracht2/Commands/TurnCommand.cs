@@ -4,26 +4,24 @@ namespace MSOopdracht2.Commands
 {
     public class TurnCommand : ICommand
     {
-        TurnDirection turn;
+        private readonly TurnDirection _turn;
 
         public TurnCommand(TurnDirection turn)
         {
-            this.turn = turn;
+            _turn = turn;
         }
-        public void Execute(Character character, List<string> trace)
+        public string Execute(Character character)
         {
-            if (turn == TurnDirection.Left)
+            if (_turn == TurnDirection.Left)
             {
                 character.TurnLeft();
-                trace.Add("Turn left");
+                return "Turn left";
             }
             else
             {
                 character.TurnRight();
-                trace.Add("Turn right");
+                return "Turn right";
             }
         }
     }
-
-   
 }
