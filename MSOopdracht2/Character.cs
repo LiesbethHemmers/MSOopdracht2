@@ -6,35 +6,31 @@ namespace MSOopdracht2
 {
     public class Character
     {
-        Vector2 position;
-        Direction direction;
-        Grid grid;
-
-        public Vector2 Position { get { return position; } }
-        public Direction Direction { get { return direction; } }
-        public Grid Grid { get { return grid; } }
+        public Vector2 Position { get; private set; }
+        public Direction Direction { get; private set; }
+        public Grid Grid { get; }
 
         public Character(Grid grid = null)//default is null because only the pathfinding exercises need a grid
         {
-            position = Vector2.Zero;
-            direction = Direction.East;
-            this.grid = grid;
+            Position = Vector2.Zero;
+            Direction = Direction.East;
+            Grid = grid;
         }
 
         public void TurnLeft()
         {
             //east -> north
-            int dir = (int)direction;//every enum has a number
-            int newdir = (dir + 3) % 4;
-            direction = (Direction)newdir;//back to direction
+            int dir = (int)Direction;//every enum has a number
+            int newDir = (dir + 3) % 4;
+            Direction = (Direction)newDir;//back to direction
         }
 
         public void TurnRight()
         {
             //east->south
-            int dir = (int)direction;//every enum has a number
-            int newdir = (dir + 1) % 4;
-            direction = (Direction)newdir;//back to direction
+            int dir = (int)Direction;//every enum has a number
+            int newDir = (dir + 1) % 4;
+            Direction = (Direction)newDir;//back to direction
         }
 
         public void MoveForward(int steps)
@@ -42,27 +38,27 @@ namespace MSOopdracht2
             for (int i = 0; i < steps; i++)
             {
                 Vector2 nextPos = NextPos();
-                if (grid != null)
+                if (Grid != null)
                 {
-                    if (!grid.InBounds((int)nextPos.X, (int)nextPos.Y))
+                    if (!Grid.InBounds((int)nextPos.X, (int)nextPos.Y))
                     {
                         throw new OutOfBoundsException($"({nextPos.X}, {nextPos.Y}) is outside of the grid");
                     }
-                    char symbol = grid.GetSymbol((int)nextPos.X, (int)nextPos.Y);
+                    char symbol = Grid.GetSymbol((int)nextPos.X, (int)nextPos.Y);
                     if (symbol == '+')
                     {
                         throw new BlockedMoveException($"({nextPos.X}, {nextPos.Y}) is blocked");
                     }
 
                 }
-                position = nextPos;
+                Position = nextPos;
             }
         }
 
         public Vector2 NextPos()
         {
-            Vector2 nextPos = position;
-            switch (direction)
+            Vector2 nextPos = Position;
+            switch (Direction)
             {
                 case Direction.East: nextPos.X += 1; break;
                 case Direction.South: nextPos.Y += 1; break;
