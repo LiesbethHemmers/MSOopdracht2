@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Numerics;
 
 namespace MSOopdracht2.Conditions
 {
@@ -11,6 +6,7 @@ namespace MSOopdracht2.Conditions
     {
         public bool Evaluate(Character character)
         {
+            if (character.Grid == null) return true;
             Vector2 nextPos = character.NextPos();
             char symbol = character.Grid.GetSymbol((int)nextPos.X, (int)nextPos.Y);
             return symbol == '+';

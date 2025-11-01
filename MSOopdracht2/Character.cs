@@ -8,9 +8,9 @@ namespace MSOopdracht2
     {
         public Vector2 Position { get; private set; }
         public Direction Direction { get; private set; }
-        public Grid Grid { get; }
+        public Grid? Grid { get; }//grid can be null, because the grid is optional
 
-        public Character(Grid grid = null)//default is null because only the pathfinding exercises need a grid
+        public Character(Grid? grid = null)//default is null because only the pathfinding exercises need a grid
         {
             Position = Vector2.Zero;
             Direction = Direction.East;

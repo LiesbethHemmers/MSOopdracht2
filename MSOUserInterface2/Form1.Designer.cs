@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            metricsButton = new Button();
             programButton = new Button();
             pathfindingButton = new Button();
             programPanel = new Panel();
-            button3 = new Button();
-            textBox1 = new TextBox();
-            richTextBox1 = new RichTextBox();
-            button2 = new Button();
-            comboBox1 = new ComboBox();
+            fileLoadButton = new Button();
+            outputTextBox = new TextBox();
+            programRichTextBox = new RichTextBox();
+            runButton = new Button();
+            examplesComboBox = new ComboBox();
             pathfindingPanel = new Panel();
             programPanel.SuspendLayout();
             pathfindingPanel.SuspendLayout();
             SuspendLayout();
             // 
-            // button1
+            // metricsButton
             // 
-            button1.ForeColor = Color.Red;
-            button1.Location = new Point(312, 76);
-            button1.Name = "button1";
-            button1.Size = new Size(147, 60);
-            button1.TabIndex = 0;
-            button1.Text = "Metrics";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            metricsButton.ForeColor = Color.Red;
+            metricsButton.Location = new Point(312, 76);
+            metricsButton.Name = "metricsButton";
+            metricsButton.Size = new Size(147, 60);
+            metricsButton.TabIndex = 0;
+            metricsButton.Text = "Metrics";
+            metricsButton.UseVisualStyleBackColor = true;
+            metricsButton.Click += MetricsButtonClick;
             // 
             // programButton
             // 
@@ -78,70 +78,70 @@
             // programPanel
             // 
             programPanel.BackColor = Color.DarkRed;
-            programPanel.Controls.Add(button3);
-            programPanel.Controls.Add(textBox1);
-            programPanel.Controls.Add(richTextBox1);
-            programPanel.Controls.Add(button2);
-            programPanel.Controls.Add(comboBox1);
+            programPanel.Controls.Add(fileLoadButton);
+            programPanel.Controls.Add(outputTextBox);
+            programPanel.Controls.Add(programRichTextBox);
+            programPanel.Controls.Add(runButton);
+            programPanel.Controls.Add(examplesComboBox);
             programPanel.Controls.Add(pathfindingButton);
-            programPanel.Controls.Add(button1);
+            programPanel.Controls.Add(metricsButton);
             programPanel.Location = new Point(11, 12);
             programPanel.Name = "programPanel";
             programPanel.Size = new Size(878, 494);
             programPanel.TabIndex = 3;
             // 
-            // button3
+            // fileLoadButton
             // 
-            button3.BackColor = Color.Crimson;
-            button3.ForeColor = SystemColors.ButtonFace;
-            button3.Location = new Point(14, 41);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 7;
-            button3.Text = "From file";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            fileLoadButton.BackColor = Color.Crimson;
+            fileLoadButton.ForeColor = SystemColors.ButtonFace;
+            fileLoadButton.Location = new Point(14, 41);
+            fileLoadButton.Name = "fileLoadButton";
+            fileLoadButton.Size = new Size(94, 29);
+            fileLoadButton.TabIndex = 7;
+            fileLoadButton.Text = "From file";
+            fileLoadButton.UseVisualStyleBackColor = false;
+            fileLoadButton.Click += FileLoadButtonClick;
             // 
-            // textBox1
+            // outputTextBox
             // 
-            textBox1.BackColor = Color.Tomato;
-            textBox1.Location = new Point(312, 161);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(363, 319);
-            textBox1.TabIndex = 6;
+            outputTextBox.BackColor = Color.Tomato;
+            outputTextBox.Location = new Point(312, 161);
+            outputTextBox.Multiline = true;
+            outputTextBox.Name = "outputTextBox";
+            outputTextBox.Size = new Size(363, 319);
+            outputTextBox.TabIndex = 6;
             // 
-            // richTextBox1
+            // programRichTextBox
             // 
-            richTextBox1.BackColor = Color.Salmon;
-            richTextBox1.Location = new Point(14, 76);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(276, 404);
-            richTextBox1.TabIndex = 5;
-            richTextBox1.Text = "";
+            programRichTextBox.BackColor = Color.Salmon;
+            programRichTextBox.Location = new Point(14, 76);
+            programRichTextBox.Name = "programRichTextBox";
+            programRichTextBox.Size = new Size(276, 404);
+            programRichTextBox.TabIndex = 5;
+            programRichTextBox.Text = "";
             // 
-            // button2
+            // runButton
             // 
-            button2.ForeColor = Color.Red;
-            button2.Location = new Point(528, 76);
-            button2.Name = "button2";
-            button2.Size = new Size(147, 60);
-            button2.TabIndex = 4;
-            button2.Text = "Run";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            runButton.ForeColor = Color.Red;
+            runButton.Location = new Point(528, 76);
+            runButton.Name = "runButton";
+            runButton.Size = new Size(147, 60);
+            runButton.TabIndex = 4;
+            runButton.Text = "Run";
+            runButton.UseVisualStyleBackColor = true;
+            runButton.Click += RunButtonClick;
             // 
-            // comboBox1
+            // examplesComboBox
             // 
-            comboBox1.BackColor = Color.RosyBrown;
-            comboBox1.ForeColor = Color.Brown;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Basic", "Advanced", "Expert" });
-            comboBox1.Location = new Point(114, 41);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(172, 31);
-            comboBox1.TabIndex = 3;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            examplesComboBox.BackColor = Color.RosyBrown;
+            examplesComboBox.ForeColor = Color.Brown;
+            examplesComboBox.FormattingEnabled = true;
+            examplesComboBox.Items.AddRange(new object[] { "Basic", "Advanced", "Expert" });
+            examplesComboBox.Location = new Point(114, 41);
+            examplesComboBox.Name = "examplesComboBox";
+            examplesComboBox.Size = new Size(172, 31);
+            examplesComboBox.TabIndex = 3;
+            examplesComboBox.SelectedIndexChanged += ExamplesComboBox_SelectedIndexChanged;
             // 
             // pathfindingPanel
             // 
@@ -169,15 +169,15 @@
 
         #endregion
 
-        private Button button1;
+        private Button metricsButton;
         private Button programButton;
         private Button pathfindingButton;
         private Panel programPanel;
         private Panel pathfindingPanel;
-        private ComboBox comboBox1;
-        private Button button2;
-        private RichTextBox richTextBox1;
-        private TextBox textBox1;
-        private Button button3;
+        private ComboBox examplesComboBox;
+        private Button runButton;
+        private RichTextBox programRichTextBox;
+        private TextBox outputTextBox;
+        private Button fileLoadButton;
     }
 }

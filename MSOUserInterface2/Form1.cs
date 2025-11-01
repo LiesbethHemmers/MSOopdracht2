@@ -20,31 +20,31 @@ namespace MSOUserInterface2
             programPanel.BringToFront();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void MetricsButtonClick(object sender, EventArgs e)
         {
             CodeProgram codeProgram = TextToCodeProgram();
             MetricCalculator calculator = new MetricCalculator();
             StoredMetrics metric = calculator.CalculateMetrics(codeProgram);
             List<string> output = metric.GetMetrics();
-            textBox1.Text = string.Join(" ", output);
+            outputTextBox.Text = string.Join(" ", output);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void RunButtonClick(object sender, EventArgs e)
         {
             CodeProgram codeProgram = TextToCodeProgram();
             CodeProgramExecutor executor = new CodeProgramExecutor();
             List<string> output = executor.Run(codeProgram);
-            textBox1.Text = string.Join(" ", output);
+            outputTextBox.Text = string.Join(" ", output);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void FileLoadButtonClick(object sender, EventArgs e)
         {
             using OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string filePath = openFileDialog.FileName;
-                richTextBox1.Text = File.ReadAllText(filePath);
-                string fileAsText = richTextBox1.Text;
+                programRichTextBox.Text = File.ReadAllText(filePath);
+                string fileAsText = programRichTextBox.Text;
             }
         }
 
@@ -57,19 +57,19 @@ namespace MSOUserInterface2
             pathfindingPanel.BringToFront();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ExamplesComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.Text.Equals("Basic"))
+            if (examplesComboBox.Text.Equals("Basic"))
             {
                 BasicClick();
             }
 
-            if (comboBox1.Text.Equals("Advanced"))
+            if (examplesComboBox.Text.Equals("Advanced"))
             {
                 AdvancedClick();
             }
 
-            if (comboBox1.Text.Equals("Expert"))
+            if (examplesComboBox.Text.Equals("Expert"))
             {
                 ExpertClick();
             }
@@ -78,22 +78,22 @@ namespace MSOUserInterface2
         public void BasicClick()
         {
             string exampleProgram = ExamplePrograms.GetTextBasicExampleProgram();
-            richTextBox1.Text = File.ReadAllText(exampleProgram);
-            string fileAsText = richTextBox1.Text;
+            programRichTextBox.Text = File.ReadAllText(exampleProgram);
+            string fileAsText = programRichTextBox.Text;
         }
 
         public void AdvancedClick()
         {
             string exampleProgram = ExamplePrograms.GetTextAdvancedExampleProgram();
-            richTextBox1.Text = File.ReadAllText(exampleProgram);
-            string fileAsText = richTextBox1.Text;
+            programRichTextBox.Text = File.ReadAllText(exampleProgram);
+            string fileAsText = programRichTextBox.Text;
         }
 
         public void ExpertClick()
         {
             string exampleProgram = ExamplePrograms.GetTextExpertExampleProgram();
-            richTextBox1.Text = File.ReadAllText(exampleProgram);
-            string fileAsText = richTextBox1.Text;
+            programRichTextBox.Text = File.ReadAllText(exampleProgram);
+            string fileAsText = programRichTextBox.Text;
         }
 
 
@@ -102,7 +102,7 @@ namespace MSOUserInterface2
             FileInfo file = new FileInfo(@"ProcessingFile\ProcessingFile.txt");
             string fullFileName = file.FullName;
 
-            richTextBox1.SaveFile(fullFileName, RichTextBoxStreamType.PlainText);
+            programRichTextBox.SaveFile(fullFileName, RichTextBoxStreamType.PlainText);
 
             CodeProgram codeProgram = null;
             IProgramParser parser = new TxtProgramParser();

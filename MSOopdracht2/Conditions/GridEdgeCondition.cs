@@ -11,6 +11,7 @@ namespace MSOopdracht2.Conditions
     {
         public bool Evaluate(Character character)
         {
+            if (character.Grid == null) return true;
             Vector2 nextPos = character.NextPos();
             bool inBounds = character.Grid.InBounds((int)nextPos.X, (int)nextPos.Y);
 
