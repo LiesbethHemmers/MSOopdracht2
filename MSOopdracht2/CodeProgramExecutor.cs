@@ -10,7 +10,7 @@ namespace MSOopdracht2
 
         }
 
-        public List<string> Run(CodeProgram program, Grid grid = null)
+        public List<string> Run(CodeProgram program, Grid? grid = null)
         {
             Character character = new Character(grid); //Character starts at (0,0) facing east 
             List<string> output = new List<string>();

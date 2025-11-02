@@ -8,16 +8,16 @@ using System.Collections.Generic;
 
 namespace MSOUserInterface2
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
-            programPanel.BringToFront();
+            _programPanel.BringToFront();
         }
 
         private void MetricsButtonClick(object sender, EventArgs e)
@@ -26,7 +26,7 @@ namespace MSOUserInterface2
             MetricCalculator calculator = new MetricCalculator();
             StoredMetrics metric = calculator.CalculateMetrics(codeProgram);
             List<string> output = metric.GetMetrics();
-            outputTextBox.Text = string.Join(" ", output);
+            _outputTextBox.Text = string.Join(" ", output);
         }
 
         private void RunButtonClick(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace MSOUserInterface2
             CodeProgram codeProgram = TextToCodeProgram();
             CodeProgramExecutor executor = new CodeProgramExecutor();
             List<string> output = executor.Run(codeProgram);
-            outputTextBox.Text = string.Join(" ", output);
+            _outputTextBox.Text = string.Join(" ", output);
         }
 
         private void FileLoadButtonClick(object sender, EventArgs e)
@@ -43,33 +43,33 @@ namespace MSOUserInterface2
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string filePath = openFileDialog.FileName;
-                programRichTextBox.Text = File.ReadAllText(filePath);
-                string fileAsText = programRichTextBox.Text;
+                _programRichTextBox.Text = File.ReadAllText(filePath);
+                string fileAsText = _programRichTextBox.Text;
             }
         }
 
         private void ToProgramButtonClick(object sender, EventArgs e)
         {
-            programPanel.BringToFront();
+            _programPanel.BringToFront();
         }
         private void ToPathfindingButtonClick(object sender, EventArgs e)
         {
-            pathfindingPanel.BringToFront();
+            _pathfindingPanel.BringToFront();
         }
 
         private void ExamplesComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (examplesComboBox.Text.Equals("Basic"))
+            if (_examplesComboBox.Text.Equals("Basic"))
             {
                 BasicClick();
             }
 
-            if (examplesComboBox.Text.Equals("Advanced"))
+            if (_examplesComboBox.Text.Equals("Advanced"))
             {
                 AdvancedClick();
             }
 
-            if (examplesComboBox.Text.Equals("Expert"))
+            if (_examplesComboBox.Text.Equals("Expert"))
             {
                 ExpertClick();
             }
@@ -78,22 +78,22 @@ namespace MSOUserInterface2
         public void BasicClick()
         {
             string exampleProgram = ExamplePrograms.GetTextBasicExampleProgram();
-            programRichTextBox.Text = File.ReadAllText(exampleProgram);
-            string fileAsText = programRichTextBox.Text;
+            _programRichTextBox.Text = File.ReadAllText(exampleProgram);
+            string fileAsText = _programRichTextBox.Text;
         }
 
         public void AdvancedClick()
         {
             string exampleProgram = ExamplePrograms.GetTextAdvancedExampleProgram();
-            programRichTextBox.Text = File.ReadAllText(exampleProgram);
-            string fileAsText = programRichTextBox.Text;
+            _programRichTextBox.Text = File.ReadAllText(exampleProgram);
+            string fileAsText = _programRichTextBox.Text;
         }
 
         public void ExpertClick()
         {
             string exampleProgram = ExamplePrograms.GetTextExpertExampleProgram();
-            programRichTextBox.Text = File.ReadAllText(exampleProgram);
-            string fileAsText = programRichTextBox.Text;
+            _programRichTextBox.Text = File.ReadAllText(exampleProgram);
+            string fileAsText = _programRichTextBox.Text;
         }
 
 
@@ -102,7 +102,7 @@ namespace MSOUserInterface2
             FileInfo file = new FileInfo(@"ProcessingFile\ProcessingFile.txt");
             string fullFileName = file.FullName;
 
-            programRichTextBox.SaveFile(fullFileName, RichTextBoxStreamType.PlainText);
+            _programRichTextBox.SaveFile(fullFileName, RichTextBoxStreamType.PlainText);
 
             CodeProgram codeProgram = null;
             IProgramParser parser = new TxtProgramParser();
