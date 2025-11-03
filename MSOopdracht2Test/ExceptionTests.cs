@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MSOopdracht2;
+﻿using MSOopdracht2;
 using MSOopdracht2.Exceptions;
 
 namespace MSOopdracht2Test
@@ -13,6 +8,7 @@ namespace MSOopdracht2Test
         [Fact]
         public void MoveForwardBlockedMoveException()
         {
+            //Initialize the test objects
             char[,] mockGrid = { {' '}, {'+'} };
             Grid grid = new Grid(mockGrid);
             Character character = new Character(grid);
@@ -23,6 +19,7 @@ namespace MSOopdracht2Test
         [Fact]
         public void MoveForwardOutOfBoundsException()
         {
+            //Initialize the test objects
             char[,] mockGrid = { { ' ' } };
             Grid grid = new Grid(mockGrid);
             Character character = new Character(grid);

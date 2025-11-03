@@ -10,6 +10,10 @@
         }
         public string Execute(Character character)
         {
+            if (_steps <= 0)
+            {
+                return "Move 0";
+            }
             character.MoveForward(_steps);
             return $"Move {_steps}";
         }

@@ -9,9 +9,8 @@ namespace MSOopdracht2Test
         [Fact]
         public void TurnLeftTest()
         {
-            //initialize all testobjects
-            Grid grid = null; //dummy
-            Character character = new Character(grid);
+            //initialize all test objects
+            Character character = new Character();
             TurnCommand turnCommand = new TurnCommand(TurnDirection.Left);
 
             //execute the tested method
@@ -24,9 +23,8 @@ namespace MSOopdracht2Test
         [Fact]
         public void TurnRightTest()
         {
-            //initialize all testobjects
-            Grid grid = null; //dummy
-            Character character = new Character(grid);
+            //initialize all test objects
+            Character character = new Character();
             TurnCommand turnCommand = new TurnCommand(TurnDirection.Right);
 
             //execute the tested method

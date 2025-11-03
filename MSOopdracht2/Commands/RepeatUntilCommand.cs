@@ -1,10 +1,4 @@
 ﻿using MSOopdracht2.Conditions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MSOopdracht2.Commands
 {
@@ -22,7 +16,7 @@ namespace MSOopdracht2.Commands
         public string Execute(Character character)
         {
             List<string> traceParts = new List<string>();
-            while (!_condition.Evaluate(character))
+            while (!_condition.Evaluate(character) && Commands.Count != 0)//without the count check, the command can keep trying to evaluate the condition forever, because the condition never changes
             {
                 foreach (ICommand command in Commands)
                 {
@@ -30,7 +24,6 @@ namespace MSOopdracht2.Commands
                     traceParts.Add(part);
                 }
             }
-
             return string.Join(", ", traceParts);
         }
     }
