@@ -9,35 +9,29 @@ namespace MSOopdracht2Test
         [Fact]
         public void TurnLeftTest()
         {
-            //initialize all testobjects
-            Grid grid = null; //dummy
-            Character character = new Character(grid);
-            List<string> trace = new List<string>();
+            //initialize all test objects
+            Character character = new Character();
             TurnCommand turnCommand = new TurnCommand(TurnDirection.Left);
 
             //execute the tested method
-            turnCommand.Execute(character, trace);
+            string trace = turnCommand.Execute(character);
 
             Assert.Equal(Direction.North, character.Direction);
-            Assert.Single(trace);
-            Assert.Contains("Turn left", trace[0]);
+            Assert.Contains("Turn left", trace);
         }
 
         [Fact]
         public void TurnRightTest()
         {
-            //initialize all testobjects
-            Grid grid = null; //dummy
-            Character character = new Character(grid);
-            List<string> trace = new List<string>();
+            //initialize all test objects
+            Character character = new Character();
             TurnCommand turnCommand = new TurnCommand(TurnDirection.Right);
 
             //execute the tested method
-            turnCommand.Execute(character, trace);
+            string trace = turnCommand.Execute(character);
 
             Assert.Equal(Direction.South, character.Direction);
-            Assert.Single(trace);
-            Assert.Contains("Turn right", trace[0]);
+            Assert.Contains("Turn right", trace);
         }
     }
 }

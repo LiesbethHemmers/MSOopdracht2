@@ -2,16 +2,20 @@
 {
     public class MoveCommand : ICommand
     {
-        public int steps;
+        private readonly int _steps;
 
         public MoveCommand(int steps)
         {
-            this.steps = steps;
+            _steps = steps;
         }
-        public void Execute(Character character, List<string> trace)
+        public string Execute(Character character)
         {
-            character.MoveForward(steps);
-            trace.Add("Move " + steps);
+            if (_steps <= 0)
+            {
+                return "Move 0";
+            }
+            character.MoveForward(_steps);
+            return $"Move {_steps}";
         }
     }
 }

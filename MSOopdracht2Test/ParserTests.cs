@@ -50,8 +50,8 @@ namespace MSOopdracht2Test
             List<string> trace2 = new List<string>();
 
             //Execute both programs:
-            parsedProgram.Execute(character2, trace2);
-            compareProgram.Execute(character, trace);
+            parsedProgram.Execute(character2);
+            compareProgram.Execute(character);
 
             //Check if the end states are equal:
             Assert.Equal(character2.Position, character.Position);

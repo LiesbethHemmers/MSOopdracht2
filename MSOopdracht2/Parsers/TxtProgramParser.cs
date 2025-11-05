@@ -87,7 +87,7 @@ namespace MSOopdracht2.Parsers
                     }
                 }
             }
-            return commands; //So this are the commands that belong to a repeat command
+            return commands; //So these are the commands that belong to a repeat command
         }
 
         ICondition ParseStringToCondition(string condition)

@@ -89,7 +89,6 @@
             _programPanel.Name = "_programPanel";
             _programPanel.Size = new Size(878, 494);
             _programPanel.TabIndex = 3;
-            _programPanel.Paint += _programPanel_Paint;
             // 
             // _fileLoadButton
             // 
@@ -140,9 +139,9 @@
             _examplesComboBox.Items.AddRange(new object[] { "Basic", "Advanced", "Expert" });
             _examplesComboBox.Location = new Point(114, 41);
             _examplesComboBox.Name = "_examplesComboBox";
+            _examplesComboBox.Text = "Examples";
             _examplesComboBox.Size = new Size(172, 31);
             _examplesComboBox.TabIndex = 3;
-            _examplesComboBox.Text = "Examples";
             _examplesComboBox.SelectedIndexChanged += ExamplesComboBox_SelectedIndexChanged;
             // 
             // _pathfindingPanel

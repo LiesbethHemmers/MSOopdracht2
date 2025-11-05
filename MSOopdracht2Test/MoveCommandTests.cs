@@ -9,35 +9,60 @@ namespace MSOopdracht2Test
         [Fact]
         public void MoveForwardEastTest()
         {
-            //initialize all testobjects
+            //initialize all test objects
             Character character = new Character();
-            List<string> trace = new List<string>();
             MoveCommand moveCommand = new MoveCommand(3);
 
             //execute the tested method
-            moveCommand.Execute(character, trace);
+            string trace = moveCommand.Execute(character);
 
             Assert.Equal(new Vector2(3, 0), character.Position);
-            Assert.Single(trace);
-            Assert.Contains("Move 3", trace[0]);
+            Assert.Equal("Move 3", trace);
         }
 
         [Fact]
         public void MoveForwardNorthTest()
         {
-            //initialize all testobjects
+            //initialize all test objects
             Character character = new Character();
-            List<string> trace = new List<string>();
             MoveCommand moveCommand = new MoveCommand(3);
 
             character.TurnLeft();//so that the character faces north
 
             //execute the tested method
-            moveCommand.Execute(character, trace);
+            string trace = moveCommand.Execute(character);
 
             Assert.Equal(new Vector2(0, -3), character.Position);
-            Assert.Single(trace);
-            Assert.Contains("Move 3", trace[0]);
+            Assert.Equal("Move 3", trace);
+        }
+
+        [Fact]
+        public void MoveForwardWithNoStepsTest()
+        {
+            //initialize all test objects
+            Character character = new Character();
+            MoveCommand moveCommand = new MoveCommand(0);
+
+            //execute the tested method
+            string trace = moveCommand.Execute(character);
+
+            Assert.Equal(new Vector2(0, 0), character.Position);
+            Assert.Equal("Move 0", trace);
+        }
+
+        [Fact]
+        public void MoveForwardWithNegativeStepsTest()
+        {
+            //initialize all test objects
+            Character character = new Character();
+            MoveCommand moveCommand = new MoveCommand(-2);
+
+            //execute the tested method
+            string trace = moveCommand.Execute(character);
+
+            //when negative steps are given, it should be the same as if zero steps were given
+            Assert.Equal(new Vector2(0, 0), character.Position);
+            Assert.Equal("Move 0", trace);
         }
     }
 }

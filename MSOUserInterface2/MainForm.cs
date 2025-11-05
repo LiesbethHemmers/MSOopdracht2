@@ -30,9 +30,11 @@ namespace MSOUserInterface2
             MetricCalculator calculator = new MetricCalculator();
             StoredMetrics metric = calculator.CalculateMetrics(codeProgram);
             List<string> output = metric.GetMetrics();
-
+<<<<<<<< HEAD:MSOUserInterface2/Form1.cs
+            textBox1.Text = string.Join(" ", output);
 
             _outputTextBox.Text = string.Join(" ", output);
+>>>>>>>> 07f56eff317fc231018ca7a6159230f1e51687c6:MSOUserInterface2/MainForm.cs
         }
 
         private void RunButtonClick(object sender, EventArgs e)
@@ -40,9 +42,11 @@ namespace MSOUserInterface2
             CodeProgram codeProgram = TextToCodeProgram();
             CodeProgramExecutor executor = new CodeProgramExecutor();
             List<string> output = executor.Run(codeProgram);
-
+<<<<<<<< HEAD:MSOUserInterface2/Form1.cs
+            textBox1.Text = string.Join(" ", output);
 
             _outputTextBox.Text = string.Join(" ", output);
+>>>>>>>> 07f56eff317fc231018ca7a6159230f1e51687c6:MSOUserInterface2/MainForm.cs
         }
 
         private void FileLoadButtonClick(object sender, EventArgs e)
@@ -54,6 +58,8 @@ namespace MSOUserInterface2
                 _programRichTextBox.Text = File.ReadAllText(filePath);
                 string fileAsText = _programRichTextBox.Text;
             }
+
+            panel1.Invalidate();
         }
 
         private void ToProgramButtonClick(object sender, EventArgs e)
@@ -86,25 +92,25 @@ namespace MSOUserInterface2
         public void BasicClick()
         {
             string exampleProgram = ExamplePrograms.GetTextBasicExampleProgram();
-
             _programRichTextBox.Text = File.ReadAllText(exampleProgram);
             string fileAsText = _programRichTextBox.Text;
+>>>>>>>> 07f56eff317fc231018ca7a6159230f1e51687c6:MSOUserInterface2/MainForm.cs
         }
 
         public void AdvancedClick()
         {
             string exampleProgram = ExamplePrograms.GetTextAdvancedExampleProgram();
-
             _programRichTextBox.Text = File.ReadAllText(exampleProgram);
             string fileAsText = _programRichTextBox.Text;
+>>>>>>>> 07f56eff317fc231018ca7a6159230f1e51687c6:MSOUserInterface2/MainForm.cs
         }
 
         public void ExpertClick()
         {
             string exampleProgram = ExamplePrograms.GetTextExpertExampleProgram();
-
             _programRichTextBox.Text = File.ReadAllText(exampleProgram);
             string fileAsText = _programRichTextBox.Text;
+>>>>>>>> 07f56eff317fc231018ca7a6159230f1e51687c6:MSOUserInterface2/MainForm.cs
         }
 
 

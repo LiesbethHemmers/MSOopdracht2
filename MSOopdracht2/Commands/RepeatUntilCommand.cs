@@ -1,34 +1,30 @@
 ﻿using MSOopdracht2.Conditions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MSOopdracht2.Commands
 {
     public class RepeatUntilCommand : ICommand
     {
-        ICondition condition;
-        List<ICommand> commands;
-        public List<ICommand> Commands { get { return commands; } }
+        private readonly ICondition _condition;
+        public List<ICommand> Commands { get; }
 
         public RepeatUntilCommand(ICondition condition, List<ICommand> commands)
         {
-            this.condition = condition;
-            this.commands = commands;
+            _condition = condition;
+            Commands = commands;
         }
 
-        public void Execute(Character character, List<string> trace)
+        public string Execute(Character character)
         {
-            while (!condition.Evaluate(character))
+            List<string> traceParts = new List<string>();
+            while (!_condition.Evaluate(character) && Commands.Count != 0)//without the count check, the command can keep trying to evaluate the condition forever, because the condition never changes
             {
-                foreach (ICommand command in commands)
+                foreach (ICommand command in Commands)
                 {
-                    command.Execute(character, trace);
+                    string part = command.Execute(character);
+                    traceParts.Add(part);
                 }
             }
+            return string.Join(", ", traceParts);
         }
     }
 }

@@ -65,7 +65,7 @@ namespace MSOopdracht2.Metrics
         {
             int newDepth = depth + 1;
 
-            //To keep the NestingAmmount the same as the current deepest nesting level
+            //To keep the NestingAmount the same as the current deepest nesting level
             if (newDepth > storedMetrics.NestingAmount)
             {
                 storedMetrics.NestingAmount = newDepth;
