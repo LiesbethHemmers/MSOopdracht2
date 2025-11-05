@@ -53,6 +53,7 @@ namespace MSOopdracht2
             //The endpoint (0,0) facing east
         }
 
+        //still need to make corresponding grids
         public static CodeProgram AdvancedGridProgram1()
         {
             Grid grid = null;

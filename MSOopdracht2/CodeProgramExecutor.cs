@@ -40,11 +40,11 @@ namespace MSOopdracht2
             }
             catch (OutOfBoundsException ex)
             {
-                output.Add("Runtime error" + ex.Message);
+                output.Add("Runtime error: " + ex.Message);
             }
             catch (BlockedMoveException ex)
             {
-                output.Add("Runtime error" + ex.Message);
+                output.Add("Runtime error: " + ex.Message);
             }
             
             return output;

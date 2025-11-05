@@ -48,7 +48,7 @@ namespace MSOopdracht2
                     Console.WriteLine("Enter filepath to grid");
                     string filePathGrid = Console.ReadLine();
                     IGridParser gridParser = new TxtGridParser();
-                    IGridImporter gridImporter = new GridImporter(gridParser);
+                    IGridImporter gridImporter = new TxtGridImporter(gridParser);
                     try
                     {
                         grid = gridImporter.Import(filePathGrid);
@@ -97,7 +97,7 @@ namespace MSOopdracht2
             //    codeProgram = ExamplePrograms.GetRandomGridExampleProgram();//new method only for use with grids, so there can be repeatuntil commands
             //    string gridName = codeProgram.Name;
             //    IGridParser gridParser = new TxtGridParser();
-            //    IGridImporter gridImporter = new GridImporter(gridParser);
+            //    IGridImporter gridImporter = new TxtGridImporter(gridParser);
             //    grid = gridImporter.Import(Path.Combine("Grids", gridName + ".txt"));
             //    CodeProgramExecutor executor = new CodeProgramExecutor();
             //    List<string> output = executor.Run(codeProgram, grid);

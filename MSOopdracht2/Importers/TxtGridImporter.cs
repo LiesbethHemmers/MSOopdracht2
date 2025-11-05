@@ -2,10 +2,10 @@
 
 namespace MSOopdracht2.Importers
 {
-    internal class GridImporter : IGridImporter
+    public class TxtGridImporter : IGridImporter
     {
         private readonly IGridParser _parser;
-        public GridImporter(IGridParser parser)
+        public TxtGridImporter(IGridParser parser)
         {
             _parser = parser;
         }

@@ -1,6 +1,6 @@
 ﻿namespace MSOopdracht2.Importers
 {
-    internal interface IGridImporter
+    public interface IGridImporter
     {
         public Grid Import(string filePath);
     }
