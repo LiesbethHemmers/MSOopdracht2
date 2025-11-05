@@ -10,12 +10,15 @@ namespace MSOopdracht2
         Direction direction;
         Grid grid;
 
+        public List<(int x, int y)> allPositions { get; private set; } = new List<(int x, int y)>();
+
         public Vector2 Position { get { return position; } }
         public Direction Direction { get { return direction; } }
         public Grid Grid { get { return grid; } }
 
         public Character(Grid grid = null)//default is null because only the pathfinding exercises need a grid
         {
+            allPositions.Add((0, 0));
             position = Vector2.Zero;
             direction = Direction.East;
             this.grid = grid;
@@ -56,6 +59,7 @@ namespace MSOopdracht2
 
                 }
                 position = nextPos;
+                allPositions.Add(((int x, int y))(nextPos.X, nextPos.Y));
             }
         }
 
