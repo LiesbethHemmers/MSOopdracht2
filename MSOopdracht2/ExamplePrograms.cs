@@ -1,7 +1,5 @@
 ﻿using MSOopdracht2.Importers;
 using MSOopdracht2.Parsers;
-using System;
-using System.Xml.Serialization;
 
 namespace MSOopdracht2
 {

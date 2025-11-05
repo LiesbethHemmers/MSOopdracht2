@@ -1,7 +1,6 @@
 ﻿using MSOopdracht2.Commands;
 using MSOopdracht2.Conditions;
 using MSOopdracht2.Enums;
-using System.Data;
 
 namespace MSOopdracht2.Parsers
 {

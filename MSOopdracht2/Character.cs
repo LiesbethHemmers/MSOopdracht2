@@ -10,15 +10,15 @@ namespace MSOopdracht2
         public Direction Direction { get; private set; }
         public Grid? Grid { get; }//grid can be null, because the grid is optional
 
-        public List<(int x, int y)> allPositions { get; private set; } = new List<(int x, int y)>();
+        public List<(int x, int y)> AllPositions { get; private set; } = new List<(int x, int y)>();
 
 
-        public Character(Grid grid = null)//default is null because only the pathfinding exercises need a grid
+        public Character(Grid? grid = null)//default is null because only the pathfinding exercises need a grid
         {
-            allPositions.Add((0, 0));
+            AllPositions.Add((0, 0));
             Position = Vector2.Zero;
             Direction = Direction.East;
-            this.Grid = grid;
+            Grid = grid;
         }
 
         public void TurnLeft()
@@ -56,7 +56,7 @@ namespace MSOopdracht2
 
                 }
                 Position = nextPos;
-                allPositions.Add(((int x, int y))(nextPos.X, nextPos.Y));
+                AllPositions.Add(((int x, int y))(nextPos.X, nextPos.Y));
             }
         }
 

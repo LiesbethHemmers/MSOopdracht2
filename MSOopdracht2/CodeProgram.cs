@@ -10,8 +10,8 @@ namespace MSOopdracht2
 
         public CodeProgram(List<ICommand> commands, string name)
         {
-            this.Commands = commands;
-            this.Name = name;
+            Commands = commands;
+            Name = name;
         }
         
         public List<string> Execute(Character character)

@@ -153,7 +153,7 @@ namespace MSOUserInterface2
             _pathfindingPanel.Controls.Add(_programButton);
             _pathfindingPanel.Location = new Point(11, 12);
             _pathfindingPanel.Name = "_pathfindingPanel";
-            _pathfindingPanel.Size = new Size(878, 494);
+            _pathfindingPanel.Size = new Size(986, 582);
             _pathfindingPanel.TabIndex = 0;
             // 
             // panel1
@@ -194,5 +194,6 @@ namespace MSOUserInterface2
         private TextBox _outputTextBox;
         private Button _fileLoadButton;
         private Panel panel1;
+        private bool _hasRun = false; //only draw the trace if the user has clicked 'run'
     }
 }

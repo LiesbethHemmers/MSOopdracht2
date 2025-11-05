@@ -1,14 +1,7 @@
-using Microsoft.VisualBasic.ApplicationServices;
 using MSOopdracht2;
 using MSOopdracht2.Importers;
 using MSOopdracht2.Metrics;
 using MSOopdracht2.Parsers;
-using MSOopdracht2.Commands;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using Microsoft.VisualStudio.TestPlatform.Common.Interfaces;
-using System.Diagnostics;
 
 namespace MSOUserInterface2
 {
@@ -41,6 +34,8 @@ namespace MSOUserInterface2
             List<string> output = executor.Run(codeProgram);
 
             _outputTextBox.Text = string.Join(" ", output);
+            _hasRun = true;
+            panel1.Invalidate();
         }
 
         private void FileLoadButtonClick(object sender, EventArgs e)
@@ -51,6 +46,8 @@ namespace MSOUserInterface2
                 string filePath = openFileDialog.FileName;
                 _programRichTextBox.Text = File.ReadAllText(filePath);
                 string fileAsText = _programRichTextBox.Text;
+                panel1.Invalidate();
+                _hasRun = false;
             }
         }
 
@@ -88,6 +85,7 @@ namespace MSOUserInterface2
             string fileAsText = _programRichTextBox.Text;
 
             panel1.Invalidate();
+            _hasRun = false;
         }
 
         public void AdvancedClick()
@@ -97,6 +95,7 @@ namespace MSOUserInterface2
             string fileAsText = _programRichTextBox.Text;
 
             panel1.Invalidate();
+            _hasRun = false;
         }
 
         public void ExpertClick()
@@ -106,6 +105,7 @@ namespace MSOUserInterface2
             string fileAsText = _programRichTextBox.Text;
 
             panel1.Invalidate();
+            _hasRun = false;
         }
 
 
@@ -127,7 +127,7 @@ namespace MSOUserInterface2
         {
             int gridDimension = 0;
 
-            foreach ((int x, int y) coordinate in character.allPositions)
+            foreach ((int x, int y) coordinate in character.AllPositions)
             {
                 if (coordinate.x > gridDimension)
                 {
@@ -147,7 +147,7 @@ namespace MSOUserInterface2
             Character character = new Character();
             codeProgram.Execute(character);
 
-            if (codeProgram.Commands.Count == 0)
+            if (codeProgram.Commands.Count == 0 || !_hasRun)
             {
                 return;
             }
@@ -171,19 +171,19 @@ namespace MSOUserInterface2
                 g.DrawLine(penGrid, panelMargin, panelMargin + j * cellDimension, panelMargin + usableGridSide, panelMargin + j * cellDimension); //horizontal
             }
 
-            for (int k = 0; k < character.allPositions.Count - 1; k++)
+            for (int k = 0; k < character.AllPositions.Count - 1; k++)
             {
                 (int x, int y) end;
-                (int x, int y) start = character.allPositions[k];
+                (int x, int y) start = character.AllPositions[k];
 
-                if (k == character.allPositions.Count - 1)
+                if (k == character.AllPositions.Count - 1)
                 {
                     end = start;
                 }
 
                 else
                 {
-                    end = character.allPositions[k + 1];
+                    end = character.AllPositions[k + 1];
                 }
 
                 g.DrawLine(penPath, panelMargin + start.x * cellDimension + (cellDimension / 2), panelMargin + start.y * cellDimension + (cellDimension / 2), panelMargin + end.x * cellDimension + (cellDimension / 2), panelMargin + end.y * cellDimension + (cellDimension / 2));
