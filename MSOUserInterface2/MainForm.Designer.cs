@@ -1,4 +1,6 @@
-﻿namespace MSOUserInterface2
+﻿using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollection;
+
+namespace MSOUserInterface2
 {
     partial class MainForm
     {
@@ -38,6 +40,7 @@
             _runButton = new Button();
             _examplesComboBox = new ComboBox();
             _pathfindingPanel = new Panel();
+            panel1 = new Panel();
             _programPanel.SuspendLayout();
             _pathfindingPanel.SuspendLayout();
             SuspendLayout();
@@ -45,7 +48,7 @@
             // _metricsButton
             // 
             _metricsButton.ForeColor = Color.Red;
-            _metricsButton.Location = new Point(312, 76);
+            _metricsButton.Location = new Point(312, 95);
             _metricsButton.Name = "_metricsButton";
             _metricsButton.Size = new Size(147, 60);
             _metricsButton.TabIndex = 0;
@@ -78,6 +81,7 @@
             // _programPanel
             // 
             _programPanel.BackColor = Color.DarkRed;
+            _programPanel.Controls.Add(panel1);
             _programPanel.Controls.Add(_fileLoadButton);
             _programPanel.Controls.Add(_outputTextBox);
             _programPanel.Controls.Add(_programRichTextBox);
@@ -87,7 +91,7 @@
             _programPanel.Controls.Add(_metricsButton);
             _programPanel.Location = new Point(11, 12);
             _programPanel.Name = "_programPanel";
-            _programPanel.Size = new Size(878, 494);
+            _programPanel.Size = new Size(986, 582);
             _programPanel.TabIndex = 3;
             // 
             // _fileLoadButton
@@ -108,7 +112,7 @@
             _outputTextBox.Location = new Point(312, 161);
             _outputTextBox.Multiline = true;
             _outputTextBox.Name = "_outputTextBox";
-            _outputTextBox.Size = new Size(363, 319);
+            _outputTextBox.Size = new Size(268, 213);
             _outputTextBox.TabIndex = 6;
             // 
             // _programRichTextBox
@@ -123,7 +127,7 @@
             // _runButton
             // 
             _runButton.ForeColor = Color.Red;
-            _runButton.Location = new Point(528, 76);
+            _runButton.Location = new Point(465, 95);
             _runButton.Name = "_runButton";
             _runButton.Size = new Size(147, 60);
             _runButton.TabIndex = 4;
@@ -139,9 +143,9 @@
             _examplesComboBox.Items.AddRange(new object[] { "Basic", "Advanced", "Expert" });
             _examplesComboBox.Location = new Point(114, 41);
             _examplesComboBox.Name = "_examplesComboBox";
-            _examplesComboBox.Text = "Examples";
             _examplesComboBox.Size = new Size(172, 31);
             _examplesComboBox.TabIndex = 3;
+            _examplesComboBox.Text = "Examples";
             _examplesComboBox.SelectedIndexChanged += ExamplesComboBox_SelectedIndexChanged;
             // 
             // _pathfindingPanel
@@ -152,11 +156,20 @@
             _pathfindingPanel.Size = new Size(878, 494);
             _pathfindingPanel.TabIndex = 0;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.LightGray;
+            panel1.Location = new Point(644, 161);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(300, 300);
+            panel1.TabIndex = 8;
+            panel1.Paint += ColorPad;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(900, 518);
+            ClientSize = new Size(1009, 597);
             Controls.Add(_programPanel);
             Controls.Add(_pathfindingPanel);
             Name = "MainForm";
@@ -180,5 +193,6 @@
         private RichTextBox _programRichTextBox;
         private TextBox _outputTextBox;
         private Button _fileLoadButton;
+        private Panel panel1;
     }
 }
