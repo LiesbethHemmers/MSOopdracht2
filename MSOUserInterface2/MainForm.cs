@@ -144,7 +144,7 @@ namespace MSOUserInterface2
         {
             CodeProgram codeProgram = TextToCodeProgram();
             Character character = new Character();
-            Trace trace = new Trace();
+            List<string> trace = new List<string>();
             codeProgram.Execute(character, trace);
 
             if (codeProgram.Commands.Count == 0)
