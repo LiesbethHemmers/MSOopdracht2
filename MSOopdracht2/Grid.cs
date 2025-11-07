@@ -22,6 +22,15 @@ namespace MSOopdracht2
             return symbol;
         }
 
+        public int GetWidth()
+        {
+            return LoadedGrid.GetLength(0);
+        }
+        public int GetHeight()
+        {
+            return LoadedGrid.GetLength(1);
+        }
+
         public bool InBounds(int x, int y)
         {
             return x < LoadedGrid.GetLength(0) && x >= 0 && y < LoadedGrid.GetLength(1) && y >= 0;
@@ -40,6 +49,11 @@ namespace MSOopdracht2
                 }
             }
             return Vector2.Zero;
+        }
+
+        public int Length(int v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,7 +1,9 @@
+using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel;
 using MSOopdracht2;
 using MSOopdracht2.Importers;
 using MSOopdracht2.Metrics;
 using MSOopdracht2.Parsers;
+using System.Reflection.Metadata.Ecma335;
 
 namespace MSOUserInterface2
 {
@@ -29,8 +31,14 @@ namespace MSOUserInterface2
 
         private void RunButtonClick(object sender, EventArgs e)
         {
+            currentCharacter = null;
             CodeProgram codeProgram = TextToCodeProgram();
+            Character character = new Character();
+            codeProgram.Execute(character);
+            currentCharacter = character;
+
             CodeProgramExecutor executor = new CodeProgramExecutor();
+
             List<string> output = executor.Run(codeProgram);
 
             _outputTextBox.Text = string.Join(" ", output);
@@ -54,10 +62,27 @@ namespace MSOUserInterface2
         private void ToProgramButtonClick(object sender, EventArgs e)
         {
             _programPanel.BringToFront();
+            richTextBox1.Visible = false;
+            panel1.Visible = true;
+            panel2.Visible = false;
+            panel1.BringToFront();
+            panel1.Invalidate();
+            _hasRun = false;
+            currentCharacter = null;
+            grid = null;
         }
         private void ToPathfindingButtonClick(object sender, EventArgs e)
         {
             _pathfindingPanel.BringToFront();
+            richTextBox1.Visible = true;
+            panel1.Visible = false;
+            panel2.Visible = true;
+            panel2.BringToFront();
+            panel2.Invalidate();
+            _hasRun = false;
+            currentCharacter = null;
+            grid = null;
+            _loadedGrid = false;
         }
 
         private void ExamplesComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -123,71 +148,191 @@ namespace MSOUserInterface2
             return codeProgram;
         }
 
-        private int FindGridDimension(Character character)
+        private int FindGridDimension()
         {
+            if (grid == null)
+            {
+                return 0;
+            }
+
             int gridDimension = 0;
+            gridDimension = Math.Min(grid.GetWidth(), grid.GetHeight());
+
+            return gridDimension;
+        }
+
+        private int FindFieldDimension(Character character)
+        {
+            int fieldDimension = 0;
 
             foreach ((int x, int y) coordinate in character.AllPositions)
             {
-                if (coordinate.x > gridDimension)
+                if (coordinate.x > fieldDimension)
                 {
-                    gridDimension = coordinate.x;
+                    fieldDimension = coordinate.x;
                 }
-                if (coordinate.y > gridDimension)
+                if (coordinate.y > fieldDimension)
                 {
-                    gridDimension = coordinate.y;
+                    fieldDimension = coordinate.y;
                 }
             }
-            return gridDimension;
+            return fieldDimension;
         }
 
         private void ColorPad(object sender, PaintEventArgs e)
         {
-            CodeProgram codeProgram = TextToCodeProgram();
-            Character character = new Character();
-            codeProgram.Execute(character);
-
-            if (codeProgram.Commands.Count == 0 || !_hasRun)
-            {
-                return;
-            }
-
-            float gridDimension = FindGridDimension(character) + 1;
             float panelMargin = 10;
 
             Pen penGrid = new Pen(Color.Red, 2);
             Pen penPath = new Pen(Color.Black, 2);
-            Graphics g = e.Graphics;
+            Graphics graphics = e.Graphics;
+            graphics.Clear(((Panel)sender).BackColor);
 
             Size size = ((Panel)sender).Size;
 
             float usableGridSide = size.Width - panelMargin * 2;
 
-            float cellDimension = usableGridSide / gridDimension;
-
-            for (int j = 0; j <= gridDimension; j++)
+            if (grid != null && _loadedGrid == true) //After i clicked one of the exercises in the pathfinding menu
             {
-                g.DrawLine(penGrid, panelMargin + j * cellDimension, panelMargin, panelMargin + j * cellDimension, panelMargin + usableGridSide); //vertical
-                g.DrawLine(penGrid, panelMargin, panelMargin + j * cellDimension, panelMargin + usableGridSide, panelMargin + j * cellDimension); //horizontal
+                float gridDimension = FindGridDimension();
+
+                float cellDimension = usableGridSide / gridDimension;
+
+                for (int y = 0; y < grid.GetHeight(); y++)
+                {
+                    for (int x = 0; x < grid.GetWidth(); x++)
+                    {
+                        char symbol = grid.GetSymbol(x, y);
+
+                        Brush brush = Brushes.White;
+
+                        if (symbol == '+')
+                        {
+                            brush = Brushes.Purple;
+                        }
+
+                        if (symbol == 'o')
+                        {
+                            brush = Brushes.MediumOrchid;
+                        }
+
+                        if (symbol == 'x')
+                        {
+                            brush = Brushes.Pink;
+                        }
+
+                        graphics.FillRectangle(brush, panelMargin + x * cellDimension, panelMargin + y * cellDimension, cellDimension, cellDimension);
+                    }
+                }
             }
 
-            for (int k = 0; k < character.AllPositions.Count - 1; k++)
+            if (_hasRun == true && currentCharacter != null) //When i have a program with a path that i want to draw
             {
-                (int x, int y) end;
-                (int x, int y) start = character.AllPositions[k];
+                Character character = currentCharacter;
+                float fieldDimension = FindFieldDimension(character) + 1;
+                float cellDimension = usableGridSide / fieldDimension;
 
-                if (k == character.AllPositions.Count - 1)
+                if (grid == null) //Just draw some lines for clariy if the program doesnt have a grid
                 {
-                    end = start;
+                    for (int j = 0; j <= fieldDimension; j++)
+                    {
+                        graphics.DrawLine(penGrid, panelMargin + j * cellDimension, panelMargin, panelMargin + j * cellDimension, panelMargin + usableGridSide); //vertical
+                        graphics.DrawLine(penGrid, panelMargin, panelMargin + j * cellDimension, panelMargin + usableGridSide, panelMargin + j * cellDimension); //horizontal
+                    }
                 }
 
-                else
+                for (int k = 0; k < currentCharacter.AllPositions.Count - 1; k++)
                 {
-                    end = character.AllPositions[k + 1];
-                }
+                    (int x, int y) end;
+                    (int x, int y) start = currentCharacter.AllPositions[k];
 
-                g.DrawLine(penPath, panelMargin + start.x * cellDimension + (cellDimension / 2), panelMargin + start.y * cellDimension + (cellDimension / 2), panelMargin + end.x * cellDimension + (cellDimension / 2), panelMargin + end.y * cellDimension + (cellDimension / 2));
+                    if (k == currentCharacter.AllPositions.Count - 1)
+                    {
+                        end = start;
+                    }
+
+                    else
+                    {
+                        end = currentCharacter.AllPositions[k + 1];
+                    }
+
+                    graphics.DrawLine(penPath, panelMargin + start.x * cellDimension + (cellDimension / 2), panelMargin + start.y * cellDimension + (cellDimension / 2), panelMargin + end.x * cellDimension + (cellDimension / 2), panelMargin + end.y * cellDimension + (cellDimension / 2));
+                }
             }
+        }
+
+        private void DrawGrid(object sender, PaintEventArgs e)
+        {
+        }
+
+        private Grid grid;
+        private Character? currentCharacter;
+
+        private void GetAdvancedExercise1(object sender, EventArgs e)
+        {
+            string gridFileName = ExamplePrograms.AdvancedGrid1();
+            IGridParser parser = new TxtGridParser();
+            IGridImporter importer = new TxtGridImporter(parser);
+            Grid gridProgram = importer.Import(gridFileName);
+
+            grid = gridProgram;
+
+            _hasRun = false;
+            _loadedGrid = true;
+            panel2.Invalidate();
+        }
+
+        private void GetAdvancedExercise2(object sender, EventArgs e)
+        {
+            string gridFileName = ExamplePrograms.AdvancedGrid2();
+            IGridParser parser = new TxtGridParser();
+            IGridImporter importer = new TxtGridImporter(parser);
+            Grid gridProgram = importer.Import(gridFileName);
+
+            grid = gridProgram;
+
+            _hasRun = false;
+            _loadedGrid = true;
+            panel2.Invalidate();
+        }
+
+        private void GetExpertExercise1(object sender, EventArgs e)
+        {
+            string gridFileName = ExamplePrograms.ExpertGrid1();
+            IGridParser parser = new TxtGridParser();
+            IGridImporter importer = new TxtGridImporter(parser);
+            Grid gridProgram = importer.Import(gridFileName);
+            grid = gridProgram;
+
+            _hasRun = false;
+            _loadedGrid = true;
+            panel2.Invalidate();
+        }
+
+
+        private void GetExpertExercise2(object sender, EventArgs e)
+        {
+            string gridFileName = ExamplePrograms.ExpertGrid2();
+            IGridParser parser = new TxtGridParser();
+            IGridImporter importer = new TxtGridImporter(parser);
+            Grid gridProgram = importer.Import(gridFileName);
+            grid = gridProgram;
+
+            _hasRun = false;
+            _loadedGrid = true;
+            panel2.Invalidate();
+        }
+
+        private void TryUserProgram(object sender, EventArgs e)
+        {
+            currentCharacter = null;
+            CodeProgram codeProgram = TextToCodeProgram();
+            Character character = new Character();
+            codeProgram.Execute(character);
+            currentCharacter = character;
+           
+            _hasRun = true;
+            panel2.Invalidate();
         }
 
         private void _programPanel_Paint(object sender, PaintEventArgs e)

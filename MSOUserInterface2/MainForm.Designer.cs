@@ -39,8 +39,15 @@ namespace MSOUserInterface2
             _programRichTextBox = new RichTextBox();
             _runButton = new Button();
             _examplesComboBox = new ComboBox();
-            _pathfindingPanel = new Panel();
             panel1 = new Panel();
+            button5 = new Button();
+            button4 = new Button();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            richTextBox1 = new RichTextBox();
+            _pathfindingPanel = new Panel();
+            panel2 = new Panel();
             _programPanel.SuspendLayout();
             _pathfindingPanel.SuspendLayout();
             SuspendLayout();
@@ -58,12 +65,13 @@ namespace MSOUserInterface2
             // 
             // _programButton
             // 
+            _programButton.BackColor = Color.Fuchsia;
             _programButton.Location = new Point(675, 12);
             _programButton.Name = "_programButton";
             _programButton.Size = new Size(169, 46);
             _programButton.TabIndex = 1;
             _programButton.Text = "To programs";
-            _programButton.UseVisualStyleBackColor = true;
+            _programButton.UseVisualStyleBackColor = false;
             _programButton.Click += ToProgramButtonClick;
             // 
             // _pathfindingButton
@@ -81,7 +89,6 @@ namespace MSOUserInterface2
             // _programPanel
             // 
             _programPanel.BackColor = Color.DarkRed;
-            _programPanel.Controls.Add(panel1);
             _programPanel.Controls.Add(_fileLoadButton);
             _programPanel.Controls.Add(_outputTextBox);
             _programPanel.Controls.Add(_programRichTextBox);
@@ -89,10 +96,12 @@ namespace MSOUserInterface2
             _programPanel.Controls.Add(_examplesComboBox);
             _programPanel.Controls.Add(_pathfindingButton);
             _programPanel.Controls.Add(_metricsButton);
+            _programPanel.Controls.Add(panel1);
             _programPanel.Location = new Point(11, 12);
             _programPanel.Name = "_programPanel";
             _programPanel.Size = new Size(986, 582);
             _programPanel.TabIndex = 3;
+            _programPanel.Paint += _programPanel_Paint;
             // 
             // _fileLoadButton
             // 
@@ -109,7 +118,7 @@ namespace MSOUserInterface2
             // _outputTextBox
             // 
             _outputTextBox.BackColor = Color.Tomato;
-            _outputTextBox.Location = new Point(312, 161);
+            _outputTextBox.Location = new Point(312, 184);
             _outputTextBox.Multiline = true;
             _outputTextBox.Name = "_outputTextBox";
             _outputTextBox.Size = new Size(268, 213);
@@ -148,14 +157,6 @@ namespace MSOUserInterface2
             _examplesComboBox.Text = "Examples";
             _examplesComboBox.SelectedIndexChanged += ExamplesComboBox_SelectedIndexChanged;
             // 
-            // _pathfindingPanel
-            // 
-            _pathfindingPanel.Controls.Add(_programButton);
-            _pathfindingPanel.Location = new Point(11, 12);
-            _pathfindingPanel.Name = "_pathfindingPanel";
-            _pathfindingPanel.Size = new Size(986, 582);
-            _pathfindingPanel.TabIndex = 0;
-            // 
             // panel1
             // 
             panel1.BackColor = Color.LightGray;
@@ -164,6 +165,96 @@ namespace MSOUserInterface2
             panel1.Size = new Size(300, 300);
             panel1.TabIndex = 8;
             panel1.Paint += ColorPad;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.Thistle;
+            button5.Location = new Point(25, 520);
+            button5.Name = "button5";
+            button5.Size = new Size(362, 53);
+            button5.TabIndex = 9;
+            button5.Text = "Run";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += TryUserProgram;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.MidnightBlue;
+            button4.Location = new Point(325, 28);
+            button4.Name = "button4";
+            button4.Size = new Size(94, 61);
+            button4.TabIndex = 0;
+            button4.Text = "Expert exercise 2";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += GetExpertExercise2;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.RoyalBlue;
+            button3.Location = new Point(225, 28);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 61);
+            button3.TabIndex = 11;
+            button3.Text = "Expert exercise 1";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += GetExpertExercise1;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.RoyalBlue;
+            button2.Location = new Point(25, 28);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 61);
+            button2.TabIndex = 0;
+            button2.Text = "Advanced exercise 2";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += GetAdvancedExercise2;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.MidnightBlue;
+            button1.Location = new Point(125, 28);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 61);
+            button1.TabIndex = 10;
+            button1.Text = "Advanced exercise 1";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += GetAdvancedExercise1;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.BackColor = Color.Orchid;
+            richTextBox1.Location = new Point(14, 95);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(418, 398);
+            richTextBox1.TabIndex = 9;
+            richTextBox1.Text = "";
+            richTextBox1.Visible = false;
+            // 
+            // _pathfindingPanel
+            // 
+            _pathfindingPanel.BackColor = Color.Indigo;
+            _pathfindingPanel.Controls.Add(panel2);
+            _pathfindingPanel.Controls.Add(button5);
+            _pathfindingPanel.Controls.Add(button4);
+            _pathfindingPanel.Controls.Add(button3);
+            _pathfindingPanel.Controls.Add(button2);
+            _pathfindingPanel.Controls.Add(button1);
+            _pathfindingPanel.Controls.Add(richTextBox1);
+            _pathfindingPanel.Controls.Add(_programButton);
+            _pathfindingPanel.Location = new Point(11, 12);
+            _pathfindingPanel.Name = "_pathfindingPanel";
+            _pathfindingPanel.Size = new Size(986, 582);
+            _pathfindingPanel.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Thistle;
+            panel2.Location = new Point(453, 95);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(435, 435);
+            panel2.TabIndex = 12;
+            panel2.Paint += ColorPad;
             // 
             // MainForm
             // 
@@ -195,5 +286,13 @@ namespace MSOUserInterface2
         private Button _fileLoadButton;
         private Panel panel1;
         private bool _hasRun = false; //only draw the trace if the user has clicked 'run'
+        private bool _loadedGrid = false;
+        private RichTextBox richTextBox1;
+        private Button button2;
+        private Button button1;
+        private Button button4;
+        private Button button3;
+        private Button button5;
+        private Panel panel2;
     }
 }

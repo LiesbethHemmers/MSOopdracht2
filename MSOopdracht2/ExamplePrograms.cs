@@ -54,64 +54,60 @@ namespace MSOopdracht2
         }
 
         //still need to make corresponding grids
-        public static CodeProgram AdvancedGridProgram1()
+        public static string AdvancedGridProgram1()
         {
-            Grid grid = null;
-
-            TxtProgramParser parser = new TxtProgramParser();
-            TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\AdvancedGridProgram1.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\AdvancedGridProgram1.txt");
             string fullFileName = file.FullName;
-            CodeProgram advancedGridProgram1 = import.Import(fullFileName);
-
-            advancedGridProgram1.Name = "AdvancedGrid1";
-
-            return advancedGridProgram1;
+            return fullFileName;
         }
 
-        public static CodeProgram AdvancedGridProgram2()
+        public static string AdvancedGridProgram2()
         {
-            Grid grid = null;
-
-            TxtProgramParser parser = new TxtProgramParser();
-            TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\AdvancedGridProgram2.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\AdvancedGridProgram2.txt");
             string fullFileName = file.FullName;
-            CodeProgram advancedGridProgram2 = import.Import(fullFileName);
-
-            advancedGridProgram2.Name = "AdvancedGrid2";
-
-            return advancedGridProgram2;
+            return fullFileName;
         }
 
-        public static CodeProgram ExpertGridProgram1()
+        public static string ExpertGridProgram1()
         {
-            Grid grid = null;
-
-            TxtProgramParser parser = new TxtProgramParser();
-            TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\ExpertGridProgram1.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\ExpertGridProgram1.txt");
             string fullFileName = file.FullName;
-            CodeProgram expertGridProgram1 = import.Import(fullFileName);
-
-            expertGridProgram1.Name = "ExpertGrid1";
-
-            return expertGridProgram1;
+            return fullFileName;
         }
 
-        public static CodeProgram ExpertGridProgram2()
+        public static string ExpertGridProgram2()
         {
-            Grid grid = null;
-
-            TxtProgramParser parser = new TxtProgramParser();
-            TxtProgramImporter import = new TxtProgramImporter(parser);
-            FileInfo file = new FileInfo(@"Programs\ExpertGridProgram2.txt");
+            FileInfo file = new FileInfo(@"FilePrograms\ExpertGridProgram2.txt");
             string fullFileName = file.FullName;
-            CodeProgram expertGridProgram2 = import.Import(fullFileName);
+            return fullFileName;
+        }
 
-            expertGridProgram2.Name = "ExpertGrid2";
+        public static string AdvancedGrid1()
+        {
+            FileInfo file = new FileInfo(@"FileGrids\AdvancedGrid1.txt");
+            string fullFileName = file.FullName;
+            return fullFileName;
+        }
 
-            return expertGridProgram2;
+        public static string AdvancedGrid2()
+        {
+            FileInfo file = new FileInfo(@"FileGrids\AdvancedGrid2.txt");
+            string fullFileName = file.FullName;
+            return fullFileName;
+        }
+
+        public static string ExpertGrid1()
+        {
+            FileInfo file = new FileInfo(@"FileGrids\ExpertGrid1.txt");
+            string fullFileName = file.FullName;
+            return fullFileName;
+        }
+
+        public static string ExpertGrid2()
+        {
+            FileInfo file = new FileInfo(@"FileGrids\ExpertGrid2.txt");
+            string fullFileName = file.FullName;
+            return fullFileName;
         }
 
         public static string GetTextBasicExampleProgram()
@@ -152,6 +148,5 @@ namespace MSOopdracht2
                 _ => throw new NotImplementedException() //Otherwise you will have a warning
             };
         }
-
     }
 }
