@@ -70,5 +70,10 @@ namespace MSOopdracht2
             }
             return nextPos;
         }
+
+        public Character GetInstance()
+        {
+            return this;
+        }
     }
 }

@@ -3,7 +3,7 @@
         Move 1
     Turn right
 Repeat 2
-RepeatUntil GridEdge
-    Move 1
+    RepeatUntil GridEdge
+        Move 1
 Turn left
 Move 1

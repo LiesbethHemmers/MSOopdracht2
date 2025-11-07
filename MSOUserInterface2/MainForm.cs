@@ -31,15 +31,12 @@ namespace MSOUserInterface2
 
         private void RunButtonClick(object sender, EventArgs e)
         {
-            currentCharacter = null;
-            CodeProgram codeProgram = TextToCodeProgram();
-            Character character = new Character();
-            codeProgram.Execute(character);
-            currentCharacter = character;
-
             CodeProgramExecutor executor = new CodeProgramExecutor();
-
+            CodeProgram codeProgram = TextToCodeProgram();
             List<string> output = executor.Run(codeProgram);
+
+            Character character = executor.Character;
+            currentCharacter = character;
 
             _outputTextBox.Text = string.Join(" ", output);
             _hasRun = true;
@@ -243,8 +240,7 @@ namespace MSOUserInterface2
 
             if (_hasRun == true && currentCharacter != null) //When i have a program with a path that i want to draw
             {
-                Character character = currentCharacter;
-                float fieldDimension = grid != null && _loadedGrid ? FindGridDimension() : FindFieldDimension(character) + 1;
+                float fieldDimension = grid != null && _loadedGrid ? FindGridDimension() : FindFieldDimension(currentCharacter) + 1;
                 float cellDimension = usableGridSide / fieldDimension;
 
                 if (grid == null) //Just draw some lines for clariy if the program doesnt have a grid
@@ -282,6 +278,7 @@ namespace MSOUserInterface2
 
         private Grid grid;
         private Character? currentCharacter;
+        
 
         private void GetAdvancedExercise1(object sender, EventArgs e)
         {
@@ -352,15 +349,13 @@ namespace MSOUserInterface2
 
         private void PathfindingRunButtonClick(object sender, EventArgs e)
         {
-            currentCharacter = null;
             CodeProgram codeProgram = PathfindingTextToCodeProgram();
             Character character = new Character();
             codeProgram.Execute(character);
-            currentCharacter = character;
 
             CodeProgramExecutor executor = new CodeProgramExecutor();
-
             List<string> output = executor.Run(codeProgram, grid);
+            currentCharacter = executor.Character;
 
             _outputPathFindingTextBox.Text = string.Join(" ", output);
             _hasRun = true;
