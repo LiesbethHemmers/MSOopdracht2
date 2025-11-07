@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollection;
+using MSOopdracht2;
 
 namespace MSOUserInterface2
 {
@@ -41,9 +42,9 @@ namespace MSOUserInterface2
             _examplesComboBox = new ComboBox();
             panel1 = new Panel();
             _pathfindingRunButton = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
+            _pathfindingExpert2 = new Button();
+            _pathfindingExpert1 = new Button();
+            _pathfindingAdvanced2 = new Button();
             button1 = new Button();
             richTextBox1 = new RichTextBox();
             _pathfindingPanel = new Panel();
@@ -180,38 +181,38 @@ namespace MSOUserInterface2
             _pathfindingRunButton.UseVisualStyleBackColor = false;
             _pathfindingRunButton.Click += PathfindingRunButtonClick;
             // 
-            // button4
+            // _pathfindingExpert2
             // 
-            button4.BackColor = Color.MidnightBlue;
-            button4.Location = new Point(325, 28);
-            button4.Name = "button4";
-            button4.Size = new Size(90, 53);
-            button4.TabIndex = 0;
-            button4.Text = "Expert example 2";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += GetExpertExercise2;
+            _pathfindingExpert2.BackColor = Color.MidnightBlue;
+            _pathfindingExpert2.Location = new Point(325, 28);
+            _pathfindingExpert2.Name = "_pathfindingExpert2";
+            _pathfindingExpert2.Size = new Size(90, 53);
+            _pathfindingExpert2.TabIndex = 0;
+            _pathfindingExpert2.Text = "Expert example 2";
+            _pathfindingExpert2.UseVisualStyleBackColor = false;
+            _pathfindingExpert2.Click += GetExpertExercise2;
             // 
-            // button3
+            // _pathfindingExpert1
             // 
-            button3.BackColor = Color.RoyalBlue;
-            button3.Location = new Point(225, 28);
-            button3.Name = "button3";
-            button3.Size = new Size(90, 53);
-            button3.TabIndex = 11;
-            button3.Text = "Expert example 1";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += GetExpertExercise1;
+            _pathfindingExpert1.BackColor = Color.RoyalBlue;
+            _pathfindingExpert1.Location = new Point(225, 28);
+            _pathfindingExpert1.Name = "_pathfindingExpert1";
+            _pathfindingExpert1.Size = new Size(90, 53);
+            _pathfindingExpert1.TabIndex = 11;
+            _pathfindingExpert1.Text = "Expert example 1";
+            _pathfindingExpert1.UseVisualStyleBackColor = false;
+            _pathfindingExpert1.Click += GetExpertExercise1;
             // 
-            // button2
+            // _pathfindingAdvanced2
             // 
-            button2.BackColor = Color.RoyalBlue;
-            button2.Location = new Point(25, 28);
-            button2.Name = "button2";
-            button2.Size = new Size(90, 53);
-            button2.TabIndex = 0;
-            button2.Text = "Advanced example 1";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += GetAdvancedExercise2;
+            _pathfindingAdvanced2.BackColor = Color.RoyalBlue;
+            _pathfindingAdvanced2.Location = new Point(25, 28);
+            _pathfindingAdvanced2.Name = "_pathfindingAdvanced2";
+            _pathfindingAdvanced2.Size = new Size(90, 53);
+            _pathfindingAdvanced2.TabIndex = 0;
+            _pathfindingAdvanced2.Text = "Advanced example 1";
+            _pathfindingAdvanced2.UseVisualStyleBackColor = false;
+            _pathfindingAdvanced2.Click += GetAdvancedExercise2;
             // 
             // button1
             // 
@@ -239,9 +240,9 @@ namespace MSOUserInterface2
             _pathfindingPanel.BackColor = Color.Indigo;
             _pathfindingPanel.Controls.Add(panel2);
             _pathfindingPanel.Controls.Add(_pathfindingRunButton);
-            _pathfindingPanel.Controls.Add(button4);
-            _pathfindingPanel.Controls.Add(button3);
-            _pathfindingPanel.Controls.Add(button2);
+            _pathfindingPanel.Controls.Add(_pathfindingExpert2);
+            _pathfindingPanel.Controls.Add(_pathfindingExpert1);
+            _pathfindingPanel.Controls.Add(_pathfindingAdvanced2);
             _pathfindingPanel.Controls.Add(button1);
             _pathfindingPanel.Controls.Add(richTextBox1);
             _pathfindingPanel.Controls.Add(_programButton);
@@ -325,16 +326,17 @@ namespace MSOUserInterface2
         private bool _hasRun = false; //only draw the trace if the user has clicked 'run'
         private bool _loadedGrid = false;
         private RichTextBox richTextBox1;
-        private Button button2;
+        private Button _pathfindingAdvanced2;
         private Button button1;
-        private Button button4;
-        private Button button3;
+        private Button _pathfindingExpert2;
+        private Button _pathfindingExpert1;
         private Button _pathfindingRunButton;
         private Panel panel2;
         private TextBox _outputPathFindingTextBox;
         private ComboBox _pathFindingExerciseComboBox;
         private Button _pathfindingMetricButton;
         private Image _characterImage;
-
+        private Grid _grid;
+        private Character _currentCharacter;
     }
 }
