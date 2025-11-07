@@ -9,11 +9,9 @@ namespace MSOopdracht2Test
         [Fact]
         public void TurnLeftTest()
         {
-            //initialize all test objects
             Character character = new Character();
             TurnCommand turnCommand = new TurnCommand(TurnDirection.Left);
 
-            //execute the tested method
             string trace = turnCommand.Execute(character);
 
             Assert.Equal(Direction.North, character.Direction);
@@ -23,11 +21,9 @@ namespace MSOopdracht2Test
         [Fact]
         public void TurnRightTest()
         {
-            //initialize all test objects
             Character character = new Character();
             TurnCommand turnCommand = new TurnCommand(TurnDirection.Right);
 
-            //execute the tested method
             string trace = turnCommand.Execute(character);
 
             Assert.Equal(Direction.South, character.Direction);

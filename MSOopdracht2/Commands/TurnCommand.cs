@@ -17,11 +17,8 @@ namespace MSOopdracht2.Commands
                 character.TurnLeft();
                 return "Turn left";
             }
-            else
-            {
-                character.TurnRight();
-                return "Turn right";
-            }
+            character.TurnRight();
+            return "Turn right";
         }
     }
 }
