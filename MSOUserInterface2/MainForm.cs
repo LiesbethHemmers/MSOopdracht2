@@ -195,7 +195,7 @@ namespace MSOUserInterface2
             return fieldDimension;
         }
 
-        private void ColorPad(object sender, PaintEventArgs e)
+        private void ColorPanel(object sender, PaintEventArgs e)
         {
             float panelMargin = 10;
 
@@ -396,11 +396,6 @@ namespace MSOUserInterface2
             _outputPathFindingTextBox.Text = string.Join(" ", output);
             _hasRun = true;
             panel2.Invalidate();
-        }
-
-        private void _programPanel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void PathfindingExercises_SelectedIndexChanged(object sender, EventArgs e)
