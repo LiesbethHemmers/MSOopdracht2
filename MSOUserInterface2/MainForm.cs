@@ -257,7 +257,7 @@ namespace MSOUserInterface2
                 float fieldDimension = grid != null && _loadedGrid ? FindGridDimension() : FindFieldDimension(currentCharacter) + 1;
                
 
-                if (grid == null) //Just draw some lines for clariy if the program doesnt have a grid
+                if (grid == null) //Just draw some lines for clarity if the program doesnt have a grid
                 {
                     for (int j = 0; j <= fieldDimension; j++)
                     {
@@ -271,15 +271,7 @@ namespace MSOUserInterface2
                     (int x, int y) end;
                     (int x, int y) start = currentCharacter.AllPositions[k];
 
-                    if (k == currentCharacter.AllPositions.Count - 1)
-                    {
-                        end = start;
-                    }
-
-                    else
-                    {
-                        end = currentCharacter.AllPositions[k + 1];
-                    }
+                    end = currentCharacter.AllPositions[k + 1];
 
                     graphics.DrawLine(penPath, panelMargin + start.x * cellDimension + (cellDimension / 2), panelMargin + start.y * cellDimension + (cellDimension / 2), panelMargin + end.x * cellDimension + (cellDimension / 2), panelMargin + end.y * cellDimension + (cellDimension / 2));
                 }
