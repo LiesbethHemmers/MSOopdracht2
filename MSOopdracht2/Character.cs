@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System.Net.Mime;
+using System.Numerics;
 using MSOopdracht2.Enums;
 using MSOopdracht2.Exceptions;
 

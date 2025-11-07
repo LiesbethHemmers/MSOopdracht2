@@ -51,10 +51,8 @@ namespace MSOUserInterface2
             _outputPathFindingTextBox = new TextBox();
             _pathFindingExerciseComboBox = new ComboBox();
             _pathfindingMetricButton = new Button();
-            _catPictureBox = new PictureBox();
             _programPanel.SuspendLayout();
             _pathfindingPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)_catPictureBox).BeginInit();
             SuspendLayout();
             // 
             // _metricsButton
@@ -94,7 +92,6 @@ namespace MSOUserInterface2
             // _programPanel
             // 
             _programPanel.BackColor = Color.DarkRed;
-            _programPanel.Controls.Add(_catPictureBox);
             _programPanel.Controls.Add(_fileLoadButton);
             _programPanel.Controls.Add(_outputTextBox);
             _programPanel.Controls.Add(_programRichTextBox);
@@ -293,14 +290,7 @@ namespace MSOUserInterface2
             _pathfindingMetricButton.Text = "Metrics";
             _pathfindingMetricButton.UseVisualStyleBackColor = true;
             _pathfindingMetricButton.Click += PathfindingMetricsButtonClick;
-            // 
-            // _catPictureBox
-            // 
-            _catPictureBox.Location = new Point(391, 435);
-            _catPictureBox.Name = "_catPictureBox";
-            _catPictureBox.Size = new Size(125, 62);
-            _catPictureBox.TabIndex = 9;
-            _catPictureBox.TabStop = false;
+            
             // 
             // MainForm
             // 
@@ -316,7 +306,6 @@ namespace MSOUserInterface2
             _programPanel.PerformLayout();
             _pathfindingPanel.ResumeLayout(false);
             _pathfindingPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)_catPictureBox).EndInit();
             ResumeLayout(false);
         }
 
@@ -345,6 +334,7 @@ namespace MSOUserInterface2
         private TextBox _outputPathFindingTextBox;
         private ComboBox _pathFindingExerciseComboBox;
         private Button _pathfindingMetricButton;
-        private PictureBox _catPictureBox;
+        private Image _characterImage;
+
     }
 }
