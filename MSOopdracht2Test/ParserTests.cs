@@ -1,5 +1,6 @@
 ﻿using MSOopdracht2;
 using MSOopdracht2.Commands;
+using MSOopdracht2.Conditions;
 using MSOopdracht2.Enums;
 using MSOopdracht2.Parsers;
 using System.Numerics;
@@ -14,7 +15,7 @@ namespace MSOopdracht2Test
             string[] lines = {"Repeat 3 times",
                               "    Move 1",
                               "    Turn right",
-                              "    Repeat 5 times",
+                              "    RepeatUntil GridEdge",
                               "        Move 2",
                               "Turn left"
                               };
@@ -26,7 +27,7 @@ namespace MSOopdracht2Test
                                                           new RepeatCommand(3, new List<ICommand>{
                                                           new MoveCommand(1),
                                                           new TurnCommand(TurnDirection.Right),
-                                                          new RepeatCommand(5,new List<ICommand>
+                                                          new RepeatUntilCommand(new GridEdgeCondition(), new List<ICommand>
                                                           {
                                                               new MoveCommand(2)
                                                           })
@@ -94,6 +95,44 @@ namespace MSOopdracht2Test
             //execute both programs
             parsedProgram.Execute(character2);
             compareProgramEmptyProgram.Execute(character);
+
+            //check if the end states are equal
+            Assert.Equal(character2.Position, character.Position);
+            Assert.Equal(character2.Direction, character.Direction);
+        }
+
+        public void TxtProgramParserEmptyLinesTest()
+        {
+            string[] lines = {"Repeat 3 times",
+                              "",
+                              "    Move 1",
+                              "    Turn right",
+                              "",
+                              "    RepeatUntil GridEdge",
+                              "        Move 2",
+                              "Turn left"
+                              };
+            IProgramParser parser = new TxtProgramParser();
+            CodeProgram parsedProgram = parser.Parse(lines);
+
+            CodeProgram compareProgramEmptyLines = new CodeProgram(new List<ICommand>
+                                                          {
+                                                          new RepeatCommand(3, new List<ICommand>{
+                                                          new MoveCommand(1),
+                                                          new TurnCommand(TurnDirection.Right),
+                                                          new RepeatUntilCommand(new GridEdgeCondition(), new List<ICommand>
+                                                          {
+                                                              new MoveCommand(2)
+                                                          })
+                                                          }),
+                                                          new TurnCommand(TurnDirection.Left)}
+                                                          , "CompareProgram");
+            Character character = new Character();
+            Character character2 = new Character();
+
+            //execute both programs
+            parsedProgram.Execute(character2);
+            compareProgramEmptyLines.Execute(character);
 
             //check if the end states are equal
             Assert.Equal(character2.Position, character.Position);

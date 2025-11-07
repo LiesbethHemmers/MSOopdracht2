@@ -45,6 +45,11 @@ namespace MSOopdracht2.Parsers
             //Starts from the line after the repeat statement:
             for (linePointer++; linePointer < lines.Length; linePointer++)
             {
+                if (string.IsNullOrWhiteSpace(lines[linePointer]))
+                {
+                    continue;
+                }
+
                 int numOfLeadingSpaces = lines[linePointer].TakeWhile(char.IsWhiteSpace).Count();
                 int currentDepth = numOfLeadingSpaces / 4; //So if the currentDepth is 1, amount of leading spaces are 4, if 2, there are 8, etc.
                 string[] parts = lines[linePointer].Trim().Split(' ');
