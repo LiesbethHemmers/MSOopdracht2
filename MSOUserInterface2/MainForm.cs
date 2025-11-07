@@ -40,7 +40,7 @@ namespace MSOUserInterface2
 
             _outputTextBox.Text = string.Join(" ", output);
             _hasRun = true;
-            panel1.Invalidate();
+            _programGridPanel.Invalidate();
         }
 
         private void FileLoadButtonClick(object sender, EventArgs e)
@@ -52,8 +52,7 @@ namespace MSOUserInterface2
             {
                 string filePath = openFileDialog.FileName;
                 _programRichTextBox.Text = File.ReadAllText(filePath);
-                string fileAsText = _programRichTextBox.Text;
-                panel1.Invalidate();
+                _programGridPanel.Invalidate();
                 _hasRun = false;
             }
         }
@@ -61,11 +60,11 @@ namespace MSOUserInterface2
         private void ToProgramButtonClick(object sender, EventArgs e)
         {
             _programPanel.BringToFront();
-            richTextBox1.Visible = false;
-            panel1.Visible = true;
-            panel2.Visible = false;
-            panel1.BringToFront();
-            panel1.Invalidate();
+            _pathfindingRichTextBox.Visible = false;
+            _programGridPanel.Visible = true;
+            _pathfindingGridPanel.Visible = false;
+            _programGridPanel.BringToFront();
+            _programGridPanel.Invalidate();
             _hasRun = false;
             _currentCharacter = null;
             _grid = null;
@@ -73,11 +72,11 @@ namespace MSOUserInterface2
         private void ToPathfindingButtonClick(object sender, EventArgs e)
         {
             _pathfindingPanel.BringToFront();
-            richTextBox1.Visible = true;
-            panel1.Visible = false;
-            panel2.Visible = true;
-            panel2.BringToFront();
-            panel2.Invalidate();
+            _pathfindingRichTextBox.Visible = true;
+            _programGridPanel.Visible = false;
+            _pathfindingGridPanel.Visible = true;
+            _pathfindingGridPanel.BringToFront();
+            _pathfindingGridPanel.Invalidate();
             _hasRun = false;
             _currentCharacter = null;
             _grid = null;
@@ -109,7 +108,7 @@ namespace MSOUserInterface2
             string exampleProgram = ExamplePrograms.GetTextBasicExampleProgram();
             _programRichTextBox.Text = File.ReadAllText(exampleProgram);
 
-            panel1.Invalidate();
+            _programGridPanel.Invalidate();
             _hasRun = false;
         }
 
@@ -120,7 +119,7 @@ namespace MSOUserInterface2
             string exampleProgram = ExamplePrograms.GetTextAdvancedExampleProgram();
             _programRichTextBox.Text = File.ReadAllText(exampleProgram);
 
-            panel1.Invalidate();
+            _programGridPanel.Invalidate();
             _hasRun = false;
         }
 
@@ -131,7 +130,7 @@ namespace MSOUserInterface2
             string exampleProgram = ExamplePrograms.GetTextExpertExampleProgram();
             _programRichTextBox.Text = File.ReadAllText(exampleProgram);
 
-            panel1.Invalidate();
+            _programGridPanel.Invalidate();
             _hasRun = false;
         }
 
@@ -155,7 +154,7 @@ namespace MSOUserInterface2
             FileInfo file = new FileInfo(@"ProcessingFile\ProcessingFile.txt");
             string fullFileName = file.FullName;
 
-            richTextBox1.SaveFile(fullFileName, RichTextBoxStreamType.PlainText);
+            _pathfindingRichTextBox.SaveFile(fullFileName, RichTextBoxStreamType.PlainText);
 
             CodeProgram codeProgram = null;
             IProgramParser parser = new TxtProgramParser();
@@ -252,12 +251,12 @@ namespace MSOUserInterface2
                 }
             }
 
-            if (_hasRun && _currentCharacter != null) //When i have a program with a path that i want to draw
+            if (_hasRun && _currentCharacter != null) //When I have a program with a path that I want to draw
             {
                 float fieldDimension = _grid != null && _loadedGrid ? FindGridDimension() : FindFieldDimension(_currentCharacter) + 1;
                
 
-                if (_grid == null) //Just draw some lines for clarity if the program doesnt have a _grid
+                if (_grid == null) //Just draw some lines for clarity if the program doesn't have a _grid
                 {
                     for (int j = 0; j <= fieldDimension; j++)
                     {
@@ -283,7 +282,7 @@ namespace MSOUserInterface2
                 DrawCharacterImage(graphics, _characterImage, 0, 0, cellDimension, angle);
             }
 
-            if (_hasRun && _characterImage != null)
+            if (_hasRun && _characterImage != null && _currentCharacter != null)
             {
                 var lastPos = _currentCharacter.AllPositions.Last();
                 float angle = GetLastDirection(_currentCharacter.Direction);
@@ -323,11 +322,11 @@ namespace MSOUserInterface2
 
             _grid = gridProgram;
             string exampleProgram = ExamplePrograms.AdvancedGridProgram1();
-            richTextBox1.Text = File.ReadAllText(exampleProgram);
+            _pathfindingRichTextBox.Text = File.ReadAllText(exampleProgram);
 
             _hasRun = false;
             _loadedGrid = true;
-            panel2.Invalidate();
+            _pathfindingGridPanel.Invalidate();
         }
 
         private void GetAdvancedExercise2(object sender, EventArgs e)
@@ -341,11 +340,11 @@ namespace MSOUserInterface2
 
             _grid = gridProgram;
             string exampleProgram = ExamplePrograms.AdvancedGridProgram2();
-            richTextBox1.Text = File.ReadAllText(exampleProgram);
+            _pathfindingRichTextBox.Text = File.ReadAllText(exampleProgram);
 
             _hasRun = false;
             _loadedGrid = true;
-            panel2.Invalidate();
+            _pathfindingGridPanel.Invalidate();
         }
 
         private void GetExpertExercise1(object sender, EventArgs e)
@@ -358,11 +357,11 @@ namespace MSOUserInterface2
             Grid gridProgram = importer.Import(gridFileName);
             _grid = gridProgram;
             string exampleProgram = ExamplePrograms.ExpertGridProgram1();
-            richTextBox1.Text = File.ReadAllText(exampleProgram);
+            _pathfindingRichTextBox.Text = File.ReadAllText(exampleProgram);
 
             _hasRun = false;
             _loadedGrid = true;
-            panel2.Invalidate();
+            _pathfindingGridPanel.Invalidate();
         }
 
 
@@ -376,11 +375,11 @@ namespace MSOUserInterface2
             Grid gridProgram = importer.Import(gridFileName);
             _grid = gridProgram;
             string exampleProgram = ExamplePrograms.ExpertGridProgram2();
-            richTextBox1.Text = File.ReadAllText(exampleProgram);
+            _pathfindingRichTextBox.Text = File.ReadAllText(exampleProgram);
 
             _hasRun = false;
             _loadedGrid = true;
-            panel2.Invalidate();
+            _pathfindingGridPanel.Invalidate();
         }
 
         private void PathfindingRunButtonClick(object sender, EventArgs e)
@@ -395,7 +394,7 @@ namespace MSOUserInterface2
 
             _outputPathFindingTextBox.Text = string.Join(" ", output);
             _hasRun = true;
-            panel2.Invalidate();
+            _pathfindingGridPanel.Invalidate();
         }
 
         private void PathfindingExercises_SelectedIndexChanged(object sender, EventArgs e)
@@ -425,11 +424,11 @@ namespace MSOUserInterface2
             IGridImporter importer = new TxtGridImporter(parser);
             Grid gridProgram = importer.Import(gridFileName);
             _grid = gridProgram;
-            richTextBox1.Text = null;
+            _pathfindingRichTextBox.Text = null;
 
             _hasRun = false;
             _loadedGrid = true;
-            panel2.Invalidate();
+            _pathfindingGridPanel.Invalidate();
         }
         public void Exercise2Click()
         {
@@ -440,11 +439,11 @@ namespace MSOUserInterface2
             IGridImporter importer = new TxtGridImporter(parser);
             Grid gridProgram = importer.Import(gridFileName);
             _grid = gridProgram;
-            richTextBox1.Text = null;
+            _pathfindingRichTextBox.Text = null;
 
             _hasRun = false;
             _loadedGrid = true;
-            panel2.Invalidate();
+            _pathfindingGridPanel.Invalidate();
         }
         public void Exercise3Click()
         {
@@ -455,11 +454,11 @@ namespace MSOUserInterface2
             IGridImporter importer = new TxtGridImporter(parser);
             Grid gridProgram = importer.Import(gridFileName);
             _grid = gridProgram;
-            richTextBox1.Text = null;
+            _pathfindingRichTextBox.Text = null;
 
             _hasRun = false;
             _loadedGrid = true;
-            panel2.Invalidate();
+            _pathfindingGridPanel.Invalidate();
         }
 
         private void PathfindingMetricsButtonClick(object sender, EventArgs e)

@@ -40,15 +40,15 @@ namespace MSOUserInterface2
             _programRichTextBox = new RichTextBox();
             _runButton = new Button();
             _examplesComboBox = new ComboBox();
-            panel1 = new Panel();
+            _programGridPanel = new Panel();
             _pathfindingRunButton = new Button();
             _pathfindingExpert2 = new Button();
             _pathfindingExpert1 = new Button();
             _pathfindingAdvanced2 = new Button();
-            button1 = new Button();
-            richTextBox1 = new RichTextBox();
+            _pathfindingAdvanced1 = new Button();
+            _pathfindingRichTextBox = new RichTextBox();
             _pathfindingPanel = new Panel();
-            panel2 = new Panel();
+            _pathfindingGridPanel = new Panel();
             _outputPathFindingTextBox = new TextBox();
             _pathFindingExerciseComboBox = new ComboBox();
             _pathfindingMetricButton = new Button();
@@ -62,7 +62,6 @@ namespace MSOUserInterface2
             _metricsButton.Location = new Point(312, 95);
             _metricsButton.Name = "_metricsButton";
             _metricsButton.Size = new Size(147, 60);
-            _metricsButton.TabIndex = 0;
             _metricsButton.Text = "Metrics";
             _metricsButton.UseVisualStyleBackColor = true;
             _metricsButton.Click += MetricsButtonClick;
@@ -70,10 +69,9 @@ namespace MSOUserInterface2
             // _programButton
             // 
             _programButton.BackColor = Color.Fuchsia;
-            _programButton.Location = new Point(675, 12);
+            _programButton.Location = new Point(675, 28);
             _programButton.Name = "_programButton";
             _programButton.Size = new Size(169, 46);
-            _programButton.TabIndex = 1;
             _programButton.Text = "To programs";
             _programButton.UseVisualStyleBackColor = false;
             _programButton.Click += ToProgramButtonClick;
@@ -82,10 +80,9 @@ namespace MSOUserInterface2
             // 
             _pathfindingButton.BackColor = Color.Crimson;
             _pathfindingButton.ForeColor = SystemColors.ButtonFace;
-            _pathfindingButton.Location = new Point(684, 12);
+            _pathfindingButton.Location = new Point(675, 28);
             _pathfindingButton.Name = "_pathfindingButton";
             _pathfindingButton.Size = new Size(169, 46);
-            _pathfindingButton.TabIndex = 2;
             _pathfindingButton.Text = "To pathfinding";
             _pathfindingButton.UseVisualStyleBackColor = false;
             _pathfindingButton.Click += ToPathfindingButtonClick;
@@ -100,11 +97,10 @@ namespace MSOUserInterface2
             _programPanel.Controls.Add(_examplesComboBox);
             _programPanel.Controls.Add(_pathfindingButton);
             _programPanel.Controls.Add(_metricsButton);
-            _programPanel.Controls.Add(panel1);
+            _programPanel.Controls.Add(_programGridPanel);
             _programPanel.Location = new Point(11, 12);
             _programPanel.Name = "_programPanel";
             _programPanel.Size = new Size(986, 582);
-            _programPanel.TabIndex = 3;
             // 
             // _fileLoadButton
             // 
@@ -113,7 +109,6 @@ namespace MSOUserInterface2
             _fileLoadButton.Location = new Point(14, 41);
             _fileLoadButton.Name = "_fileLoadButton";
             _fileLoadButton.Size = new Size(94, 29);
-            _fileLoadButton.TabIndex = 7;
             _fileLoadButton.Text = "From file";
             _fileLoadButton.UseVisualStyleBackColor = false;
             _fileLoadButton.Click += FileLoadButtonClick;
@@ -125,7 +120,6 @@ namespace MSOUserInterface2
             _outputTextBox.Multiline = true;
             _outputTextBox.Name = "_outputTextBox";
             _outputTextBox.Size = new Size(268, 213);
-            _outputTextBox.TabIndex = 6;
             // 
             // _programRichTextBox
             // 
@@ -133,7 +127,6 @@ namespace MSOUserInterface2
             _programRichTextBox.Location = new Point(14, 76);
             _programRichTextBox.Name = "_programRichTextBox";
             _programRichTextBox.Size = new Size(276, 404);
-            _programRichTextBox.TabIndex = 5;
             _programRichTextBox.Text = "";
             // 
             // _runButton
@@ -142,7 +135,6 @@ namespace MSOUserInterface2
             _runButton.Location = new Point(465, 95);
             _runButton.Name = "_runButton";
             _runButton.Size = new Size(147, 60);
-            _runButton.TabIndex = 4;
             _runButton.Text = "Run";
             _runButton.UseVisualStyleBackColor = true;
             _runButton.Click += RunButtonClick;
@@ -156,18 +148,16 @@ namespace MSOUserInterface2
             _examplesComboBox.Location = new Point(114, 41);
             _examplesComboBox.Name = "_examplesComboBox";
             _examplesComboBox.Size = new Size(172, 31);
-            _examplesComboBox.TabIndex = 3;
             _examplesComboBox.Text = "Examples";
             _examplesComboBox.SelectedIndexChanged += ExamplesComboBox_SelectedIndexChanged;
             // 
-            // panel1
+            // _programGridPanel
             // 
-            panel1.BackColor = Color.LightGray;
-            panel1.Location = new Point(644, 161);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(300, 300);
-            panel1.TabIndex = 8;
-            panel1.Paint += ColorPanel;
+            _programGridPanel.BackColor = Color.LightGray;
+            _programGridPanel.Location = new Point(644, 161);
+            _programGridPanel.Name = "_programGridPanel";
+            _programGridPanel.Size = new Size(300, 300);
+            _programGridPanel.Paint += ColorPanel;
             // 
             // _pathfindingRunButton
             // 
@@ -175,7 +165,6 @@ namespace MSOUserInterface2
             _pathfindingRunButton.Location = new Point(14, 520);
             _pathfindingRunButton.Name = "_pathfindingRunButton";
             _pathfindingRunButton.Size = new Size(112, 53);
-            _pathfindingRunButton.TabIndex = 9;
             _pathfindingRunButton.Text = "Run";
             _pathfindingRunButton.UseVisualStyleBackColor = false;
             _pathfindingRunButton.Click += PathfindingRunButtonClick;
@@ -186,7 +175,6 @@ namespace MSOUserInterface2
             _pathfindingExpert2.Location = new Point(325, 28);
             _pathfindingExpert2.Name = "_pathfindingExpert2";
             _pathfindingExpert2.Size = new Size(90, 53);
-            _pathfindingExpert2.TabIndex = 0;
             _pathfindingExpert2.Text = "Expert example 2";
             _pathfindingExpert2.UseVisualStyleBackColor = false;
             _pathfindingExpert2.Click += GetExpertExercise2;
@@ -197,7 +185,6 @@ namespace MSOUserInterface2
             _pathfindingExpert1.Location = new Point(225, 28);
             _pathfindingExpert1.Name = "_pathfindingExpert1";
             _pathfindingExpert1.Size = new Size(90, 53);
-            _pathfindingExpert1.TabIndex = 11;
             _pathfindingExpert1.Text = "Expert example 1";
             _pathfindingExpert1.UseVisualStyleBackColor = false;
             _pathfindingExpert1.Click += GetExpertExercise1;
@@ -208,42 +195,39 @@ namespace MSOUserInterface2
             _pathfindingAdvanced2.Location = new Point(25, 28);
             _pathfindingAdvanced2.Name = "_pathfindingAdvanced2";
             _pathfindingAdvanced2.Size = new Size(90, 53);
-            _pathfindingAdvanced2.TabIndex = 0;
             _pathfindingAdvanced2.Text = "Advanced example 1";
             _pathfindingAdvanced2.UseVisualStyleBackColor = false;
             _pathfindingAdvanced2.Click += GetAdvancedExercise2;
             // 
-            // button1
+            // _pathfindingAdvanced1
             // 
-            button1.BackColor = Color.MidnightBlue;
-            button1.Location = new Point(125, 28);
-            button1.Name = "button1";
-            button1.Size = new Size(90, 53);
-            button1.TabIndex = 10;
-            button1.Text = "Advanced example 2";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += GetAdvancedExercise1;
+            _pathfindingAdvanced1.BackColor = Color.MidnightBlue;
+            _pathfindingAdvanced1.Location = new Point(125, 28);
+            _pathfindingAdvanced1.Name = "_pathfindingAdvanced1";
+            _pathfindingAdvanced1.Size = new Size(90, 53);
+            _pathfindingAdvanced1.Text = "Advanced example 2";
+            _pathfindingAdvanced1.UseVisualStyleBackColor = false;
+            _pathfindingAdvanced1.Click += GetAdvancedExercise1;
             // 
-            // richTextBox1
+            // _pathfindingRichTextBox
             // 
-            richTextBox1.BackColor = Color.Orchid;
-            richTextBox1.Location = new Point(14, 95);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(418, 229);
-            richTextBox1.TabIndex = 9;
-            richTextBox1.Text = "";
-            richTextBox1.Visible = false;
+            _pathfindingRichTextBox.BackColor = Color.Orchid;
+            _pathfindingRichTextBox.Location = new Point(14, 95);
+            _pathfindingRichTextBox.Name = "_pathfindingRichTextBox";
+            _pathfindingRichTextBox.Size = new Size(418, 229);
+            _pathfindingRichTextBox.Text = "";
+            _pathfindingRichTextBox.Visible = false;
             // 
             // _pathfindingPanel
             // 
             _pathfindingPanel.BackColor = Color.Indigo;
-            _pathfindingPanel.Controls.Add(panel2);
+            _pathfindingPanel.Controls.Add(_pathfindingGridPanel);
             _pathfindingPanel.Controls.Add(_pathfindingRunButton);
             _pathfindingPanel.Controls.Add(_pathfindingExpert2);
             _pathfindingPanel.Controls.Add(_pathfindingExpert1);
             _pathfindingPanel.Controls.Add(_pathfindingAdvanced2);
-            _pathfindingPanel.Controls.Add(button1);
-            _pathfindingPanel.Controls.Add(richTextBox1);
+            _pathfindingPanel.Controls.Add(_pathfindingAdvanced1);
+            _pathfindingPanel.Controls.Add(_pathfindingRichTextBox);
             _pathfindingPanel.Controls.Add(_programButton);
             _pathfindingPanel.Controls.Add(_outputPathFindingTextBox);
             _pathfindingPanel.Controls.Add(_pathFindingExerciseComboBox);
@@ -251,16 +235,14 @@ namespace MSOUserInterface2
             _pathfindingPanel.Location = new Point(11, 12);
             _pathfindingPanel.Name = "_pathfindingPanel";
             _pathfindingPanel.Size = new Size(986, 582);
-            _pathfindingPanel.TabIndex = 0;
             // 
-            // panel2
+            // _pathfindingGridPanel
             // 
-            panel2.BackColor = Color.Thistle;
-            panel2.Location = new Point(453, 95);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(435, 435);
-            panel2.TabIndex = 12;
-            panel2.Paint += ColorPanel;
+            _pathfindingGridPanel.BackColor = Color.Thistle;
+            _pathfindingGridPanel.Location = new Point(453, 95);
+            _pathfindingGridPanel.Name = "_pathfindingGridPanel";
+            _pathfindingGridPanel.Size = new Size(435, 435);
+            _pathfindingGridPanel.Paint += ColorPanel;
             // 
             // _outputPathFindingTextBox
             // 
@@ -268,7 +250,6 @@ namespace MSOUserInterface2
             _outputPathFindingTextBox.Multiline = true;
             _outputPathFindingTextBox.Name = "_outputPathFindingTextBox";
             _outputPathFindingTextBox.Size = new Size(268, 160);
-            _outputPathFindingTextBox.TabIndex = 9;
             // 
             // _pathFindingExerciseComboBox
             // 
@@ -277,18 +258,17 @@ namespace MSOUserInterface2
             _pathFindingExerciseComboBox.Location = new Point(450, 34);
             _pathFindingExerciseComboBox.Name = "_pathFindingExerciseComboBox";
             _pathFindingExerciseComboBox.Size = new Size(169, 31);
-            _pathFindingExerciseComboBox.TabIndex = 9;
             _pathFindingExerciseComboBox.Text = "Exercises";
             _pathFindingExerciseComboBox.SelectedIndexChanged += PathfindingExercises_SelectedIndexChanged;
             // 
             // _pathfindingMetricButton
             // 
+            _pathfindingMetricButton.BackColor = Color.Thistle;
             _pathfindingMetricButton.Location = new Point(135, 520);
             _pathfindingMetricButton.Name = "_pathfindingMetricButton";
             _pathfindingMetricButton.Size = new Size(106, 53);
-            _pathfindingMetricButton.TabIndex = 9;
             _pathfindingMetricButton.Text = "Metrics";
-            _pathfindingMetricButton.UseVisualStyleBackColor = true;
+            _pathfindingMetricButton.UseVisualStyleBackColor = false;
             _pathfindingMetricButton.Click += PathfindingMetricsButtonClick;
             
             // 
@@ -321,16 +301,16 @@ namespace MSOUserInterface2
         private RichTextBox _programRichTextBox;
         private TextBox _outputTextBox;
         private Button _fileLoadButton;
-        private Panel panel1;
+        private Panel _programGridPanel;
         private bool _hasRun = false; //only draw the trace if the user has clicked 'run'
         private bool _loadedGrid = false;
-        private RichTextBox richTextBox1;
+        private RichTextBox _pathfindingRichTextBox;
         private Button _pathfindingAdvanced2;
-        private Button button1;
+        private Button _pathfindingAdvanced1;
         private Button _pathfindingExpert2;
         private Button _pathfindingExpert1;
         private Button _pathfindingRunButton;
-        private Panel panel2;
+        private Panel _pathfindingGridPanel;
         private TextBox _outputPathFindingTextBox;
         private ComboBox _pathFindingExerciseComboBox;
         private Button _pathfindingMetricButton;
