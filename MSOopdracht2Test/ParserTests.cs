@@ -64,7 +64,7 @@ namespace MSOopdracht2Test
                                                           })
                                                           }),
                                                           new TurnCommand(TurnDirection.Left)}
-                                                          , "CompareProgram");
+                                                          , "CompareProgramZeroCommands");
             Character character = new Character();
             Character character2 = new Character();
 
@@ -88,7 +88,7 @@ namespace MSOopdracht2Test
             CodeProgram compareProgramEmptyProgram = new CodeProgram(new List<ICommand>
                                                           {
                                                           }
-                                                          , "CompareProgram");
+                                                          , "CompareProgramEmptyProgram");
             Character character = new Character();
             Character character2 = new Character();
 
@@ -126,7 +126,7 @@ namespace MSOopdracht2Test
                                                           })
                                                           }),
                                                           new TurnCommand(TurnDirection.Left)}
-                                                          , "CompareProgram");
+                                                          , "CompareProgramEmptyLines");
             Character character = new Character();
             Character character2 = new Character();
 
@@ -154,6 +154,7 @@ namespace MSOopdracht2Test
 
             Grid parsedGrid = parser.Parse(lines);
 
+            //check if the end states are equal
             Assert.Equal(3, parsedGrid.LoadedGrid.GetLength(0));
             Assert.Equal(4, parsedGrid.LoadedGrid.GetLength(1));
             Assert.Equal(expectedXPos, parsedGrid.GetXPosition());
@@ -172,6 +173,7 @@ namespace MSOopdracht2Test
 
             Grid parsedGrid = parser.Parse(lines);
 
+            //check if the end states are equal
             Assert.Equal(0, parsedGrid.LoadedGrid.GetLength(0));
             Assert.Equal(1, parsedGrid.LoadedGrid.GetLength(1));
         }

@@ -76,7 +76,7 @@ namespace MSOopdracht2Test
                 new RepeatUntilCommand(new GridEdgeCondition(), new List<ICommand>{
                 new TurnCommand(TurnDirection.Left),
                 new MoveCommand(4)}),
-            }, "repeatProgram");
+            }, "repeatAndRepeatUntilProgram");
             MetricCalculator calculator = new MetricCalculator();
 
             StoredMetrics result = calculator.CalculateMetrics(repeatAndRepeatUntilProgram);
@@ -100,7 +100,7 @@ namespace MSOopdracht2Test
                         })
                     })
                 })
-            }, "nestingProgram");
+            }, "nestingWithRepeatUntilProgram");
             MetricCalculator calculator = new MetricCalculator();
 
             StoredMetrics result = calculator.CalculateMetrics(nestedWithRepeatUntilProgram);
