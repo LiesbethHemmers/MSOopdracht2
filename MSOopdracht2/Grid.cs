@@ -8,7 +8,6 @@ namespace MSOopdracht2
         //example: oo++
         //         +oo+
         //         ++ox has 4 columns and 3 rows, so that is new char[4,3]
-
         public char[,] LoadedGrid { get; }
 
         public Grid(char[,] grid)

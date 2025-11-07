@@ -9,6 +9,7 @@ namespace MSOopdracht2.Conditions
             if (character.Grid == null) return true;
             Vector2 nextPos = character.NextPos();
             char symbol = character.Grid.GetSymbol((int)nextPos.X, (int)nextPos.Y);
+
             return symbol == '+';
         }
     }

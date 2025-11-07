@@ -10,12 +10,11 @@ namespace MSOopdracht2
         public Direction Direction { get; private set; }
         public Grid? Grid { get; }//grid can be null, because the grid is optional
 
-        public List<(int x, int y)> AllPositions { get; private set; } = new List<(int x, int y)>();
-
+        public List<(int x, int y)> AllPositions { get; }
 
         public Character(Grid? grid = null)//default is null because only the pathfinding exercises need a grid
         {
-            AllPositions.Add((0, 0));
+            AllPositions = new List<(int x, int y)> { (0, 0) };
             Position = Vector2.Zero;
             Direction = Direction.East;
             Grid = grid;
@@ -31,7 +30,7 @@ namespace MSOopdracht2
 
         public void TurnRight()
         {
-            //east->south
+            //east -> south
             int dir = (int)Direction;//every enum has a number
             int newDir = (dir + 1) % 4;
             Direction = (Direction)newDir;//back to direction
@@ -53,7 +52,6 @@ namespace MSOopdracht2
                     {
                         throw new BlockedMoveException($"({nextPos.X}, {nextPos.Y}) is blocked");
                     }
-
                 }
                 Position = nextPos;
                 AllPositions.Add(((int x, int y))(nextPos.X, nextPos.Y));

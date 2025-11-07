@@ -5,11 +5,6 @@ namespace MSOopdracht2
 {
     public class CodeProgramExecutor
     {
-        public CodeProgramExecutor()
-        {
-
-        }
-
         public List<string> Run(CodeProgram program, Grid? grid = null)
         {
             Character character = new Character(grid); //Character starts at (0,0) facing east 
@@ -29,13 +24,12 @@ namespace MSOopdracht2
                     {
                         output.Add("Character did not end at the right position");
                     }
-
                 }
 
-                //Firstly we need to print out the path the character had:
+                //the path the character had
                 output.Add(string.Join(", ", trace) + ".");
 
-                //Lastly we need to print it's finally coordinates and directions it faces:
+                //character's final coordinates and direction it faces
                 output.Add($"End state ({character.Position.X},{character.Position.Y}) facing {character.Direction}.");
             }
             catch (OutOfBoundsException ex)
@@ -46,7 +40,6 @@ namespace MSOopdracht2
             {
                 output.Add("Runtime error: " + ex.Message);
             }
-            
             return output;
         }
     }

@@ -1,16 +1,8 @@
-﻿using Microsoft.VisualStudio.TestPlatform.TestHost;
-using MSOopdracht2;
+﻿using MSOopdracht2;
 using MSOopdracht2.Commands;
 using MSOopdracht2.Enums;
 using MSOopdracht2.Parsers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading.Tasks.Dataflow;
-using System.Xml.Serialization;
 
 namespace MSOopdracht2Test
 {
@@ -19,7 +11,6 @@ namespace MSOopdracht2Test
         [Fact]
         public void TxtProgramParserTest()
         {
-            //Initialize the test objects:
             string[] lines = {"Repeat 3 times",
                               "    Move 1",
                               "    Turn right",
@@ -27,8 +18,6 @@ namespace MSOopdracht2Test
                               "        Move 2",
                               "Turn left"
                               };
-
-
             IProgramParser parser = new TxtProgramParser();
             CodeProgram parsedProgram = parser.Parse(lines);
 
@@ -46,14 +35,12 @@ namespace MSOopdracht2Test
                                                           , "CompareProgram");
             Character character = new Character();
             Character character2 = new Character();
-            List<string> trace = new List<string>();
-            List<string> trace2 = new List<string>();
 
-            //Execute both programs:
+            //execute both programs
             parsedProgram.Execute(character2);
             compareProgram.Execute(character);
 
-            //Check if the end states are equal:
+            //check if the end states are equal
             Assert.Equal(character2.Position, character.Position);
             Assert.Equal(character2.Direction, character.Direction);
         }
@@ -70,8 +57,9 @@ namespace MSOopdracht2Test
                 "+ox"
             };
             IGridParser parser = new TxtGridParser();
-            Grid parsedGrid = parser.Parse(lines);
             Vector2 expectedXPos = new Vector2(2, 3);
+
+            Grid parsedGrid = parser.Parse(lines);
 
             Assert.Equal(3, parsedGrid.LoadedGrid.GetLength(0));
             Assert.Equal(4, parsedGrid.LoadedGrid.GetLength(1));

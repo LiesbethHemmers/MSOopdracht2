@@ -3,7 +3,6 @@ using MSOopdracht2.Commands;
 using MSOopdracht2.Enums;
 using MSOopdracht2.Metrics;
 
-
 namespace MSOopdracht2Test
 {
     public class MetricCalculatorTests
@@ -11,7 +10,6 @@ namespace MSOopdracht2Test
         [Fact]
         public void CommandAmountTest()
         {
-            //Initialize the test objects:
             CodeProgram commandProgram = new CodeProgram(new List<ICommand>
             {
                 new MoveCommand(10),
@@ -20,7 +18,6 @@ namespace MSOopdracht2Test
             }, "commandProgram");
             MetricCalculator calculator = new MetricCalculator();
 
-            //Execute the method that's being tested:
             StoredMetrics result = calculator.CalculateMetrics(commandProgram);
 
             Assert.Equal(3, result.CommandAmount);
@@ -29,7 +26,6 @@ namespace MSOopdracht2Test
         [Fact]
         public void RepeatAmountTest()
         {
-            //Initialize the test objects:
             CodeProgram repeatProgram = new CodeProgram(new List<ICommand>
             {
                 new RepeatCommand(3, new List<ICommand>{
@@ -38,7 +34,6 @@ namespace MSOopdracht2Test
             }, "repeatProgram");
             MetricCalculator calculator = new MetricCalculator();
 
-            //Execute the method that's being tested:
             StoredMetrics result = calculator.CalculateMetrics(repeatProgram);
 
             Assert.Equal(1, result.RepeatAmount);
@@ -48,7 +43,6 @@ namespace MSOopdracht2Test
         [Fact]
         public void NestingAmountTest()
         {
-            //Initialize the test objects:
             CodeProgram nestedProgram = new CodeProgram(new List<ICommand>
             {
                 new RepeatCommand(2, new List<ICommand>
@@ -65,7 +59,6 @@ namespace MSOopdracht2Test
             }, "nestingProgram");
             MetricCalculator calculator = new MetricCalculator();
 
-            //Execute the method that's being tested:
             StoredMetrics result = calculator.CalculateMetrics(nestedProgram);
 
             Assert.Equal(3, result.NestingAmount);

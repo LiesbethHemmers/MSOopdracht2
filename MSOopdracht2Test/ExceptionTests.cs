@@ -8,7 +8,6 @@ namespace MSOopdracht2Test
         [Fact]
         public void MoveForwardBlockedMoveException()
         {
-            //Initialize the test objects
             char[,] mockGrid = { {' '}, {'+'} };
             Grid grid = new Grid(mockGrid);
             Character character = new Character(grid);
@@ -19,7 +18,6 @@ namespace MSOopdracht2Test
         [Fact]
         public void MoveForwardOutOfBoundsException()
         {
-            //Initialize the test objects
             char[,] mockGrid = { { ' ' } };
             Grid grid = new Grid(mockGrid);
             Character character = new Character(grid);

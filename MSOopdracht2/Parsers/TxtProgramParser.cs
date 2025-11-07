@@ -6,11 +6,6 @@ namespace MSOopdracht2.Parsers
 {
     public class TxtProgramParser : IProgramParser
     {
-        public TxtProgramParser()
-        {
-
-        }
-
         public CodeProgram Parse(string[] lines)
         {
             List<ICommand> commands = new List<ICommand>();
@@ -40,7 +35,6 @@ namespace MSOopdracht2.Parsers
                     commands.Add(repeatUntilCommand); 
                 }
             }
-
             return program;
         }
 
@@ -95,11 +89,7 @@ namespace MSOopdracht2.Parsers
             {
                 return new WallAheadCondition();
             }
-
-            else
-            {
-                return new GridEdgeCondition();
-            }
+            return new GridEdgeCondition();
         }
 
         TurnCommand ParseTurnCommand(string[] parts)

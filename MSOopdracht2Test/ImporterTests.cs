@@ -1,13 +1,6 @@
 ﻿using MSOopdracht2;
 using MSOopdracht2.Parsers;
 using MSOopdracht2.Importers;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 using MSOopdracht2.Commands;
 using MSOopdracht2.Enums;
 
@@ -18,7 +11,6 @@ namespace MSOopdracht2Test
         [Fact]
         public void TxtGridImporterTest()
         {
-            
             IGridParser parser = new TxtGridParser();
             IGridImporter importer = new TxtGridImporter(parser);
 
@@ -48,7 +40,6 @@ namespace MSOopdracht2Test
             string testFile = Path.GetTempFileName();
             File.WriteAllLines(testFile, new[]
             {
-                
                 "Move 1",
                 "Turn right"
             });
@@ -63,6 +54,5 @@ namespace MSOopdracht2Test
             //test if there is any data
             Assert.Equal(compareCommands.Count, program.Commands.Count);
         }
-
     }
 }

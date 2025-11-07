@@ -4,11 +4,6 @@ namespace MSOopdracht2.Metrics
 {
     public class MetricCalculator
     {
-        public MetricCalculator()
-        {
-
-        }
-
         public StoredMetrics CalculateMetrics(CodeProgram program)
         {
             StoredMetrics storedMetrics = new StoredMetrics(0, 0, 0);

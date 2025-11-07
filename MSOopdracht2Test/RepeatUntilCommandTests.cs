@@ -35,7 +35,6 @@ namespace MSOopdracht2Test
             RepeatUntilCommand repeatUntilCommand = new RepeatUntilCommand(condition, commands);
             string expected = "Move 1, Turn left, Turn right, Move 1, Turn left, Turn right";
 
-            //execute the tested method
             string trace = repeatUntilCommand.Execute(character);
 
             //(3,0) is blocked, so the position of the character should be 1 before that
@@ -72,14 +71,12 @@ namespace MSOopdracht2Test
 
             //(5,0) is outside the grid, so the last position should be (4, 0) 
             Assert.Equal(new Vector2(4, 0), character.Position);
-            
             Assert.Equal(expected, trace);
         }
 
         [Fact]
         public void RepeatUntilWithoutGrid()
         {
-            //initialize all test objects
             Character character = new Character();
             ICondition condition = new GridEdgeCondition();
             List<ICommand> commands = new List<ICommand>()
@@ -88,7 +85,6 @@ namespace MSOopdracht2Test
             };
             RepeatUntilCommand repeatUntilCommand = new RepeatUntilCommand(condition, commands);
 
-            //execute the tested method
             string trace = repeatUntilCommand.Execute(character);
 
             //if there is no grid, the RepeatUntil command should stop executing immediately so the returned string must be empty
@@ -114,7 +110,6 @@ namespace MSOopdracht2Test
             };
             RepeatUntilCommand repeatUntilCommand = new RepeatUntilCommand(condition, commands);
 
-            //execute the tested method
             string trace = repeatUntilCommand.Execute(character);
 
             //the character should not move
@@ -140,11 +135,10 @@ namespace MSOopdracht2Test
             Character character = new Character(grid);
             ICondition condition = new GridEdgeCondition();
             List<ICommand> commands = new List<ICommand>();
-
             RepeatUntilCommand repeatUntilCommand = new RepeatUntilCommand(condition, commands);
 
-            //execute the tested method
             string trace = repeatUntilCommand.Execute(character);
+
             //when there are no commands in the list, the RepeatUntil command should be stopped immediately
             Assert.Equal(string.Empty, trace);
         }
