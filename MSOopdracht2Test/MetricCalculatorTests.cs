@@ -3,6 +3,7 @@ using MSOopdracht2.Commands;
 using MSOopdracht2.Conditions;
 using MSOopdracht2.Enums;
 using MSOopdracht2.Metrics;
+using MSOopdracht2.Parsers;
 
 namespace MSOopdracht2Test
 {
@@ -141,6 +142,32 @@ namespace MSOopdracht2Test
             Assert.Equal(0, result.CommandAmount);
             Assert.Equal(0, result.RepeatAmount);
             Assert.Equal(0, result.NestingAmount);
+        }
+
+        [Fact]
+        public void EmptyLinesTest()
+        {
+            string[] lines = {
+                      "Move 2",
+                      "",
+                      "RepeatUntil WallAhead",
+                      "",
+                      "    Move 2",
+                      "",
+                      "    Repeat 2",
+                      "        Turn Right"
+                };
+
+            IProgramParser parser = new TxtProgramParser();
+            CodeProgram emptyLinesProgram = parser.Parse(lines);
+
+            MetricCalculator calculator = new MetricCalculator();
+
+            StoredMetrics result = calculator.CalculateMetrics(emptyLinesProgram);
+
+            Assert.Equal(5, result.CommandAmount);
+            Assert.Equal(2, result.RepeatAmount);
+            Assert.Equal(2, result.NestingAmount);
         }
     }
 }

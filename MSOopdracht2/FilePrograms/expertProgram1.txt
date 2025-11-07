@@ -1,12 +1,8 @@
 Move 5
-Turn left
-Turn left
-Move 3
-Turn left
-Move 4
 Repeat 3
-    Move 1
-    Turn left
     Repeat 2
         Move 1
+        Turn right
+Move 2
 Turn left
+Move 4
