@@ -10,6 +10,9 @@
   <ItemGroup>
     <None Remove="AdvancedGrid1.txt" />
     <None Remove="FileGrids\AdvancedGrid2.txt" />
+    <None Remove="FileGrids\ExerciseGrid1.txt" />
+    <None Remove="FileGrids\ExerciseGrid2.txt" />
+    <None Remove="FileGrids\ExerciseGrid3.txt" />
     <None Remove="FileGrids\ExpertGrid1.txt" />
     <None Remove="FileGrids\ExpertGrid2.txt" />
     <None Remove="ProcessingFile\ProcessingFile.txt" />
@@ -33,6 +36,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="FileGrids\AdvancedGrid2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FileGrids\ExerciseGrid1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FileGrids\ExerciseGrid2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FileGrids\ExerciseGrid3.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="FileGrids\ExpertGrid1.txt">

@@ -110,6 +110,27 @@ namespace MSOopdracht2
             return fullFileName;
         }
 
+        public static string ExerciseGrid1()
+        {
+            FileInfo file = new FileInfo(@"FileGrids\ExerciseGrid1.txt");
+            string fullFileName = file.FullName;
+            return fullFileName;
+        }
+
+        public static string ExerciseGrid2()
+        {
+            FileInfo file = new FileInfo(@"FileGrids\ExerciseGrid2.txt");
+            string fullFileName = file.FullName;
+            return fullFileName;
+        }
+
+        public static string ExerciseGrid3()
+        {
+            FileInfo file = new FileInfo(@"FileGrids\ExerciseGrid3.txt");
+            string fullFileName = file.FullName;
+            return fullFileName;
+        }
+
         public static string GetTextBasicExampleProgram()
         {
             Random random = new Random();
