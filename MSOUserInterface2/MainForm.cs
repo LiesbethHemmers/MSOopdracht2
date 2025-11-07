@@ -316,7 +316,6 @@ namespace MSOUserInterface2
         private Grid grid;
         private Character? currentCharacter;
         
-
         private void GetAdvancedExercise1(object sender, EventArgs e)
         {
             currentCharacter = new Character();
