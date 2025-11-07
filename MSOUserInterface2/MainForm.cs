@@ -48,6 +48,7 @@ namespace MSOUserInterface2
 
         private void FileLoadButtonClick(object sender, EventArgs e)
         {
+            _outputTextBox.Text = null;
             using OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -105,9 +106,9 @@ namespace MSOUserInterface2
 
         public void BasicClick()
         {
+            _outputTextBox.Text = null;
             string exampleProgram = ExamplePrograms.GetTextBasicExampleProgram();
             _programRichTextBox.Text = File.ReadAllText(exampleProgram);
-            string fileAsText = _programRichTextBox.Text;
 
             panel1.Invalidate();
             _hasRun = false;
@@ -115,9 +116,9 @@ namespace MSOUserInterface2
 
         public void AdvancedClick()
         {
+            _outputTextBox.Text = null;
             string exampleProgram = ExamplePrograms.GetTextAdvancedExampleProgram();
             _programRichTextBox.Text = File.ReadAllText(exampleProgram);
-            string fileAsText = _programRichTextBox.Text;
 
             panel1.Invalidate();
             _hasRun = false;
@@ -125,9 +126,9 @@ namespace MSOUserInterface2
 
         public void ExpertClick()
         {
+            _outputTextBox.Text = null;
             string exampleProgram = ExamplePrograms.GetTextExpertExampleProgram();
             _programRichTextBox.Text = File.ReadAllText(exampleProgram);
-            string fileAsText = _programRichTextBox.Text;
 
             panel1.Invalidate();
             _hasRun = false;
@@ -284,6 +285,7 @@ namespace MSOUserInterface2
 
         private void GetAdvancedExercise1(object sender, EventArgs e)
         {
+            _outputPathFindingTextBox.Text = null;
             string gridFileName = ExamplePrograms.AdvancedGrid1();
             IGridParser parser = new TxtGridParser();
             IGridImporter importer = new TxtGridImporter(parser);
@@ -300,6 +302,7 @@ namespace MSOUserInterface2
 
         private void GetAdvancedExercise2(object sender, EventArgs e)
         {
+            _outputPathFindingTextBox.Text = null;
             string gridFileName = ExamplePrograms.AdvancedGrid2();
             IGridParser parser = new TxtGridParser();
             IGridImporter importer = new TxtGridImporter(parser);
@@ -316,6 +319,7 @@ namespace MSOUserInterface2
 
         private void GetExpertExercise1(object sender, EventArgs e)
         {
+            _outputPathFindingTextBox.Text = null;
             string gridFileName = ExamplePrograms.ExpertGrid1();
             IGridParser parser = new TxtGridParser();
             IGridImporter importer = new TxtGridImporter(parser);
@@ -332,6 +336,7 @@ namespace MSOUserInterface2
 
         private void GetExpertExercise2(object sender, EventArgs e)
         {
+            _outputPathFindingTextBox.Text = null;
             string gridFileName = ExamplePrograms.ExpertGrid2();
             IGridParser parser = new TxtGridParser();
             IGridImporter importer = new TxtGridImporter(parser);
@@ -399,6 +404,7 @@ namespace MSOUserInterface2
 
         public void Exercise1Click()
         {
+            _outputPathFindingTextBox.Text = null;
             string gridFileName = ExamplePrograms.ExerciseGrid1();
             IGridParser parser = new TxtGridParser();
             IGridImporter importer = new TxtGridImporter(parser);
@@ -412,6 +418,7 @@ namespace MSOUserInterface2
         }
         public void Exercise2Click()
         {
+            _outputPathFindingTextBox.Text = null;
             string gridFileName = ExamplePrograms.ExerciseGrid2();
             IGridParser parser = new TxtGridParser();
             IGridImporter importer = new TxtGridImporter(parser);
@@ -425,6 +432,7 @@ namespace MSOUserInterface2
         }
         public void Exercise3Click()
         {
+            _outputPathFindingTextBox.Text = null;
             string gridFileName = ExamplePrograms.ExerciseGrid3();
             IGridParser parser = new TxtGridParser();
             IGridImporter importer = new TxtGridImporter(parser);

@@ -51,8 +51,10 @@ namespace MSOUserInterface2
             _outputPathFindingTextBox = new TextBox();
             _pathFindingExerciseComboBox = new ComboBox();
             _pathfindingMetricButton = new Button();
+            _catPictureBox = new PictureBox();
             _programPanel.SuspendLayout();
             _pathfindingPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)_catPictureBox).BeginInit();
             SuspendLayout();
             // 
             // _metricsButton
@@ -92,6 +94,7 @@ namespace MSOUserInterface2
             // _programPanel
             // 
             _programPanel.BackColor = Color.DarkRed;
+            _programPanel.Controls.Add(_catPictureBox);
             _programPanel.Controls.Add(_fileLoadButton);
             _programPanel.Controls.Add(_outputTextBox);
             _programPanel.Controls.Add(_programRichTextBox);
@@ -185,9 +188,9 @@ namespace MSOUserInterface2
             button4.BackColor = Color.MidnightBlue;
             button4.Location = new Point(289, 24);
             button4.Name = "button4";
-            button4.Size = new Size(84, 53);
+            button4.Size = new Size(90, 53);
             button4.TabIndex = 0;
-            button4.Text = "Expert exercise 2";
+            button4.Text = "Expert example 2";
             button4.UseVisualStyleBackColor = false;
             button4.Click += GetExpertExercise2;
             // 
@@ -196,9 +199,9 @@ namespace MSOUserInterface2
             button3.BackColor = Color.RoyalBlue;
             button3.Location = new Point(200, 24);
             button3.Name = "button3";
-            button3.Size = new Size(84, 53);
+            button3.Size = new Size(90, 53);
             button3.TabIndex = 11;
-            button3.Text = "Expert exercise 1";
+            button3.Text = "Expert example 1";
             button3.UseVisualStyleBackColor = false;
             button3.Click += GetExpertExercise1;
             // 
@@ -207,9 +210,9 @@ namespace MSOUserInterface2
             button2.BackColor = Color.RoyalBlue;
             button2.Location = new Point(22, 24);
             button2.Name = "button2";
-            button2.Size = new Size(84, 53);
+            button2.Size = new Size(90, 53);
             button2.TabIndex = 0;
-            button2.Text = "Advanced exercise 2";
+            button2.Text = "Advanced example 1";
             button2.UseVisualStyleBackColor = false;
             button2.Click += GetAdvancedExercise2;
             // 
@@ -218,9 +221,9 @@ namespace MSOUserInterface2
             button1.BackColor = Color.MidnightBlue;
             button1.Location = new Point(111, 24);
             button1.Name = "button1";
-            button1.Size = new Size(84, 53);
+            button1.Size = new Size(90, 53);
             button1.TabIndex = 10;
-            button1.Text = "Advanced exercise 1";
+            button1.Text = "Advanced example 2";
             button1.UseVisualStyleBackColor = false;
             button1.Click += GetAdvancedExercise1;
             // 
@@ -291,6 +294,14 @@ namespace MSOUserInterface2
             _pathfindingMetricButton.UseVisualStyleBackColor = true;
             _pathfindingMetricButton.Click += PathfindingMetricsButtonClick;
             // 
+            // _catPictureBox
+            // 
+            _catPictureBox.Location = new Point(391, 435);
+            _catPictureBox.Name = "_catPictureBox";
+            _catPictureBox.Size = new Size(125, 62);
+            _catPictureBox.TabIndex = 9;
+            _catPictureBox.TabStop = false;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -305,6 +316,7 @@ namespace MSOUserInterface2
             _programPanel.PerformLayout();
             _pathfindingPanel.ResumeLayout(false);
             _pathfindingPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)_catPictureBox).EndInit();
             ResumeLayout(false);
         }
 
@@ -333,5 +345,6 @@ namespace MSOUserInterface2
         private TextBox _outputPathFindingTextBox;
         private ComboBox _pathFindingExerciseComboBox;
         private Button _pathfindingMetricButton;
+        private PictureBox _catPictureBox;
     }
 }
