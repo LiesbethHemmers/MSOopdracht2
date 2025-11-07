@@ -104,7 +104,6 @@ namespace MSOUserInterface2
             _programPanel.Name = "_programPanel";
             _programPanel.Size = new Size(986, 582);
             _programPanel.TabIndex = 3;
-            _programPanel.Paint += _programPanel_Paint;
             // 
             // _fileLoadButton
             // 
