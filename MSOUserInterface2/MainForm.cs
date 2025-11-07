@@ -1,9 +1,7 @@
-using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel;
 using MSOopdracht2;
 using MSOopdracht2.Importers;
 using MSOopdracht2.Metrics;
 using MSOopdracht2.Parsers;
-using System.Reflection.Metadata.Ecma335;
 using MSOopdracht2.Enums;
 
 namespace MSOUserInterface2
@@ -48,6 +46,7 @@ namespace MSOUserInterface2
         private void FileLoadButtonClick(object sender, EventArgs e)
         {
             _outputTextBox.Text = null;
+            currentCharacter = null;
             using OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -105,6 +104,7 @@ namespace MSOUserInterface2
 
         public void BasicClick()
         {
+            currentCharacter = null;
             _outputTextBox.Text = null;
             string exampleProgram = ExamplePrograms.GetTextBasicExampleProgram();
             _programRichTextBox.Text = File.ReadAllText(exampleProgram);
@@ -115,6 +115,7 @@ namespace MSOUserInterface2
 
         public void AdvancedClick()
         {
+            currentCharacter = null;
             _outputTextBox.Text = null;
             string exampleProgram = ExamplePrograms.GetTextAdvancedExampleProgram();
             _programRichTextBox.Text = File.ReadAllText(exampleProgram);
@@ -125,6 +126,7 @@ namespace MSOUserInterface2
 
         public void ExpertClick()
         {
+            currentCharacter = null;
             _outputTextBox.Text = null;
             string exampleProgram = ExamplePrograms.GetTextExpertExampleProgram();
             _programRichTextBox.Text = File.ReadAllText(exampleProgram);
@@ -221,9 +223,6 @@ namespace MSOUserInterface2
 
             if (grid != null && _loadedGrid) //After I clicked one of the exercises in the pathfinding menu
             {
-                //float gridDimension = FindGridDimension();
-
-                //float cellDimension = usableGridSide / gridDimension;
 
                 for (int y = 0; y < grid.GetHeight(); y++)
                 {
@@ -256,7 +255,7 @@ namespace MSOUserInterface2
             if (_hasRun && currentCharacter != null) //When i have a program with a path that i want to draw
             {
                 float fieldDimension = grid != null && _loadedGrid ? FindGridDimension() : FindFieldDimension(currentCharacter) + 1;
-                //float cellDimension = usableGridSide / fieldDimension;
+               
 
                 if (grid == null) //Just draw some lines for clariy if the program doesnt have a grid
                 {
