@@ -195,7 +195,7 @@ namespace MSOUserInterface2
             return fieldDimension;
         }
 
-        private void ColorPad(object sender, PaintEventArgs e)
+        private void ColorPanel(object sender, PaintEventArgs e)
         {
             float panelMargin = 10;
 

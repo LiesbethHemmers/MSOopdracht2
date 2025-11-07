@@ -166,7 +166,7 @@ namespace MSOUserInterface2
             panel1.Name = "panel1";
             panel1.Size = new Size(300, 300);
             panel1.TabIndex = 8;
-            panel1.Paint += ColorPad;
+            panel1.Paint += ColorPanel;
             // 
             // _pathfindingRunButton
             // 
@@ -259,7 +259,7 @@ namespace MSOUserInterface2
             panel2.Name = "panel2";
             panel2.Size = new Size(435, 435);
             panel2.TabIndex = 12;
-            panel2.Paint += ColorPad;
+            panel2.Paint += ColorPanel;
             // 
             // _outputPathFindingTextBox
             // 
