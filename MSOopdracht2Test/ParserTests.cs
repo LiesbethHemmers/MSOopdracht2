@@ -46,7 +46,61 @@ namespace MSOopdracht2Test
         }
 
         [Fact]
+        public void ZeroCommandsTest()
+        {
+            string[] lines = {"Repeat 2 times",
+                              "    Repeat 5 times",
+                              "Turn left"
+                              };
+            IProgramParser parser = new TxtProgramParser();
+            CodeProgram parsedProgram = parser.Parse(lines);
 
+            CodeProgram compareProgramZeroCommands = new CodeProgram(new List<ICommand>
+                                                          {
+                                                          new RepeatCommand(2, new List<ICommand>{
+                                                          new RepeatCommand(5,new List<ICommand>
+                                                          {
+                                                          })
+                                                          }),
+                                                          new TurnCommand(TurnDirection.Left)}
+                                                          , "CompareProgram");
+            Character character = new Character();
+            Character character2 = new Character();
+
+            //execute both programs
+            parsedProgram.Execute(character2);
+            compareProgramZeroCommands.Execute(character);
+
+            //check if the end states are equal
+            Assert.Equal(character2.Position, character.Position);
+            Assert.Equal(character2.Direction, character.Direction);
+        }
+
+        public void TxtProgramParserEmptyProgramTest()
+        {
+            string[] lines = {""
+                              };
+
+            IProgramParser parser = new TxtProgramParser();
+            CodeProgram parsedProgram = parser.Parse(lines);
+
+            CodeProgram compareProgramEmptyProgram = new CodeProgram(new List<ICommand>
+                                                          {
+                                                          }
+                                                          , "CompareProgram");
+            Character character = new Character();
+            Character character2 = new Character();
+
+            //execute both programs
+            parsedProgram.Execute(character2);
+            compareProgramEmptyProgram.Execute(character);
+
+            //check if the end states are equal
+            Assert.Equal(character2.Position, character.Position);
+            Assert.Equal(character2.Direction, character.Direction);
+        }
+
+        [Fact]
         public void TxtGridParserTest()
         {
             string[] lines =
@@ -65,6 +119,22 @@ namespace MSOopdracht2Test
             Assert.Equal(4, parsedGrid.LoadedGrid.GetLength(1));
             Assert.Equal(expectedXPos, parsedGrid.GetXPosition());
             Assert.Equal('o', parsedGrid.GetSymbol(1,0));
+        }
+
+        [Fact]
+        public void TxtGridParserEmptyGridTest()
+        {
+            string[] lines =
+            {
+                ""
+            };
+
+            IGridParser parser = new TxtGridParser();
+
+            Grid parsedGrid = parser.Parse(lines);
+
+            Assert.Equal(0, parsedGrid.LoadedGrid.GetLength(0));
+            Assert.Equal(1, parsedGrid.LoadedGrid.GetLength(1));
         }
     }
 }
