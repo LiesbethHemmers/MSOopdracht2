@@ -40,7 +40,6 @@ namespace MSOopdracht2Test
             Assert.Equal(1, result.RepeatAmount);
         }
 
-
         [Fact]
         public void NestingAmountTest()
         {
@@ -61,6 +60,49 @@ namespace MSOopdracht2Test
             MetricCalculator calculator = new MetricCalculator();
             
             StoredMetrics result = calculator.CalculateMetrics(nestedProgram);
+
+            Assert.Equal(3, result.NestingAmount);
+        }
+
+        [Fact]
+        public void RepeatandRepeatUntilAmountTest()
+        {
+            CodeProgram repeatAndRepeatUntilProgram = new CodeProgram(new List<ICommand>
+            {
+                new RepeatCommand(3, new List<ICommand>{
+                new TurnCommand(TurnDirection.Left),
+                new MoveCommand(4)}),
+                new RepeatUntilCommand(new GridEdgeCondition(), new List<ICommand>{
+                new TurnCommand(TurnDirection.Left),
+                new MoveCommand(4)}),
+            }, "repeatProgram");
+            MetricCalculator calculator = new MetricCalculator();
+
+            StoredMetrics result = calculator.CalculateMetrics(repeatAndRepeatUntilProgram);
+
+            Assert.Equal(2, result.RepeatAmount);
+        }
+
+        [Fact]
+        public void NestingAmountWithRepeatUntilTest()
+        {
+            CodeProgram nestedWithRepeatUntilProgram = new CodeProgram(new List<ICommand>
+            {
+                new RepeatCommand(2, new List<ICommand>
+                {
+                    new MoveCommand(2),
+                    new RepeatUntilCommand(new WallAheadCondition(), new List<ICommand>
+                    {
+                        new MoveCommand(3),
+                        new RepeatCommand(2, new List<ICommand>{
+                            new TurnCommand(TurnDirection.Right)
+                        })
+                    })
+                })
+            }, "nestingProgram");
+            MetricCalculator calculator = new MetricCalculator();
+
+            StoredMetrics result = calculator.CalculateMetrics(nestedWithRepeatUntilProgram);
 
             Assert.Equal(3, result.NestingAmount);
         }

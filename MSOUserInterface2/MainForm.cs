@@ -362,18 +362,6 @@ namespace MSOUserInterface2
             panel2.Invalidate();
         }
 
-        //private void TryUserProgram(object sender, EventArgs e)
-        //{
-        //    currentCharacter = null;
-        //    CodeProgram codeProgram = TextToCodeProgram();
-        //    Character character = new Character();
-        //    codeProgram.Execute(character);
-        //    currentCharacter = character;
-           
-        //    _hasRun = true;
-        //    panel2.Invalidate();
-        //}
-
         private void _programPanel_Paint(object sender, PaintEventArgs e)
         {
 

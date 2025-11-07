@@ -1,5 +1,6 @@
 ﻿using MSOopdracht2;
 using MSOopdracht2.Commands;
+using MSOopdracht2.Conditions;
 using MSOopdracht2.Enums;
 using MSOopdracht2.Parsers;
 using System.Numerics;
@@ -14,7 +15,7 @@ namespace MSOopdracht2Test
             string[] lines = {"Repeat 3 times",
                               "    Move 1",
                               "    Turn right",
-                              "    Repeat 5 times",
+                              "    RepeatUntil GridEdge",
                               "        Move 2",
                               "Turn left"
                               };
@@ -26,7 +27,7 @@ namespace MSOopdracht2Test
                                                           new RepeatCommand(3, new List<ICommand>{
                                                           new MoveCommand(1),
                                                           new TurnCommand(TurnDirection.Right),
-                                                          new RepeatCommand(5,new List<ICommand>
+                                                          new RepeatUntilCommand(new GridEdgeCondition(), new List<ICommand>
                                                           {
                                                               new MoveCommand(2)
                                                           })
